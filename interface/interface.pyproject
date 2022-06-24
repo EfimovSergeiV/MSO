@@ -1,0 +1,13 @@
+{
+    "files": [
+        "main.py",
+        "src/main.qml",
+        "src/pages/settings.qml",
+        "src/pages/action.qml",
+        "src/pages/charts.qml",
+        "src/pages/index.qml",
+        "src/pages/programms.qml",
+        "src/sensors/rt-chart/RTChart.qml",
+        "src/sensors/rt-chart/SpeedsXml.qml"
+        ]
+}
