@@ -224,7 +224,7 @@ class Handler(QObject):
     close_counter = 0
     @Slot()
     def close_application(self):
-        print(f'THIS ME: {self.first_thread.isFinished()}')
+
         self.first_worker_stop()
         print(self.treads_check_list)
         time.sleep(5)
