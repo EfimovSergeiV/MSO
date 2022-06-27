@@ -8,7 +8,7 @@ Window {
     width: 1280
     height: 1024
     visible: true
-    title: qsTr("Hello World")
+    title: qsTr("MSO")
 
     StackView {
         id: stackView
@@ -55,4 +55,12 @@ Window {
     //    Component.onCompleted: {
     //        mainWindow.showFullScreen()
     //    }
+    Connections {
+        target: handler
+
+        function onAllDataSaved() {
+            Qt.quit()
+        }
+    }
+    // Component.onDestruction: handler.first_worker_stop()
 }

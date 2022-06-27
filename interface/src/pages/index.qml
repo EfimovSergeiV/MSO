@@ -28,7 +28,7 @@ Item {
             Button {
                 id: button
                 x: 8
-                y: 8
+                y: 49
                 width: 332
                 height: 40
                 text: "Визуализация"
@@ -38,28 +38,42 @@ Item {
             }
 
             Button {
-                id: button1
-                x: 8
-                y: 761
-                width: 332
-                height: 40
-                text: qsTr("Программы")
-                anchors.bottom: parent.bottom
-                anchors.bottomMargin: 8
-                onClicked: {
-                    stackView.push(Qt.resolvedUrl("programms.qml"))
-                }
-            }
-
-            Button {
                 id: button3
                 x: 8
-                y: 59
+                y: 101
                 width: 332
                 height: 40
                 text: "График"
                 onClicked: {
                     stackView.push(Qt.resolvedUrl("charts.qml"))
+                }
+            }
+
+            Label {
+                id: label2
+                x: 8
+                y: 8
+                width: 332
+                height: 35
+                color: "#ffffff"
+                text: "Процесс:"
+                verticalAlignment: Text.AlignVCenter
+                font.styleName: "Light"
+                font.pointSize: 16
+                font.bold: true
+            }
+
+            Button {
+                id: button4
+                x: 8
+                y: 794
+                width: 332
+                height: 40
+                text: "Выход"
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: 8
+                onClicked: {
+                    handler.close_application()
                 }
             }
         }
@@ -102,21 +116,45 @@ Item {
         Rectangle {
             id: rectangle3
             x: 8
-            y: 823
+            y: 856
             width: 348
-            height: 193
+            height: 160
             radius: 5
             anchors.bottom: parent.bottom
             anchors.bottomMargin: 8
             color: "#7f000000"
 
+            Label {
+                id: label1
+                x: 8
+                y: 8
+                width: 332
+                height: 30
+                color: "#ffffff"
+                text: "Настройки:"
+                verticalAlignment: Text.AlignVCenter
+                font.pointSize: 16
+            }
+            Button {
+                id: button1
+                x: 8
+                y: 53
+                width: 332
+                height: 40
+                text: qsTr("Программы")
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: 67
+                onClicked: {
+                    stackView.push(Qt.resolvedUrl("programms.qml"))
+                }
+            }
             Button {
                 id: button2
                 x: 8
-                y: 145
+                y: 112
                 width: 332
                 height: 40
-                text: qsTr("Настройки")
+                text: "Прочее"
                 onClicked: {
                     stackView.push(Qt.resolvedUrl("settings.qml"))
                 }
@@ -137,11 +175,16 @@ Item {
             fillMode: Image.PreserveAspectFit
         }
     }
+
+    // Component.onDestruction: console.log("DESTROED")
+    Component.onCompleted: {
+        handler.first_worker_start()
+    }
 }
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}D{i:7}
+    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}
 }
 ##^##*/
 

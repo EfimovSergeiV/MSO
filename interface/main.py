@@ -17,6 +17,7 @@ if __name__ == "__main__":
     engine.rootContext().setContextProperty("handler", handler)
 
     engine.load(os.fspath(Path(__file__).resolve().parent / "src/main.qml"))
+
     if not engine.rootObjects():
         sys.exit(-1)
     sys.exit(app.exec_())
