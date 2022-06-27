@@ -226,13 +226,13 @@ class Handler(QObject):
     def close_application(self):
 
         self.first_worker_stop()
-        print(self.treads_check_list)
-        time.sleep(5)
         
-        print(f'THIS ME: {self.first_thread.isFinished()}')
-        
-        if self.first_thread.isFinished:
-            self.allDataSaved.emit()
+        while self.first_thread.isFinished() == False:
+            print("Останавливаем First Worker")
+            time.sleep(1)
+
+
+        self.allDataSaved.emit()
 
 
         # self.first_thread.quit()
