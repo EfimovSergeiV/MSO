@@ -176,10 +176,9 @@ Item {
         }
     }
 
-    // Component.onDestruction: console.log("DESTROED")
-    Component.onCompleted: {
-        handler.first_worker_start()
-    }
+    //    Component.onCompleted: {
+    //        handler.running_application()
+    //    }
 }
 
 /*##^##

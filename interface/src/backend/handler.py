@@ -1,14 +1,12 @@
+import asyncio
 import time
 import random
 from PySide2.QtCore import QObject, Signal, Slot, QThread
 
-
-# from PySide2.QtCore import *
-# from PySide2.QtWidgets import *
-# from PySide2.QtCharts import *
-# from PySide2.QtQml import *
-
 from src.backend import database
+import logging
+
+
 
 
 class ChartWorker(QObject):
@@ -79,37 +77,33 @@ class Handler(QObject):
     } 
 
 
-    # FIRST WORKER THREAD
-    def first_worker_signal(self, data):
+    """
+        Charts 
+    """
+    def chart_worker_signal(self, data):
         self.chartData.emit(data)
 
 
-    @Slot()
-    def first_worker_start(self):
-        if self.treads_check_list["chartView"] == False:
-            self.first_thread = QThread()
-            self.first_worker = ChartWorker()
-            self.first_worker.moveToThread(self.first_thread)
+    def create_chart_stream(self):
+        """ Создаём поток таблиц """
 
-            self.first_thread.started.connect(self.first_worker.doWork)
+        self.chart_thread = QThread()
+        self.chart_worker = ChartWorker()
+        self.chart_worker.moveToThread(self.chart_thread)
 
-            self.first_worker.chart.connect(self.first_worker_signal)
-            self.first_worker.finished.connect(self.first_thread.quit)
+        self.chart_thread.started.connect(self.chart_worker.doWork)
 
-
-            self.first_thread.start()
-            self.treads_check_list["chartView"] = True
-
-        else:
-            pass
+        self.chart_worker.chart.connect(self.chart_worker_signal)
+        self.chart_worker.finished.connect(self.chart_thread.quit)
 
 
+        self.chart_thread.start()
 
-    @Slot()
-    def first_worker_stop(self):
-        print(f"[+] Пытаемся остановить первый поток")
-        self.first_worker.stop()
-        self.first_thread.quit()
+
+    def destroy_chart_stream(self):
+        print(f"[+] Останавливаем поток диаграмм")
+        self.chart_worker.stop()
+        self.chart_thread.quit()
 
 
 
@@ -221,31 +215,45 @@ class Handler(QObject):
         # self.get_welding_programm()
 
 
-    close_counter = 0
+
+
+
+
+
+
+
+    # Остановка и запуск приложения
+
+    @Slot()
+    def running_application(self):
+        """ Запуск необходимых сервисов при старте """
+
+        self.create_chart_stream()
+
+
+
+
+
     @Slot()
     def close_application(self):
+        """ Ожидаем закрытия потоков сервисов и закрываем приложение """
 
-        self.first_worker_stop()
-        
-        while self.first_thread.isFinished() == False:
+        # Останавливаем потоки
+        self.destroy_chart_stream()
+
+
+
+        # Ждём пока поток будет завершён
+        while self.chart_thread.isRunning():
             print("Останавливаем First Worker")
             time.sleep(1)
 
 
+
+        # Проверяем остановлен ли поток
+        print(f"RUNNING FIRST THREAD: { self.chart_thread.isFinished() }")
+
+
+
+        # Закрываем приложение, если все потоки остановились
         self.allDataSaved.emit()
-
-
-        # self.first_thread.quit()
-
-
-
-
-        # while True:
-        #     if True in list(self.treads_check_list.values()):
-        
-        #         self.allDataSaved.emit()
-        #         break
-
-        #     time.sleep(5)
-        #     print("Проверка правильности остановки программы")
-
