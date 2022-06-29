@@ -6,7 +6,7 @@ from psycopg2 import Error
 from pathlib import Path
 from random import randint
 
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent.parent
 
 # logging.basicConfig(filename='database.log', encoding='utf-8', level=#logging.error)
 
@@ -800,5 +800,5 @@ def remove_programm(id):
 
 
 # list_programm()
-# get_programm(id=5)
+get_programm(id=5)
 # create_programm()
