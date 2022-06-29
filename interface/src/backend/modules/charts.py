@@ -5,7 +5,7 @@ import time, random, logging
 
 class ChartWorker(QObject):
     """ Поток данных построения таблицы """
-    
+
     finished = Signal()
     chart = Signal(list)
 

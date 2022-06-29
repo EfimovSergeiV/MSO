@@ -6,6 +6,7 @@
         "src/pages/action.qml",
         "src/pages/charts.qml",
         "src/pages/index.qml",
+        "src/pages/programm.qml",
         "src/pages/programms.qml",
         "src/sensors/rt-chart/RTChart.qml",
         "src/sensors/rt-chart/SpeedsXml.qml"
