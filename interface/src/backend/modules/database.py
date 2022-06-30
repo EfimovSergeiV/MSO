@@ -800,5 +800,5 @@ def remove_programm(id):
 
 
 # list_programm()
-get_programm(id=5)
+# get_programm(id=5)
 # create_programm()

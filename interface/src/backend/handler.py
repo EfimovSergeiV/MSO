@@ -55,6 +55,19 @@ class Handler(QObject):
         }
 
 
+
+
+    @Slot(list)
+    def save_programm(self, data):
+        """ CREATE PROGRAMM """
+
+        print(data)
+
+
+
+
+
+
     @Slot()
     def create_welding_programm(self):
         """ Создание новой программы сварки """

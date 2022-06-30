@@ -16,7 +16,7 @@ Window {
         y: 0
         width: mainWindow.width
         height: mainWindow.height
-        initialItem: Qt.resolvedUrl("pages/index.qml")
+        initialItem: Qt.resolvedUrl("pages/programm.qml") ///("pages/index.qml")
         pushEnter: Transition {
             PropertyAnimation {
                 property: "scale" /// "opacity"
@@ -52,11 +52,10 @@ Window {
     }
 
     //  For production
-    //    Component.onCompleted: {
-    //        mainWindow.showFullScreen()
-    //    }
     Component.onCompleted: {
-        handler.running_application()
+
+        //        mainWindow.showFullScreen()
+        //        handler.running_application()
     }
     Connections {
         target: handler
@@ -65,5 +64,5 @@ Window {
             Qt.quit()
         }
     }
-    // Component.onDestruction: handler.first_worker_stop()
+    //    Component.onDestruction: handler.first_worker_stop()
 }
