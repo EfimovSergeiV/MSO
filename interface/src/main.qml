@@ -60,7 +60,7 @@ Window {
     Connections {
         target: handler
 
-        function onAllDataSaved() {
+        function onCloseApplication() {
             Qt.quit()
         }
     }
