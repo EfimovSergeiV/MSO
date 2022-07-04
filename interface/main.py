@@ -7,7 +7,11 @@ from PySide2.QtWidgets import QApplication
 from PySide2.QtQml import QQmlApplicationEngine
 
 
-os.environ["QT_IM_MODULE"] = "qtvirtualkeyboard"
+# import gi
+# gi.require_version("Gtk", "3.0")
+# from gi.repository import Gtk, GLib
+
+# os.environ["QT_IM_MODULE"] = "qtvirtualkeyboard"
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

@@ -6,6 +6,8 @@ import QtQuick.VirtualKeyboard 2.15
 import QtQuick.VirtualKeyboard.Styles 2.15
 import QtQuick.VirtualKeyboard.Settings 2.15
 
+import "../controls/keyboard"
+
 Item {
     id: item1
 
@@ -162,7 +164,7 @@ Item {
             id: rectangle2
             x: 8
             y: 677
-            width: 690
+            width: 633
             height: 339
             color: "#7e000000"
             radius: 5
@@ -171,7 +173,7 @@ Item {
                 id: programmDescription
                 x: 8
                 y: 54
-                width: 674
+                width: 617
                 height: 277
                 color: "#ffffff"
                 placeholderText: qsTr("Описание/комментарий к сварочной программе")
@@ -181,17 +183,17 @@ Item {
                 id: programmName
                 x: 8
                 y: 8
-                width: 674
+                width: 617
                 height: 40
+                placeholderTextColor: "#000000"
                 placeholderText: qsTr("Название программы")
             }
         }
-
         Rectangle {
             id: rectangle3
-            x: 704
-            y: 677
-            width: 568
+            x: 8
+            y: 586
+            width: 633
             height: 85
             color: "#7f000000"
             radius: 5
@@ -218,8 +220,8 @@ Item {
 
             Label {
                 id: label16
-                x: 263
-                y: 44
+                x: 299
+                y: 41
                 width: 43
                 height: 33
                 color: "#ffffff"
@@ -231,8 +233,8 @@ Item {
 
             TextField {
                 id: maxDiameter
-                x: 312
-                y: 37
+                x: 377
+                y: 35
                 width: 247
                 height: 40
                 horizontalAlignment: Text.AlignHCenter
@@ -240,11 +242,10 @@ Item {
                 inputMethodHints: Qt.ImhDigitsOnly
             }
         }
-
         Rectangle {
             id: rectangle4
             x: 8
-            y: 518
+            y: 526
             width: 1264
             height: 54
             color: "#7e000000"
@@ -252,9 +253,9 @@ Item {
 
             Button {
                 id: button
-                x: 1009
+                x: 1164
                 y: 7
-                width: 247
+                width: 92
                 height: 40
                 text: qsTr("Выход")
                 onClicked: {
@@ -269,7 +270,7 @@ Item {
                 id: button1
                 x: 8
                 y: 7
-                width: 241
+                width: 126
                 height: 40
                 text: "Сохранить"
                 onClicked: {
@@ -279,7 +280,7 @@ Item {
 
             Button {
                 id: button2
-                x: 406
+                x: 271
                 y: 7
                 width: 125
                 height: 40
@@ -291,8 +292,8 @@ Item {
 
             Button {
                 id: button21
-                x: 275
-                y: 7
+                x: 140
+                y: 8
                 width: 125
                 height: 40
                 text: qsTr("Оплавление")
@@ -303,9 +304,9 @@ Item {
 
             Button {
                 id: button3
-                x: 549
+                x: 402
                 y: 7
-                width: 209
+                width: 176
                 height: 40
                 text: qsTr("Подогрев/Выжигание")
                 onClicked: {
@@ -315,17 +316,28 @@ Item {
 
             Button {
                 id: button4
-                x: 774
-                y: 7
-                width: 210
+                x: 584
+                y: 8
+                width: 197
                 height: 40
                 text: qsTr("Параметры цикла сварки")
                 onClicked: {
                     showParamSection("DDDD")
                 }
             }
-        }
 
+            Button {
+                id: button5
+                x: 1063
+                y: 8
+                width: 95
+                height: 40
+                text: qsTr("Keyboard")
+                onClicked: {
+                    keyboard.show = !keyboard.show
+                }
+            }
+        }
         Rectangle {
             id: correctorRectangle
             x: 8
@@ -908,7 +920,6 @@ Item {
                 verticalAlignment: Text.AlignVCenter
             }
         }
-
         Rectangle {
             id: reflowRectangle
             x: 8
@@ -1490,6 +1501,17 @@ Item {
                 verticalAlignment: Text.AlignVCenter
             }
         }
+        Keyboard {
+            id: keyboard
+            y: 624
+            width: 1280
+            height: 400
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.rightMargin: 0
+            anchors.leftMargin: 0
+            show: false
+        }
     }
 
     //    InputPanel {
@@ -1509,7 +1531,7 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}
+    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}D{i:142}
 }
 ##^##*/
 

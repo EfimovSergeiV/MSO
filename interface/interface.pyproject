@@ -9,6 +9,8 @@
         "src/pages/programm.qml",
         "src/pages/programms.qml",
         "src/sensors/rt-chart/RTChart.qml",
-        "src/sensors/rt-chart/SpeedsXml.qml"
+        "src/sensors/rt-chart/SpeedsXml.qml",
+        "src/controls/keyboard/Keyboard.qml",
+        "src/controls/keyboard/KeyButton.qml"
         ]
 }
