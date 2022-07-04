@@ -4,7 +4,15 @@ import QtQuick.Controls 2.15
 Item {
     id: keyboard
 
-    property bool show: false
+    property string strData: ""
+    property real realData: strData
+    property string keyData: "progOne"
+
+    property bool show: true
+
+    function makeRealData(val) {
+        strData = strData + val
+    }
 
     Rectangle {
         id: rectangle
@@ -347,7 +355,7 @@ Item {
                 y: 238
                 width: 146
                 height: 70
-                text: "?123"
+                text: "123"
                 onClicked: {
                     abcRectangle.visible = false
                     intRectangle.visible = true
@@ -366,7 +374,7 @@ Item {
 
         Rectangle {
             id: intRectangle
-            width: 365
+            width: 350
             height: 319
             color: "#00000000"
             anchors.verticalCenter: parent.verticalCenter
@@ -388,6 +396,7 @@ Item {
                 width: 146
                 height: 70
                 text: "0"
+                onClicked: makeRealData("0")
             }
 
             KeyButton {
@@ -448,7 +457,7 @@ Item {
                 id: keyButton48
                 x: 236
                 y: 8
-                width: 123
+                width: 104
                 height: 70
                 text: "<"
             }
@@ -466,7 +475,7 @@ Item {
                 id: keyButton49
                 x: 236
                 y: 84
-                width: 123
+                width: 104
                 height: 70
                 text: "ABC"
                 onClicked: {
@@ -488,7 +497,7 @@ Item {
                 id: keyButton50
                 x: 236
                 y: 160
-                width: 123
+                width: 104
                 height: 144
                 text: "Готово"
             }

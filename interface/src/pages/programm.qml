@@ -1508,9 +1508,11 @@ Item {
             height: 400
             anchors.left: parent.left
             anchors.right: parent.right
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 0
             anchors.rightMargin: 0
             anchors.leftMargin: 0
-            show: false
+            show: true
         }
     }
 

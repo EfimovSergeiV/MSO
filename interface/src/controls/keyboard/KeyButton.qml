@@ -7,6 +7,13 @@ Button {
     font.bold: true
     font.pointSize: 20
 
+    property string keyname: "A"
+
+    onClicked: {
+        print(activeFocusItem, button.keyname)
+        activeFocusItem.text = activeFocusItem.text + button.keyname
+    }
+
     contentItem: Text {
         text: button.text
         font: button.font

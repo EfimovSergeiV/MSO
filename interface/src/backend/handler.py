@@ -33,8 +33,7 @@ class Handler(QObject):
 
 
     @Slot(list)
-    def create_reflow_data(self, data):
-        self.list_reflow_data = data
+    def save_programm(self, data):
         print(f"CREATE REFLOW DATA { data }")
 
 
