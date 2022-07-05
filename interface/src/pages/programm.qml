@@ -1506,13 +1506,13 @@ Item {
             property bool showKeyboard: false
 
             NumberAnimation on y {
-                to: 1600
+                to: 1400
                 duration: 500
                 running: !keyboard.showKeyboard
             }
             NumberAnimation on y {
-                from: 1600
-                to: 624
+                from: 1400
+                to: 630
                 duration: 500
                 running: keyboard.showKeyboard
             }
@@ -1521,7 +1521,7 @@ Item {
             //            width: 1280
             //            height: 400
             x: 0
-            y: 1821
+            y: 1400
             width: 1280
             height: 400
             anchors.left: parent.left

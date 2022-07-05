@@ -32,7 +32,7 @@ Item {
             color: "#00000000"
             anchors.verticalCenter: parent.verticalCenter
             anchors.horizontalCenter: parent.horizontalCenter
-            visible: false
+            visible: true
 
             KeyButton {
                 id: keyButton
@@ -384,20 +384,61 @@ Item {
                         anchors.fill: parent
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
+                        anchors.rightMargin: 0
                         font.pointSize: 18
                         font.bold: true
                     }
                 }
             }
 
-            KeyButton {
-                id: keyButton36
+            Item {
+
+                id: removeLater1
                 x: 691
                 y: 238
                 width: 146
                 height: 70
-                text: "Готово"
+
+                MouseArea {
+                    id: remove1LaterAction
+                    anchors.fill: parent
+                    anchors.rightMargin: 42
+
+                    onClicked: {
+                        activeFocusItem.text = activeFocusItem.text.slice(0, -1)
+                    }
+                }
+
+                Rectangle {
+                    id: rectangle1521
+                    x: 0
+                    y: 0
+                    width: textButton.width
+                    height: textButton.height
+                    color: textAction.pressed ? "#abbdcb" : "#ffffff"
+                    radius: 3
+
+                    Label {
+                        id: label2621
+                        color: "#143656"
+                        text: "<"
+                        anchors.fill: parent
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        font.pointSize: 18
+                        font.bold: true
+                    }
+                }
             }
+
+            //            KeyButton {
+            //                id: keyButton36
+            //                x: 691
+            //                y: 238
+            //                width: 146
+            //                height: 70
+            //                text: "Готово"
+            //            }
         }
 
         Rectangle {
@@ -407,7 +448,7 @@ Item {
             color: "#00000000"
             anchors.verticalCenter: parent.verticalCenter
             anchors.horizontalCenter: parent.horizontalCenter
-            visible: true
+            visible: false
 
             KeyButton {
                 id: keyButton44
@@ -520,14 +561,6 @@ Item {
                 }
             }
 
-            //            KeyButton {
-            //                id: keyButton48
-            //                x: 236
-            //                y: 8
-            //                width: 104
-            //                height: 70
-            //                text: "<"
-            //            }
             KeyButton {
                 id: keyButton41
                 x: 8
