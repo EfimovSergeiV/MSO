@@ -316,7 +316,7 @@ Item {
 
             KeyButton {
                 id: keyButton31
-                x: 159
+                x: 83
                 y: 238
                 width: 70
                 height: 70
@@ -325,7 +325,7 @@ Item {
 
             KeyButton {
                 id: keyButton32
-                x: 615
+                x: 539
                 y: 238
                 width: 70
                 height: 70
@@ -334,7 +334,7 @@ Item {
 
             KeyButton {
                 id: keyButton33
-                x: 235
+                x: 159
                 y: 238
                 width: 374
                 height: 70
@@ -355,7 +355,7 @@ Item {
                 id: digitsButton
                 x: 7
                 y: 238
-                width: 146
+                width: 70
                 height: 70
 
                 MouseArea {
@@ -394,15 +394,15 @@ Item {
             Item {
 
                 id: removeLater1
-                x: 691
+                x: 615
                 y: 238
-                width: 146
+                width: 105
                 height: 70
 
                 MouseArea {
                     id: remove1LaterAction
                     anchors.fill: parent
-                    anchors.rightMargin: 42
+                    anchors.rightMargin: 0
 
                     onClicked: {
                         activeFocusItem.text = activeFocusItem.text.slice(0, -1)
@@ -413,8 +413,8 @@ Item {
                     id: rectangle1521
                     x: 0
                     y: 0
-                    width: textButton.width
-                    height: textButton.height
+                    width: removeLater1.width
+                    height: removeLater1.height
                     color: textAction.pressed ? "#abbdcb" : "#ffffff"
                     radius: 3
 
@@ -425,20 +425,15 @@ Item {
                         anchors.fill: parent
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
+                        anchors.rightMargin: 0
+                        anchors.bottomMargin: 0
+                        anchors.leftMargin: 0
+                        anchors.topMargin: 0
                         font.pointSize: 18
                         font.bold: true
                     }
                 }
             }
-
-            //            KeyButton {
-            //                id: keyButton36
-            //                x: 691
-            //                y: 238
-            //                width: 146
-            //                height: 70
-            //                text: "Готово"
-            //            }
         }
 
         Rectangle {
