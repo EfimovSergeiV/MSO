@@ -40,7 +40,7 @@ Item {
                 y: 10
                 width: 70
                 height: 70
-                text: "\u0439"
+                keyname: "й"
             }
 
             KeyButton {
@@ -49,7 +49,7 @@ Item {
                 y: 10
                 width: 70
                 height: 70
-                text: "\u0446"
+                keyname: "ц"
             }
 
             KeyButton {
@@ -58,7 +58,7 @@ Item {
                 y: 10
                 width: 70
                 height: 70
-                text: "\u0443"
+                keyname: "у"
             }
 
             KeyButton {
@@ -67,7 +67,7 @@ Item {
                 y: 10
                 width: 70
                 height: 70
-                text: "\u043a"
+                keyname: "к"
             }
 
             KeyButton {
@@ -76,7 +76,7 @@ Item {
                 y: 10
                 width: 70
                 height: 70
-                text: "\u0435"
+                keyname: "е"
             }
 
             KeyButton {
@@ -85,7 +85,7 @@ Item {
                 y: 10
                 width: 70
                 height: 70
-                text: "\u043d"
+                keyname: "н"
             }
 
             KeyButton {
@@ -94,7 +94,7 @@ Item {
                 y: 10
                 width: 70
                 height: 70
-                text: "\u0433"
+                keyname: "г"
             }
 
             KeyButton {
@@ -103,7 +103,7 @@ Item {
                 y: 10
                 width: 70
                 height: 70
-                text: "\u0448"
+                keyname: "ш"
             }
 
             KeyButton {
@@ -112,7 +112,7 @@ Item {
                 y: 10
                 width: 70
                 height: 70
-                text: "\u0449"
+                keyname: "щ"
             }
 
             KeyButton {
@@ -121,7 +121,7 @@ Item {
                 y: 10
                 width: 70
                 height: 70
-                text: "\u0437"
+                keyname: "з"
             }
 
             KeyButton {
@@ -130,7 +130,7 @@ Item {
                 y: 10
                 width: 70
                 height: 70
-                text: "\u0445"
+                keyname: "х"
             }
 
             KeyButton {
@@ -139,7 +139,7 @@ Item {
                 y: 86
                 width: 70
                 height: 70
-                text: "\u0444"
+                keyname: "ф"
             }
 
             KeyButton {
@@ -148,7 +148,7 @@ Item {
                 y: 86
                 width: 70
                 height: 70
-                text: "\u044b"
+                keyname: "ы"
             }
 
             KeyButton {
@@ -157,7 +157,7 @@ Item {
                 y: 86
                 width: 70
                 height: 70
-                text: "\u0432"
+                keyname: "в"
             }
 
             KeyButton {
@@ -166,7 +166,7 @@ Item {
                 y: 86
                 width: 70
                 height: 70
-                text: "\u0430"
+                keyname: "а"
             }
 
             KeyButton {
@@ -175,7 +175,7 @@ Item {
                 y: 86
                 width: 70
                 height: 70
-                text: "\u043f"
+                keyname: "п"
             }
 
             KeyButton {
@@ -184,7 +184,7 @@ Item {
                 y: 86
                 width: 70
                 height: 70
-                text: "\u0440"
+                keyname: "р"
             }
 
             KeyButton {
@@ -193,7 +193,7 @@ Item {
                 y: 86
                 width: 70
                 height: 70
-                text: "\u043e"
+                keyname: "о"
             }
 
             KeyButton {
@@ -202,7 +202,7 @@ Item {
                 y: 86
                 width: 70
                 height: 70
-                text: "\u043b"
+                keyname: "л"
             }
 
             KeyButton {
@@ -211,7 +211,7 @@ Item {
                 y: 86
                 width: 70
                 height: 70
-                text: "\u0434"
+                keyname: "д"
             }
 
             KeyButton {
@@ -220,7 +220,7 @@ Item {
                 y: 86
                 width: 70
                 height: 70
-                text: "\u0436"
+                keyname: "ж"
             }
 
             KeyButton {
@@ -229,7 +229,7 @@ Item {
                 y: 86
                 width: 70
                 height: 70
-                text: "\u044d"
+                keyname: "э"
             }
 
             KeyButton {
@@ -238,7 +238,7 @@ Item {
                 y: 162
                 width: 70
                 height: 70
-                text: "\u044f"
+                keyname: "я"
             }
 
             KeyButton {
@@ -247,7 +247,7 @@ Item {
                 y: 162
                 width: 70
                 height: 70
-                text: "\u0447"
+                keyname: "ч"
             }
 
             KeyButton {
@@ -256,7 +256,8 @@ Item {
                 y: 162
                 width: 70
                 height: 70
-                text: "\u0441"
+                text: "0"
+                keyname: "с"
             }
 
             KeyButton {
@@ -265,7 +266,7 @@ Item {
                 y: 162
                 width: 70
                 height: 70
-                text: "\u043c"
+                keyname: "м"
             }
 
             KeyButton {
@@ -274,7 +275,7 @@ Item {
                 y: 162
                 width: 70
                 height: 70
-                text: "\u0438"
+                keyname: "и"
             }
 
             KeyButton {
@@ -283,7 +284,7 @@ Item {
                 y: 162
                 width: 70
                 height: 70
-                text: "\u0442"
+                keyname: "т"
             }
 
             KeyButton {
@@ -292,7 +293,7 @@ Item {
                 y: 162
                 width: 70
                 height: 70
-                text: "\u044c"
+                keyname: "ь"
             }
 
             KeyButton {
@@ -301,7 +302,7 @@ Item {
                 y: 162
                 width: 70
                 height: 70
-                text: "\u0431"
+                keyname: "б"
             }
 
             KeyButton {
@@ -310,7 +311,7 @@ Item {
                 y: 162
                 width: 70
                 height: 70
-                text: "\u044e"
+                keyname: "ю"
             }
 
             KeyButton {
@@ -319,7 +320,7 @@ Item {
                 y: 238
                 width: 70
                 height: 70
-                text: ","
+                keyname: ","
             }
 
             KeyButton {
@@ -328,7 +329,7 @@ Item {
                 y: 238
                 width: 70
                 height: 70
-                text: "."
+                keyname: "."
             }
 
             KeyButton {
@@ -337,7 +338,7 @@ Item {
                 y: 238
                 width: 374
                 height: 70
-                text: "Пробел"
+                keyname: " "
             }
 
             KeyButton {
@@ -349,16 +350,43 @@ Item {
                 text: "<"
             }
 
-            KeyButton {
-                id: keyButton35
+            Item {
+
+                id: digitsButton
                 x: 7
                 y: 238
                 width: 146
                 height: 70
-                text: "123"
-                onClicked: {
-                    abcRectangle.visible = false
-                    intRectangle.visible = true
+
+                MouseArea {
+                    id: btnHaracter
+                    anchors.fill: parent
+
+                    onClicked: {
+                        abcRectangle.visible = false
+                        intRectangle.visible = true
+                    }
+                }
+
+                Rectangle {
+                    id: rectangle15
+                    x: 0
+                    y: 0
+                    width: digitsButton.width
+                    height: digitsButton.height
+                    color: btnHaracter.pressed ? "#abbdcb" : "#ffffff"
+                    radius: 3
+
+                    Label {
+                        id: label26
+                        color: "#143656"
+                        text: "123"
+                        anchors.fill: parent
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        font.pointSize: 18
+                        font.bold: true
+                    }
                 }
             }
 
@@ -379,6 +407,7 @@ Item {
             color: "#00000000"
             anchors.verticalCenter: parent.verticalCenter
             anchors.horizontalCenter: parent.horizontalCenter
+            visible: true
 
             KeyButton {
                 id: keyButton44
@@ -386,7 +415,7 @@ Item {
                 y: 8
                 width: 70
                 height: 70
-                text: "7"
+                keyname: "7"
             }
 
             KeyButton {
@@ -395,8 +424,7 @@ Item {
                 y: 236
                 width: 146
                 height: 70
-                text: "0"
-                onClicked: makeRealData("0")
+                keyname: "0"
             }
 
             KeyButton {
@@ -405,7 +433,7 @@ Item {
                 y: 8
                 width: 70
                 height: 70
-                text: "8"
+                keyname: "8"
             }
 
             KeyButton {
@@ -414,7 +442,7 @@ Item {
                 y: 160
                 width: 70
                 height: 70
-                text: "1"
+                keyname: "1"
             }
 
             KeyButton {
@@ -423,7 +451,7 @@ Item {
                 y: 8
                 width: 70
                 height: 70
-                text: "9"
+                keyname: "9"
             }
 
             KeyButton {
@@ -432,7 +460,7 @@ Item {
                 y: 160
                 width: 70
                 height: 70
-                text: "2"
+                keyname: "2"
             }
 
             KeyButton {
@@ -441,7 +469,7 @@ Item {
                 y: 236
                 width: 70
                 height: 70
-                text: "."
+                keyname: "."
             }
 
             KeyButton {
@@ -450,7 +478,7 @@ Item {
                 y: 160
                 width: 70
                 height: 70
-                text: "3"
+                keyname: "3"
             }
 
             KeyButton {
@@ -468,19 +496,46 @@ Item {
                 y: 84
                 width: 70
                 height: 70
-                text: "4"
+                keyname: "4"
             }
 
-            KeyButton {
-                id: keyButton49
+            Item {
+
+                id: textButton
                 x: 236
                 y: 84
                 width: 104
                 height: 70
-                text: "ABC"
-                onClicked: {
-                    abcRectangle.visible = true
-                    intRectangle.visible = false
+
+                MouseArea {
+                    id: textAction
+                    anchors.fill: parent
+
+                    onClicked: {
+                        abcRectangle.visible = true
+                        intRectangle.visible = false
+                    }
+                }
+
+                Rectangle {
+                    id: rectangle152
+                    x: 0
+                    y: 0
+                    width: textButton.width
+                    height: textButton.height
+                    color: textAction.pressed ? "#abbdcb" : "#ffffff"
+                    radius: 3
+
+                    Label {
+                        id: label262
+                        color: "#143656"
+                        text: "ABC"
+                        anchors.fill: parent
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        font.pointSize: 18
+                        font.bold: true
+                    }
                 }
             }
 
@@ -498,7 +553,7 @@ Item {
                 x: 236
                 y: 160
                 width: 104
-                height: 144
+                height: 146
                 text: "Готово"
             }
             KeyButton {
@@ -515,11 +570,7 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:0.75;height:400;width:1280}D{i:4}D{i:5}D{i:6}D{i:7}
-D{i:8}D{i:9}D{i:10}D{i:11}D{i:12}D{i:13}D{i:14}D{i:15}D{i:16}D{i:17}D{i:18}D{i:19}
-D{i:20}D{i:21}D{i:22}D{i:23}D{i:24}D{i:25}D{i:26}D{i:27}D{i:28}D{i:29}D{i:30}D{i:31}
-D{i:32}D{i:33}D{i:34}D{i:35}D{i:36}D{i:37}D{i:38}D{i:2}D{i:41}D{i:43}D{i:45}D{i:46}
-D{i:47}D{i:48}D{i:49}D{i:50}D{i:51}D{i:52}D{i:53}D{i:54}D{i:40}D{i:1}
+    D{i:0;autoSize:true;formeditorZoom:0.75;height:400;width:1280}
 }
 ##^##*/
 

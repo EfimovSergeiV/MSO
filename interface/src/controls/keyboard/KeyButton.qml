@@ -4,11 +4,10 @@ import QtQuick.Controls 2.15
 Item {
     property string keyname: "0"
     property string text: "0"
-    visible: true
 
     id: root
-    width: 73
-    height: 48
+    width: 70
+    height: 70
 
     MouseArea {
         id: btnHaracter
@@ -28,6 +27,7 @@ Item {
         height: root.height
         //        color: "#ffffff"
         color: btnHaracter.pressed ? "#abbdcb" : "#ffffff"
+        radius: 3
 
         Label {
             id: label26
@@ -37,17 +37,11 @@ Item {
             anchors.fill: parent
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
+            font.pointSize: 18
             font.bold: true
         }
     }
-} //Button {//    id: button
-//    text: "A"
-//    font.bold: true
-//    font.pointSize: 20
-
-//    property string keyname: "A"
-
-//    onClicked: {
+} //Button {//    id: button//    text: "A"//    font.bold: true//    font.pointSize: 20//    property string keyname: "A"//    onClicked: {
 //        print(activeFocusItem, button.keyname)
 //        activeFocusItem.text = activeFocusItem.text + button.keyname
 //    }
@@ -72,11 +66,4 @@ Item {
 //        //        layer.enabled: control.enabled && control.MyStyle.elevation > 0
 //    }
 //}
-
-
-/*##^##
-Designer {
-    D{i:0;autoSize:true;height:70;width:70}
-}
-##^##*/
 
