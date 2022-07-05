@@ -14,7 +14,6 @@ Item {
         anchors.fill: parent
 
         onClicked: {
-            print(activeFocusItem, root.keyname)
             activeFocusItem.text = activeFocusItem.text + root.keyname
         }
     }
@@ -41,8 +40,7 @@ Item {
             font.bold: true
         }
     }
-} //Button {//    id: button//    text: "A"//    font.bold: true//    font.pointSize: 20//    property string keyname: "A"//    onClicked: {
-//        print(activeFocusItem, button.keyname)
+} //Button {//    id: button//    text: "A"//    font.bold: true//    font.pointSize: 20//    property string keyname: "A"//    onClicked: {//        print(activeFocusItem, button.keyname)
 //        activeFocusItem.text = activeFocusItem.text + button.keyname
 //    }
 

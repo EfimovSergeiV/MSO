@@ -481,15 +481,53 @@ Item {
                 keyname: "3"
             }
 
-            KeyButton {
-                id: keyButton48
+            Item {
+
+                id: removeLater
                 x: 236
                 y: 8
                 width: 104
                 height: 70
-                text: "<"
+
+                MouseArea {
+                    id: removeLaterAction
+                    anchors.fill: parent
+
+                    onClicked: {
+                        activeFocusItem.text = activeFocusItem.text.slice(0, -1)
+                    }
+                }
+
+                Rectangle {
+                    id: rectangle152
+                    x: 0
+                    y: 0
+                    width: textButton.width
+                    height: textButton.height
+                    color: textAction.pressed ? "#abbdcb" : "#ffffff"
+                    radius: 3
+
+                    Label {
+                        id: label262
+                        color: "#143656"
+                        text: "<"
+                        anchors.fill: parent
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        font.pointSize: 18
+                        font.bold: true
+                    }
+                }
             }
 
+            //            KeyButton {
+            //                id: keyButton48
+            //                x: 236
+            //                y: 8
+            //                width: 104
+            //                height: 70
+            //                text: "<"
+            //            }
             KeyButton {
                 id: keyButton41
                 x: 8
@@ -518,7 +556,7 @@ Item {
                 }
 
                 Rectangle {
-                    id: rectangle152
+                    id: rectangle1522
                     x: 0
                     y: 0
                     width: textButton.width
@@ -527,7 +565,7 @@ Item {
                     radius: 3
 
                     Label {
-                        id: label262
+                        id: label2622
                         color: "#143656"
                         text: "ABC"
                         anchors.fill: parent
@@ -545,7 +583,7 @@ Item {
                 y: 84
                 width: 70
                 height: 70
-                text: "5"
+                keyname: "5"
             }
 
             KeyButton {
@@ -562,7 +600,7 @@ Item {
                 y: 84
                 width: 70
                 height: 70
-                text: "6"
+                keyname: "6"
             }
         }
     }
