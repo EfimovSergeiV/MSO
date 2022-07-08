@@ -7,6 +7,7 @@ import QtQuick.VirtualKeyboard.Styles 2.15
 import QtQuick.VirtualKeyboard.Settings 2.15
 
 import "../controls/keyboard"
+import "../controls/"
 
 Item {
     id: item1
@@ -152,7 +153,7 @@ Item {
     }
 
     Rectangle {
-        id: rectangle
+        id: programmRrectangle
         color: "#133656"
         anchors.fill: parent
         anchors.rightMargin: 0
@@ -161,187 +162,10 @@ Item {
         anchors.topMargin: 0
 
         Rectangle {
-            id: rectangle2
-            x: 8
-            y: 677
-            width: 633
-            height: 339
-            color: "#7e000000"
-            radius: 5
+            property int xposition: 1300
 
-            TextArea {
-                id: programmDescription
-                x: 8
-                y: 54
-                width: 617
-                height: 277
-                color: "#ffffff"
-                placeholderText: qsTr("Описание/комментарий к сварочной программе")
-            }
-
-            TextField {
-                id: programmName
-                x: 8
-                y: 8
-                width: 617
-                height: 40
-                placeholderTextColor: "#000000"
-                placeholderText: qsTr("Название программы")
-            }
-        }
-        Rectangle {
-            id: rectangle3
-            x: 8
-            y: 586
-            width: 633
-            height: 85
-            color: "#7f000000"
-            radius: 5
-
-            Label {
-                id: label17
-                x: 7
-                y: 8
-                width: 553
-                height: 23
-                color: "#ffffff"
-                text: "Допустимые диаметры"
-            }
-            TextField {
-                id: minDiameter
-                x: 7
-                y: 37
-                width: 250
-                height: 40
-                horizontalAlignment: Text.AlignHCenter
-                placeholderText: qsTr("0")
-                inputMethodHints: Qt.ImhDigitsOnly
-            }
-
-            Label {
-                id: label16
-                x: 299
-                y: 41
-                width: 43
-                height: 33
-                color: "#ffffff"
-                text: qsTr("-")
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                font.bold: true
-            }
-
-            TextField {
-                id: maxDiameter
-                x: 377
-                y: 35
-                width: 247
-                height: 40
-                horizontalAlignment: Text.AlignHCenter
-                placeholderText: qsTr("0")
-                inputMethodHints: Qt.ImhDigitsOnly
-            }
-        }
-        Rectangle {
-            id: rectangle4
-            x: 8
-            y: 526
-            width: 1264
-            height: 54
-            color: "#7e000000"
-            radius: 5
-
-            Button {
-                id: button
-                x: 1164
-                y: 7
-                width: 92
-                height: 40
-                text: qsTr("Выход")
-                onClicked: {
-                    handler.close_application()
-                }
-                //                onClicked: {
-                //                    stackView.push(Qt.resolvedUrl("programms.qml"))
-                //                }
-            }
-
-            Button {
-                id: button1
-                x: 8
-                y: 7
-                width: 126
-                height: 40
-                text: "Сохранить"
-                onClicked: {
-                    handler.save_programm(item1.programm)
-                }
-            }
-
-            Button {
-                id: button2
-                x: 271
-                y: 7
-                width: 125
-                height: 40
-                text: qsTr("Корректор")
-                onClicked: {
-                    showParamSection("correctorRectangle")
-                }
-            }
-
-            Button {
-                id: button21
-                x: 140
-                y: 8
-                width: 125
-                height: 40
-                text: qsTr("Оплавление")
-                onClicked: {
-                    showParamSection("reflowRectangle")
-                }
-            }
-
-            Button {
-                id: button3
-                x: 402
-                y: 7
-                width: 176
-                height: 40
-                text: qsTr("Подогрев/Выжигание")
-                onClicked: {
-                    showParamSection("QQ")
-                }
-            }
-
-            Button {
-                id: button4
-                x: 584
-                y: 8
-                width: 197
-                height: 40
-                text: qsTr("Параметры цикла сварки")
-                onClicked: {
-                    showParamSection("DDDD")
-                }
-            }
-
-            Button {
-                id: button5
-                x: 1063
-                y: 8
-                width: 95
-                height: 40
-                text: qsTr("Keyboard")
-                onClicked: {
-                    keyboard.showKeyboard = !keyboard.showKeyboard
-                    //                    keyboard.show = !keyboard.show
-                }
-            }
-        }
-        Rectangle {
             id: correctorRectangle
-            x: 8
+            x: correctorRectangle.xposition
             y: 8
             width: 1264
             height: 504
@@ -349,6 +173,18 @@ Item {
             radius: 5
             visible: true
 
+            //            NumberAnimation on x {
+            //                to: 2577
+            //                duration: 600
+            //                running: !correctorRectangle.show
+            //            }
+
+            //            NumberAnimation on x {
+            //                from: -2577
+            //                to: 8
+            //                duration: 600
+            //                running: correctorRectangle.show
+            //            }
             Row {
                 id: row5
                 x: 8
@@ -356,6 +192,7 @@ Item {
                 width: 1248
                 height: 30
                 spacing: 5
+
                 Label {
                     id: label18
                     width: 120
@@ -921,16 +758,30 @@ Item {
                 verticalAlignment: Text.AlignVCenter
             }
         }
+
         Rectangle {
             id: reflowRectangle
-            x: 8
+            x: 2577
             y: 8
             width: 1264
             height: 504
             color: "#80000000"
             radius: 5
-            visible: false
+            visible: true
 
+            //            property bool show: false
+            //            NumberAnimation on x {
+            //                to: 1288
+            //                duration: 600
+            //                running: !reflowRectangle.show
+            //            }
+
+            //            NumberAnimation on x {
+            //                from: -1288
+            //                to: 8
+            //                duration: 600
+            //                running: reflowRectangle.show
+            //            }
             Row {
                 id: row
                 x: 8
@@ -1502,38 +1353,216 @@ Item {
                 verticalAlignment: Text.AlignVCenter
             }
         }
-        Keyboard {
-            property bool showKeyboard: false
 
-            NumberAnimation on y {
-                to: 1400
-                duration: 500
-                running: !keyboard.showKeyboard
+        Rectangle {
+            property bool moveleft: false
+            property bool moveright: false
+            property bool showstatus: true
+
+            id: programmDescription
+            x: 8
+            y: 8
+            width: 1264
+            height: 504
+            color: "#80000000"
+            radius: 5
+            visible: programmDescription.showstatus
+
+            NumberAnimation on x {
+                to: -1300
+                duration: 600
+                running: programmDescription.moveleft
             }
-            NumberAnimation on y {
-                from: 1400
-                to: 630
-                duration: 500
-                running: keyboard.showKeyboard
+
+            NumberAnimation on x {
+                from: -1300
+                to: 8
+                duration: 600
+                running: programmDescription.moveright
             }
-            id: keyboard
-            //            y: 1200 ///624
-            //            width: 1280
-            //            height: 400
-            x: 0
-            y: 1400
-            width: 1280
-            height: 400
-            anchors.left: parent.left
-            anchors.right: parent.right
-            //            anchors.bottom: parent.bottom
-            //            anchors.bottomMargin: 0
-            anchors.rightMargin: 0
-            anchors.leftMargin: 0
-            show: true
+
+            TextField {
+                id: textField
+                x: 8
+                y: 8
+                width: 611
+                height: 40
+                placeholderText: qsTr("Название программы")
+            }
+
+            Rectangle {
+                id: rectangle2
+                x: 625
+                y: 8
+                width: 631
+                height: 488
+                color: "#ffffff"
+                radius: 3
+
+                TextArea {
+                    id: textArea
+                    x: 6
+                    y: 8
+                    width: 617
+                    height: 472
+                    placeholderText: qsTr("Описание программы")
+                }
+            }
+
+            Label {
+                id: label16
+                x: 8
+                y: 62
+                width: 611
+                height: 35
+                color: "#ffffff"
+                text: "Допустимые диаметры:"
+                verticalAlignment: Text.AlignVCenter
+                font.pointSize: 12
+            }
+
+            Label {
+                id: label17
+                x: 285
+                y: 103
+                width: 58
+                height: 40
+                color: "#ffffff"
+                text: qsTr("-")
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                font.bold: true
+                font.pointSize: 16
+            }
+
+            TextField {
+                id: textField1
+                x: 8
+                y: 103
+                width: 255
+                height: 40
+                horizontalAlignment: Text.AlignHCenter
+                placeholderText: qsTr("Минимальный")
+            }
+
+            TextField {
+                id: textField2
+                x: 362
+                y: 103
+                width: 257
+                height: 40
+                horizontalAlignment: Text.AlignHCenter
+                placeholderText: qsTr("Максимальный")
+            }
+        }
+        Rectangle {
+            id: rectangle11
+            x: 3859
+            y: 8
+            width: 1264
+            height: 504
+            color: "#80000000"
+            radius: 5
+            visible: true
+        }
+
+        Rectangle {
+            id: rectangle12
+            x: 5143
+            y: 8
+            width: 1264
+            height: 504
+            visible: true
+            color: "#80000000"
+            radius: 5
+        }
+
+        StepperBtn {
+            id: button6
+            x: 8
+            y: 518
+            width: 200
+            height: 50
+            text: qsTr("Программа")
+            onClicked: {
+                programmDescription.moveright = true
+            }
+        }
+
+        StepperBtn {
+            id: button8
+            x: 214
+            y: 518
+            width: 200
+            height: 50
+            text: qsTr("Корректор")
+            onClicked: {
+                programmDescription.moveleft = true
+                //                correctorRectangle.show = !correctorRectangle.show
+            }
+        }
+
+        StepperBtn {
+            id: button14
+            x: 420
+            y: 518
+            width: 200
+            height: 50
+            text: "Оплавление"
+            onClicked: {
+                reflowRectangle.show = !reflowRectangle.show
+            }
+        }
+
+        StepperBtn {
+            id: button9
+            x: 660
+            y: 518
+            width: 200
+            height: 50
+            text: qsTr("Подогрев")
+        }
+
+        StepperBtn {
+            id: button10
+            x: 866
+            y: 518
+            width: 200
+            height: 50
+            text: "Выжигание"
+        }
+
+        StepperBtn {
+            id: button11
+            x: 1072
+            y: 574
+            width: 200
+            height: 50
+            text: "Сохранить"
+            onClicked: {
+                handler.save_programm(item1.programm)
+            }
+        }
+
+        StepperBtn {
+            id: button12
+            x: 8
+            y: 574
+            width: 200
+            height: 50
+            text: qsTr("Выход")
+        }
+
+        StepperBtn {
+            id: button13
+            x: 1072
+            y: 518
+            width: 200
+            height: 50
+            text: qsTr("Параметры цикла сварки")
         }
     }
-}
+} //        InputPanel {//            id: keyboardPanel//            visible: true//            anchors.horizontalCenter: parent.horizontalCenter//            anchors.bottom: parent.bottom//            width: 1280//            Component.onCompleted: {//                keyboard.style.keyboardBackground = null // the keyboard background//                keyboard.style.selectionListBackground = null // the horizontal bar at the//            }//        }//        Component.onCompleted: console.log(Object.keys(keyboardPanel.keyboard.style).sort())//        qml: [alternateKeysListBackground,alternateKeysListBackgroundChanged,alternateKeysListBottomMargin,alternateKeysListBottomMarginChanged,alternateKeysListDelegate,alternateKeysListDelegateChanged,alternateKeysListHighlight,alternateKeysListHighlightChanged,alternateKeysListItemHeight,alternateKeysListItemHeightChanged,alternateKeysListItemWidth,alternateKeysListItemWidthChanged,alternateKeysListLeftMargin,alternateKeysListLeftMarginChanged,alternateKeysListRightMargin,alternateKeysListRightMarginChanged,alternateKeysListTopMargin,alternateKeysListTopMarginChanged,backspaceKeyPanel,backspaceKeyPanelChanged,characterPreviewDelegate,characterPreviewDelegateChanged,characterPreviewMargin,characterPreviewMarginChanged,compactSelectionList,compactSelectionListChanged,enterKeyPanel,enterKeyPanelChanged,fontFamily,fontFamilyChanged,fullScreenInputBackground,fullScreenInputBackgroundChanged,fullScreenInputColor,fullScreenInputColorChanged,fullScreenInputContainerBackground,fullScreenInputContainerBackgroundChanged,fullScreenInputCursor,fullScreenInputCursorChanged,fullScreenInputFont,fullScreenInputFontChanged,fullScreenInputMargins,fullScreenInputMarginsChanged,fullScreenInputPadding,fullScreenInputPaddingChanged,fullScreenInputPasswordCharacter,fullScreenInputPasswordCharacterChanged,fullScreenInputSelectedTextColor,fullScreenInputSelectedTextColorChanged,fullScreenInputSelectionColor,fullScreenInputSelectionColorChanged,handwritingKeyPanel,handwritingKeyPanelChanged,hideKeyPanel,hideKeyPanelChanged,inputLocale,inputLocaleChanged,inputLocaleIndicatorColor,inputLocaleIndicatorColorChanged,inputLocaleIndicatorHighlightTimer,inputLocaleIndicatorHighlightTimerChanged,keyBackgroundMargin,keyBackgroundMarginChanged,keyContentMargin,keyContentMarginChanged,keyIconScale,keyIconScaleChanged,keyPanel,keyPanelChanged,keyboardBackground,keyboardBackgroundChanged,keyboardDesignHeight,keyboardDesignHeightChanged,keyboardDesignWidth,keyboardDesignWidthChanged,keyboardHeight,keyboardHeightChanged,keyboardRelativeBottomMargin,keyboardRelativeBottomMarginChanged,keyboardRelativeLeftMargin,keyboardRelativeLeftMarginChanged,keyboardRelativeRightMargin,keyboardRelativeRightMarginChanged,keyboardRelativeTopMargin,keyboardRelativeTopMarginChanged,languageKeyPanel,languageKeyPanelChanged,languageListAdd,languageListAddChanged,languageListBackground,languageListBackgroundChanged,languageListDelegate,languageListDelegateChanged,languageListHighlight,languageListHighlightChanged,languageListRemove,languageListRemoveChanged,languagePopupListEnabled,languagePopupListEnabledChanged,modeKeyPanel,modeKeyPanelChanged,navigationHighlight,navigationHighlightChanged,objectName,objectNameChanged,popupListAdd,popupListAddChanged,popupListBackground,popupListBackgroundChanged,popupListDelegate,popupListDelegateChanged,popupListHighlight,popupListHighlightChanged,popupListRemove,popupListRemoveChanged,resourcePrefix,resourcePrefixChanged,scaleHint,scaleHintChanged,selectionHandle,selectionHandleChanged,selectionListAdd,selectionListAddChanged,selectionListBackground,selectionListBackgroundChanged,selectionListDelegate,selectionListDelegateChanged,selectionListHeight,selectionListHeightChanged,selectionListHighlight,selectionListHighlightChanged,selectionListRemove,selectionListRemoveChanged,shiftKeyPanel,shiftKeyPanelChanged,spaceKeyPanel,spaceKeyPanelChanged,symbolKeyPanel,symbolKeyPanelChanged,traceCanvasDelegate,traceCanvasDelegateChanged,traceInputKeyPanelDelegate,traceInputKeyPanelDelegateChanged]//        Keyboard {//            property bool showKeyboard: false//            NumberAnimation on y {//                to: 1400//                duration: 500//                running: !keyboard.showKeyboard//            }//            NumberAnimation on y {//                from: 1400//                to: 630//                duration: 500//                running: keyboard.showKeyboard//            }//            id: keyboard//            //            y: 1200 ///624//            //            width: 1280//            //            height: 400//            x: 0//            y: 1400//            width: 1280//            height: 400//            anchors.left: parent.left//            anchors.right: parent.right//            //            anchors.bottom: parent.bottom//            //            anchors.bottomMargin: 0//            anchors.rightMargin: 0//            anchors.leftMargin: 0//            show: true//        }
 
 /*##^##
 Designer {

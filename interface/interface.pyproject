@@ -11,6 +11,7 @@
         "src/sensors/rt-chart/RTChart.qml",
         "src/sensors/rt-chart/SpeedsXml.qml",
         "src/controls/keyboard/Keyboard.qml",
-        "src/controls/keyboard/KeyButton.qml"
+        "src/controls/keyboard/KeyButton.qml",
+        "src/controls/StepperBtn.qml"
         ]
 }
