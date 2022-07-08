@@ -161,6 +161,7 @@ Item {
         anchors.leftMargin: 0
         anchors.topMargin: 0
 
+        //////////// CORRECTOR PARAMS
         Rectangle {
             property int xposition: 1300
 
@@ -759,6 +760,7 @@ Item {
             }
         }
 
+        /////////// REFLOW PARAMS
         Rectangle {
             id: reflowRectangle
             x: 2577
@@ -1354,31 +1356,32 @@ Item {
             }
         }
 
+        /////////// PROGRAMM DESCRIPTION
         Rectangle {
             property bool moveleft: false
             property bool moveright: false
             property bool showstatus: true
 
-            id: programmDescription
+            id: programmRectangle
             x: 8
             y: 8
             width: 1264
             height: 504
             color: "#80000000"
             radius: 5
-            visible: programmDescription.showstatus
+            visible: true
 
             NumberAnimation on x {
                 to: -1300
                 duration: 600
-                running: programmDescription.moveleft
+                running: programmRectangle.moveleft
             }
 
             NumberAnimation on x {
                 from: -1300
                 to: 8
                 duration: 600
-                running: programmDescription.moveright
+                running: programmRectangle.moveright
             }
 
             TextField {
@@ -1481,8 +1484,6 @@ Item {
             id: button6
             x: 8
             y: 518
-            width: 200
-            height: 50
             text: qsTr("Программа")
             onClicked: {
                 programmDescription.moveright = true
@@ -1493,8 +1494,6 @@ Item {
             id: button8
             x: 214
             y: 518
-            width: 200
-            height: 50
             text: qsTr("Корректор")
             onClicked: {
                 programmDescription.moveleft = true
@@ -1506,8 +1505,6 @@ Item {
             id: button14
             x: 420
             y: 518
-            width: 200
-            height: 50
             text: "Оплавление"
             onClicked: {
                 reflowRectangle.show = !reflowRectangle.show
@@ -1518,8 +1515,6 @@ Item {
             id: button9
             x: 660
             y: 518
-            width: 200
-            height: 50
             text: qsTr("Подогрев")
         }
 
@@ -1527,8 +1522,6 @@ Item {
             id: button10
             x: 866
             y: 518
-            width: 200
-            height: 50
             text: "Выжигание"
         }
 
@@ -1536,8 +1529,6 @@ Item {
             id: button11
             x: 1072
             y: 574
-            width: 200
-            height: 50
             text: "Сохранить"
             onClicked: {
                 handler.save_programm(item1.programm)
@@ -1548,8 +1539,6 @@ Item {
             id: button12
             x: 8
             y: 574
-            width: 200
-            height: 50
             text: qsTr("Выход")
         }
 
@@ -1557,8 +1546,6 @@ Item {
             id: button13
             x: 1072
             y: 518
-            width: 200
-            height: 50
             text: qsTr("Параметры цикла сварки")
         }
     }
