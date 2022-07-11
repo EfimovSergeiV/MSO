@@ -12,6 +12,15 @@ import "../controls/"
 Item {
     id: item1
 
+    property var selectRect: programmRectangle
+
+    function changeRectangle(rectangle) {
+        console.log(rectangle)
+        selectRect.moveleft = !selectRect.moveleft
+        rectangle.moveright = !rectangle.moveright
+        selectRect = rectangle
+    }
+
     property var programm: [{
             "name": programmName.text,
             "description": programmDescription.text,
@@ -141,19 +150,18 @@ Item {
                 }]
         }]
 
-    function showParamSection(section) {
-        console.log(section)
-        if (section === "correctorRectangle") {
-            correctorRectangle.visible = true
-            reflowRectangle.visible = false
-        } else {
-            correctorRectangle.visible = false
-            reflowRectangle.visible = true
-        }
-    }
-
+    //    function showParamSection(section) {
+    //        console.log(section)
+    //        if (section === "correctorRectangle") {
+    //            correctorRectangle.visible = true
+    //            reflowRectangle.visible = false
+    //        } else {
+    //            correctorRectangle.visible = false
+    //            reflowRectangle.visible = true
+    //        }
+    //    }
     Rectangle {
-        id: programmRrectangle
+        id: windowRectangle
         color: "#133656"
         anchors.fill: parent
         anchors.rightMargin: 0
@@ -163,10 +171,11 @@ Item {
 
         //////////// CORRECTOR PARAMS
         Rectangle {
-            property int xposition: 1300
+            property bool moveleft: false
+            property bool moveright: false
 
             id: correctorRectangle
-            x: correctorRectangle.xposition
+            x: 1300
             y: 8
             width: 1264
             height: 504
@@ -174,18 +183,18 @@ Item {
             radius: 5
             visible: true
 
-            //            NumberAnimation on x {
-            //                to: 2577
-            //                duration: 600
-            //                running: !correctorRectangle.show
-            //            }
+            NumberAnimation on x {
+                to: -1300
+                duration: 600
+                running: correctorRectangle.moveleft
+            }
 
-            //            NumberAnimation on x {
-            //                from: -2577
-            //                to: 8
-            //                duration: 600
-            //                running: correctorRectangle.show
-            //            }
+            NumberAnimation on x {
+                from: -1300
+                to: 8
+                duration: 600
+                running: correctorRectangle.moveright
+            }
             Row {
                 id: row5
                 x: 8
@@ -762,6 +771,9 @@ Item {
 
         /////////// REFLOW PARAMS
         Rectangle {
+            property bool moveleft: false
+            property bool moveright: false
+
             id: reflowRectangle
             x: 2577
             y: 8
@@ -771,19 +783,18 @@ Item {
             radius: 5
             visible: true
 
-            //            property bool show: false
-            //            NumberAnimation on x {
-            //                to: 1288
-            //                duration: 600
-            //                running: !reflowRectangle.show
-            //            }
+            NumberAnimation on x {
+                to: -1300
+                duration: 600
+                running: reflowRectangle.moveleft
+            }
 
-            //            NumberAnimation on x {
-            //                from: -1288
-            //                to: 8
-            //                duration: 600
-            //                running: reflowRectangle.show
-            //            }
+            NumberAnimation on x {
+                from: -1300
+                to: 8
+                duration: 600
+                running: reflowRectangle.moveright
+            }
             Row {
                 id: row
                 x: 8
@@ -1360,7 +1371,6 @@ Item {
         Rectangle {
             property bool moveleft: false
             property bool moveright: false
-            property bool showstatus: true
 
             id: programmRectangle
             x: 8
@@ -1459,6 +1469,9 @@ Item {
             }
         }
         Rectangle {
+            property bool moveleft: false
+            property bool moveright: false
+
             id: rectangle11
             x: 3859
             y: 8
@@ -1467,9 +1480,25 @@ Item {
             color: "#80000000"
             radius: 5
             visible: true
+
+            NumberAnimation on x {
+                to: -1300
+                duration: 600
+                running: rectangle11.moveleft
+            }
+
+            NumberAnimation on x {
+                from: -1300
+                to: 8
+                duration: 600
+                running: rectangle11.moveright
+            }
         }
 
         Rectangle {
+            property bool moveleft: false
+            property bool moveright: false
+
             id: rectangle12
             x: 5143
             y: 8
@@ -1478,6 +1507,19 @@ Item {
             visible: true
             color: "#80000000"
             radius: 5
+
+            NumberAnimation on x {
+                to: -1300
+                duration: 600
+                running: rectangle12.moveleft
+            }
+
+            NumberAnimation on x {
+                from: -1300
+                to: 8
+                duration: 600
+                running: rectangle12.moveright
+            }
         }
 
         StepperBtn {
@@ -1486,7 +1528,7 @@ Item {
             y: 518
             text: qsTr("Программа")
             onClicked: {
-                programmDescription.moveright = true
+                changeRectangle(programmRectangle)
             }
         }
 
@@ -1496,7 +1538,7 @@ Item {
             y: 518
             text: qsTr("Корректор")
             onClicked: {
-                programmDescription.moveleft = true
+                changeRectangle(correctorRectangle)
                 //                correctorRectangle.show = !correctorRectangle.show
             }
         }
@@ -1507,7 +1549,7 @@ Item {
             y: 518
             text: "Оплавление"
             onClicked: {
-                reflowRectangle.show = !reflowRectangle.show
+                changeRectangle(reflowRectangle)
             }
         }
 
@@ -1516,6 +1558,9 @@ Item {
             x: 660
             y: 518
             text: qsTr("Подогрев")
+            onClicked: {
+                changeRectangle(rectangle11)
+            }
         }
 
         StepperBtn {
@@ -1523,6 +1568,9 @@ Item {
             x: 866
             y: 518
             text: "Выжигание"
+            onClicked: {
+                changeRectangle(rectangle12)
+            }
         }
 
         StepperBtn {
