@@ -19,6 +19,8 @@ Item {
         selectRect.moveleft = !selectRect.moveleft
         rectangle.moveright = !rectangle.moveright
         selectRect = rectangle
+        //        selectRect.moveleft = !selectRect.moveleft
+        //        rectangle.moveright = !rectangle.moveright
     }
 
     property var programm: [{
@@ -190,7 +192,7 @@ Item {
             }
 
             NumberAnimation on x {
-                from: -1300
+                from: 1300
                 to: 8
                 duration: 600
                 running: correctorRectangle.moveright
@@ -790,7 +792,7 @@ Item {
             }
 
             NumberAnimation on x {
-                from: -1300
+                from: 1300
                 to: 8
                 duration: 600
                 running: reflowRectangle.moveright
@@ -1370,7 +1372,7 @@ Item {
         /////////// PROGRAMM DESCRIPTION
         Rectangle {
             property bool moveleft: false
-            property bool moveright: false
+            property bool moveright: true
 
             id: programmRectangle
             x: 8
@@ -1388,7 +1390,7 @@ Item {
             }
 
             NumberAnimation on x {
-                from: -1300
+                from: 1300
                 to: 8
                 duration: 600
                 running: programmRectangle.moveright
@@ -1488,7 +1490,7 @@ Item {
             }
 
             NumberAnimation on x {
-                from: -1300
+                from: 1300
                 to: 8
                 duration: 600
                 running: rectangle11.moveright
@@ -1515,7 +1517,7 @@ Item {
             }
 
             NumberAnimation on x {
-                from: -1300
+                from: 1300
                 to: 8
                 duration: 600
                 running: rectangle12.moveright
