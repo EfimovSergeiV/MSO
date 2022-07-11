@@ -15,12 +15,11 @@ Item {
     property var selectRect: programmRectangle
 
     function changeRectangle(rectangle) {
-        console.log(rectangle)
-        selectRect.moveleft = !selectRect.moveleft
-        rectangle.moveright = !rectangle.moveright
+        selectRect.hide = false
+        rectangle.show = false
+        selectRect.hide = true
+        rectangle.show = true
         selectRect = rectangle
-        //        selectRect.moveleft = !selectRect.moveleft
-        //        rectangle.moveright = !rectangle.moveright
     }
 
     property var programm: [{
@@ -173,8 +172,8 @@ Item {
 
         //////////// CORRECTOR PARAMS
         Rectangle {
-            property bool moveleft: false
-            property bool moveright: false
+            property bool hide: false
+            property bool show: false
 
             id: correctorRectangle
             x: 1300
@@ -188,14 +187,14 @@ Item {
             NumberAnimation on x {
                 to: -1300
                 duration: 600
-                running: correctorRectangle.moveleft
+                running: correctorRectangle.hide
             }
 
             NumberAnimation on x {
                 from: 1300
                 to: 8
                 duration: 600
-                running: correctorRectangle.moveright
+                running: correctorRectangle.show
             }
             Row {
                 id: row5
@@ -773,8 +772,8 @@ Item {
 
         /////////// REFLOW PARAMS
         Rectangle {
-            property bool moveleft: false
-            property bool moveright: false
+            property bool hide: false
+            property bool show: false
 
             id: reflowRectangle
             x: 2577
@@ -788,14 +787,14 @@ Item {
             NumberAnimation on x {
                 to: -1300
                 duration: 600
-                running: reflowRectangle.moveleft
+                running: reflowRectangle.hide
             }
 
             NumberAnimation on x {
                 from: 1300
                 to: 8
                 duration: 600
-                running: reflowRectangle.moveright
+                running: reflowRectangle.show
             }
             Row {
                 id: row
@@ -1371,8 +1370,8 @@ Item {
 
         /////////// PROGRAMM DESCRIPTION
         Rectangle {
-            property bool moveleft: false
-            property bool moveright: true
+            property bool hide: false
+            property bool show: false
 
             id: programmRectangle
             x: 8
@@ -1386,14 +1385,14 @@ Item {
             NumberAnimation on x {
                 to: -1300
                 duration: 600
-                running: programmRectangle.moveleft
+                running: programmRectangle.hide
             }
 
             NumberAnimation on x {
                 from: 1300
                 to: 8
                 duration: 600
-                running: programmRectangle.moveright
+                running: programmRectangle.show
             }
 
             TextField {
@@ -1471,8 +1470,8 @@ Item {
             }
         }
         Rectangle {
-            property bool moveleft: false
-            property bool moveright: false
+            property bool hide: false
+            property bool show: false
 
             id: rectangle11
             x: 3859
@@ -1486,20 +1485,20 @@ Item {
             NumberAnimation on x {
                 to: -1300
                 duration: 600
-                running: rectangle11.moveleft
+                running: rectangle11.hide
             }
 
             NumberAnimation on x {
                 from: 1300
                 to: 8
                 duration: 600
-                running: rectangle11.moveright
+                running: rectangle11.show
             }
         }
 
         Rectangle {
-            property bool moveleft: false
-            property bool moveright: false
+            property bool hide: false
+            property bool show: false
 
             id: rectangle12
             x: 5143
@@ -1513,14 +1512,14 @@ Item {
             NumberAnimation on x {
                 to: -1300
                 duration: 600
-                running: rectangle12.moveleft
+                running: rectangle12.hide
             }
 
             NumberAnimation on x {
                 from: 1300
                 to: 8
                 duration: 600
-                running: rectangle12.moveright
+                running: rectangle12.show
             }
         }
 
