@@ -1502,7 +1502,7 @@ Item {
                 width: 1248
                 height: 32
                 color: "#ffffff"
-                text: qsTr("Параметры оплавления")
+                text: qsTr("Параметры подогрева")
                 horizontalAlignment: Text.AlignLeft
                 verticalAlignment: Text.AlignVCenter
                 font.pointSize: 16
@@ -1514,7 +1514,7 @@ Item {
                 y: 82
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -1536,7 +1536,7 @@ Item {
                 y: 128
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -1558,7 +1558,7 @@ Item {
                 y: 268
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -1580,7 +1580,7 @@ Item {
                 y: 408
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -1602,7 +1602,7 @@ Item {
                 y: 173
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -1624,7 +1624,7 @@ Item {
                 y: 316
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -1646,7 +1646,7 @@ Item {
                 y: 456
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -1668,7 +1668,7 @@ Item {
                 y: 219
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -1690,7 +1690,7 @@ Item {
                 y: 362
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -1712,7 +1712,7 @@ Item {
                 y: 82
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -1734,7 +1734,7 @@ Item {
                 y: 128
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -1756,7 +1756,7 @@ Item {
                 y: 173
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -1778,7 +1778,7 @@ Item {
                 y: 219
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -1827,7 +1827,7 @@ Item {
                 y: 88
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -1862,7 +1862,7 @@ Item {
                 y: 134
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -1884,7 +1884,7 @@ Item {
                 y: 180
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -1906,7 +1906,7 @@ Item {
                 y: 226
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -1928,7 +1928,7 @@ Item {
                 y: 318
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -1950,7 +1950,7 @@ Item {
                 y: 364
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -1972,7 +1972,7 @@ Item {
                 y: 410
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -1994,7 +1994,7 @@ Item {
                 y: 456
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2016,7 +2016,7 @@ Item {
                 y: 88
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2038,7 +2038,7 @@ Item {
                 y: 134
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2060,7 +2060,7 @@ Item {
                 y: 180
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2082,7 +2082,7 @@ Item {
                 y: 226
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2104,7 +2104,7 @@ Item {
                 y: 272
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2126,7 +2126,7 @@ Item {
                 y: 410
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2148,7 +2148,7 @@ Item {
                 y: 456
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2275,7 +2275,7 @@ Item {
                 y: 88
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2310,7 +2310,7 @@ Item {
                 y: 134
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2332,7 +2332,7 @@ Item {
                 y: 180
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2354,7 +2354,7 @@ Item {
                 y: 226
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2376,7 +2376,7 @@ Item {
                 y: 318
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2398,7 +2398,7 @@ Item {
                 y: 364
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2420,7 +2420,7 @@ Item {
                 y: 410
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2442,7 +2442,7 @@ Item {
                 y: 456
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2464,7 +2464,7 @@ Item {
                 y: 88
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2486,7 +2486,7 @@ Item {
                 y: 134
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2508,7 +2508,7 @@ Item {
                 y: 180
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2530,7 +2530,7 @@ Item {
                 y: 226
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2552,7 +2552,7 @@ Item {
                 y: 272
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2574,7 +2574,7 @@ Item {
                 y: 410
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2596,7 +2596,7 @@ Item {
                 y: 456
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2618,7 +2618,7 @@ Item {
                 y: 272
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2640,7 +2640,7 @@ Item {
                 y: 318
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2662,7 +2662,7 @@ Item {
                 y: 364
                 width: 141
                 height: 40
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2711,7 +2711,7 @@ Item {
                 y: 93
                 width: 141
                 height: 30
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2746,7 +2746,7 @@ Item {
                 y: 129
                 width: 141
                 height: 30
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2768,7 +2768,7 @@ Item {
                 y: 242
                 width: 141
                 height: 30
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2790,7 +2790,7 @@ Item {
                 y: 206
                 width: 141
                 height: 30
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2812,7 +2812,7 @@ Item {
                 y: 314
                 width: 141
                 height: 30
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2834,7 +2834,7 @@ Item {
                 y: 350
                 width: 141
                 height: 30
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2856,7 +2856,7 @@ Item {
                 y: 93
                 width: 141
                 height: 30
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2878,7 +2878,7 @@ Item {
                 y: 129
                 width: 141
                 height: 30
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2900,7 +2900,7 @@ Item {
                 y: 206
                 width: 141
                 height: 30
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2922,7 +2922,7 @@ Item {
                 y: 242
                 width: 141
                 height: 30
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2944,7 +2944,7 @@ Item {
                 y: 314
                 width: 141
                 height: 30
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -2966,7 +2966,7 @@ Item {
                 y: 350
                 width: 141
                 height: 30
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -3066,7 +3066,7 @@ Item {
                 y: 432
                 width: 141
                 height: 30
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -3088,7 +3088,7 @@ Item {
                 y: 468
                 width: 141
                 height: 30
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
@@ -3149,7 +3149,7 @@ Item {
                 y: 430
                 width: 141
                 height: 30
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             TextField {
@@ -3158,7 +3158,7 @@ Item {
                 y: 466
                 width: 141
                 height: 30
-                placeholderText: qsTr("Text Field")
+                placeholderText: qsTr("0")
             }
 
             Label {
