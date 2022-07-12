@@ -1474,7 +1474,7 @@ Item {
             property bool show: false
 
             id: rectangle11
-            x: 3859
+            x: 3860
             y: 8
             width: 1264
             height: 504
@@ -1509,18 +1509,20 @@ Item {
             }
 
             TextField {
-                id: textField3
-                x: 8
-                y: 82
+                id: ph0
+                x: 9
+                y: 70
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label35
-                x: 155
-                y: 82
+                x: 156
+                y: 70
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -1531,18 +1533,20 @@ Item {
             }
 
             TextField {
-                id: textField4
-                x: 8
-                y: 128
+                id: ph1
+                x: 9
+                y: 116
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label36
-                x: 155
-                y: 128
+                x: 156
+                y: 116
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -1553,18 +1557,20 @@ Item {
             }
 
             TextField {
-                id: textField7
-                x: 8
-                y: 268
+                id: ph2
+                x: 9
+                y: 256
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label39
-                x: 155
-                y: 268
+                x: 156
+                y: 256
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -1575,18 +1581,20 @@ Item {
             }
 
             TextField {
-                id: textField10
-                x: 8
-                y: 408
+                id: ph3
+                x: 9
+                y: 396
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label42
-                x: 155
-                y: 408
+                x: 156
+                y: 396
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -1597,18 +1605,20 @@ Item {
             }
 
             TextField {
-                id: textField5
-                x: 8
-                y: 173
+                id: ph4
+                x: 9
+                y: 161
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label37
-                x: 155
-                y: 173
+                x: 156
+                y: 161
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -1619,18 +1629,20 @@ Item {
             }
 
             TextField {
-                id: textField8
-                x: 8
-                y: 316
+                id: ph5
+                x: 9
+                y: 304
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label40
-                x: 155
-                y: 316
+                x: 156
+                y: 304
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -1641,18 +1653,20 @@ Item {
             }
 
             TextField {
-                id: textField11
-                x: 8
-                y: 456
+                id: ph6
+                x: 9
+                y: 444
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label43
-                x: 155
-                y: 456
+                x: 156
+                y: 444
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -1663,18 +1677,20 @@ Item {
             }
 
             TextField {
-                id: textField6
-                x: 8
-                y: 219
+                id: ph7
+                x: 9
+                y: 207
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label38
-                x: 155
-                y: 219
+                x: 156
+                y: 207
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -1685,18 +1701,20 @@ Item {
             }
 
             TextField {
-                id: textField9
-                x: 8
-                y: 362
+                id: ph8
+                x: 9
+                y: 350
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label41
-                x: 155
-                y: 362
+                x: 156
+                y: 350
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -1707,18 +1725,20 @@ Item {
             }
 
             TextField {
-                id: textField12
-                x: 652
-                y: 82
+                id: ph9
+                x: 653
+                y: 70
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label44
-                x: 799
-                y: 82
+                x: 800
+                y: 70
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -1729,18 +1749,20 @@ Item {
             }
 
             TextField {
-                id: textField13
-                x: 652
-                y: 128
+                id: ph10
+                x: 653
+                y: 116
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label45
-                x: 799
-                y: 128
+                x: 800
+                y: 116
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -1751,18 +1773,20 @@ Item {
             }
 
             TextField {
-                id: textField14
-                x: 652
-                y: 173
+                id: ph11
+                x: 653
+                y: 161
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label46
-                x: 799
-                y: 173
+                x: 800
+                y: 161
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -1773,18 +1797,20 @@ Item {
             }
 
             TextField {
-                id: textField15
-                x: 652
-                y: 219
+                id: ph12
+                x: 653
+                y: 207
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label47
-                x: 799
-                y: 219
+                x: 800
+                y: 207
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -1822,18 +1848,20 @@ Item {
             }
 
             TextField {
-                id: textField16
+                id: b0
                 x: 8
-                y: 88
+                y: 73
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label48
                 x: 155
-                y: 88
+                y: 73
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -1857,18 +1885,20 @@ Item {
             }
 
             TextField {
-                id: textField17
+                id: b1
                 x: 8
-                y: 134
+                y: 119
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label50
                 x: 155
-                y: 134
+                y: 119
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -1879,18 +1909,20 @@ Item {
             }
 
             TextField {
-                id: textField18
+                id: b2
                 x: 8
-                y: 180
+                y: 165
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label51
                 x: 155
-                y: 180
+                y: 165
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -1901,18 +1933,20 @@ Item {
             }
 
             TextField {
-                id: textField19
+                id: b3
                 x: 8
-                y: 226
+                y: 211
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label52
                 x: 155
-                y: 226
+                y: 211
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -1923,18 +1957,20 @@ Item {
             }
 
             TextField {
-                id: textField21
+                id: b4
                 x: 8
-                y: 318
+                y: 303
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label54
                 x: 155
-                y: 318
+                y: 303
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -1945,18 +1981,20 @@ Item {
             }
 
             TextField {
-                id: textField22
+                id: b5
                 x: 8
-                y: 364
+                y: 349
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label55
                 x: 155
-                y: 364
+                y: 349
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -1967,18 +2005,20 @@ Item {
             }
 
             TextField {
-                id: textField23
+                id: b6
                 x: 8
-                y: 410
+                y: 395
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label56
                 x: 155
-                y: 410
+                y: 395
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -1989,18 +2029,20 @@ Item {
             }
 
             TextField {
-                id: textField24
+                id: b7
                 x: 8
-                y: 456
+                y: 441
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label57
                 x: 155
-                y: 456
+                y: 441
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2011,18 +2053,20 @@ Item {
             }
 
             TextField {
-                id: textField25
+                id: cl0
                 x: 652
-                y: 88
+                y: 73
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label58
                 x: 799
-                y: 88
+                y: 73
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2033,18 +2077,20 @@ Item {
             }
 
             TextField {
-                id: textField26
+                id: cl1
                 x: 652
-                y: 134
+                y: 119
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label59
                 x: 799
-                y: 134
+                y: 119
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2055,18 +2101,20 @@ Item {
             }
 
             TextField {
-                id: textField27
+                id: cl2
                 x: 652
-                y: 180
+                y: 165
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label60
                 x: 799
-                y: 180
+                y: 165
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2077,18 +2125,20 @@ Item {
             }
 
             TextField {
-                id: textField28
+                id: cl3
                 x: 652
-                y: 226
+                y: 211
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label61
                 x: 799
-                y: 226
+                y: 211
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2099,18 +2149,20 @@ Item {
             }
 
             TextField {
-                id: textField29
+                id: cl4
                 x: 652
-                y: 272
+                y: 257
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label62
                 x: 799
-                y: 272
+                y: 257
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2121,18 +2173,20 @@ Item {
             }
 
             TextField {
-                id: textField32
+                id: cl5
                 x: 652
-                y: 410
+                y: 395
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label65
                 x: 799
-                y: 410
+                y: 395
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2143,18 +2197,20 @@ Item {
             }
 
             TextField {
-                id: textField33
+                id: cl6
                 x: 652
-                y: 456
+                y: 441
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label66
                 x: 799
-                y: 456
+                y: 441
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2165,6 +2221,7 @@ Item {
             }
         }
 
+        //// BUTTONS NAVIGATION
         StepperBtn {
             id: button6
             x: 8
@@ -2231,6 +2288,9 @@ Item {
             x: 8
             y: 574
             text: qsTr("Выход")
+            onClicked: {
+                stackView.push(Qt.resolvedUrl("index.qml"))
+            }
         }
 
         StepperBtn {
@@ -2248,7 +2308,7 @@ Item {
             property bool show: false
 
             id: rectangle13
-            x: 6430
+            x: 6432
             y: 8
             width: 1264
             height: 504
@@ -2270,18 +2330,20 @@ Item {
             }
 
             TextField {
-                id: textField20
-                x: 8
-                y: 88
+                id: oth0
+                x: 10
+                y: 73
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label53
-                x: 155
-                y: 88
+                x: 157
+                y: 73
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2305,18 +2367,20 @@ Item {
             }
 
             TextField {
-                id: textField30
-                x: 8
-                y: 134
+                id: oth1
+                x: 10
+                y: 119
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label64
-                x: 155
-                y: 134
+                x: 157
+                y: 119
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2327,18 +2391,20 @@ Item {
             }
 
             TextField {
-                id: textField31
-                x: 8
-                y: 180
+                id: oth2
+                x: 10
+                y: 165
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label67
-                x: 155
-                y: 180
+                x: 157
+                y: 165
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2349,18 +2415,20 @@ Item {
             }
 
             TextField {
-                id: textField34
-                x: 8
-                y: 226
+                id: oth3
+                x: 10
+                y: 211
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label68
-                x: 155
-                y: 226
+                x: 157
+                y: 211
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2371,18 +2439,20 @@ Item {
             }
 
             TextField {
-                id: textField35
-                x: 8
-                y: 318
+                id: oth4
+                x: 10
+                y: 303
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label69
-                x: 155
-                y: 318
+                x: 157
+                y: 303
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2393,18 +2463,20 @@ Item {
             }
 
             TextField {
-                id: textField36
-                x: 8
-                y: 364
+                id: oth5
+                x: 10
+                y: 349
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label70
-                x: 155
-                y: 364
+                x: 157
+                y: 349
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2415,18 +2487,20 @@ Item {
             }
 
             TextField {
-                id: textField37
-                x: 8
-                y: 410
+                id: oth6
+                x: 10
+                y: 395
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label71
-                x: 155
-                y: 410
+                x: 157
+                y: 395
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2437,18 +2511,20 @@ Item {
             }
 
             TextField {
-                id: textField38
-                x: 8
-                y: 456
+                id: oth7
+                x: 10
+                y: 441
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label72
-                x: 155
-                y: 456
+                x: 157
+                y: 441
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2459,18 +2535,20 @@ Item {
             }
 
             TextField {
-                id: textField39
-                x: 652
-                y: 88
+                id: oth8
+                x: 654
+                y: 73
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label73
-                x: 799
-                y: 88
+                x: 801
+                y: 73
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2481,18 +2559,20 @@ Item {
             }
 
             TextField {
-                id: textField40
-                x: 652
-                y: 134
+                id: oth9
+                x: 654
+                y: 119
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label74
-                x: 799
-                y: 134
+                x: 801
+                y: 119
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2503,18 +2583,20 @@ Item {
             }
 
             TextField {
-                id: textField41
-                x: 652
-                y: 180
+                id: oth10
+                x: 654
+                y: 165
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label75
-                x: 799
-                y: 180
+                x: 801
+                y: 165
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2525,18 +2607,20 @@ Item {
             }
 
             TextField {
-                id: textField42
-                x: 652
-                y: 226
+                id: oth11
+                x: 654
+                y: 211
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label76
-                x: 799
-                y: 226
+                x: 801
+                y: 211
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2547,18 +2631,20 @@ Item {
             }
 
             TextField {
-                id: textField43
-                x: 652
-                y: 272
+                id: oth12
+                x: 654
+                y: 257
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label77
-                x: 799
-                y: 272
+                x: 801
+                y: 257
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2569,18 +2655,20 @@ Item {
             }
 
             TextField {
-                id: textField44
-                x: 652
-                y: 410
+                id: oth13
+                x: 654
+                y: 395
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label78
-                x: 799
-                y: 410
+                x: 801
+                y: 395
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2591,18 +2679,20 @@ Item {
             }
 
             TextField {
-                id: textField45
-                x: 652
-                y: 456
+                id: oth14
+                x: 654
+                y: 441
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label79
-                x: 799
-                y: 456
+                x: 801
+                y: 441
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2613,18 +2703,20 @@ Item {
             }
 
             TextField {
-                id: textField61
-                x: 8
-                y: 272
+                id: oth15
+                x: 10
+                y: 257
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label96
-                x: 155
-                y: 272
+                x: 157
+                y: 257
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2635,18 +2727,20 @@ Item {
             }
 
             TextField {
-                id: textField62
-                x: 652
-                y: 318
+                id: oth16
+                x: 654
+                y: 303
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label97
-                x: 799
-                y: 318
+                x: 801
+                y: 303
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2657,18 +2751,20 @@ Item {
             }
 
             TextField {
-                id: textField63
-                x: 652
-                y: 364
+                id: oth17
+                x: 654
+                y: 349
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label98
-                x: 799
-                y: 364
+                x: 801
+                y: 349
                 width: 457
                 height: 40
                 color: "#ffffff"
@@ -2708,16 +2804,18 @@ Item {
             TextField {
                 id: textField46
                 x: 8
-                y: 93
+                y: 78
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label80
                 x: 155
-                y: 93
+                y: 78
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -2743,16 +2841,18 @@ Item {
             TextField {
                 id: textField47
                 x: 8
-                y: 129
+                y: 114
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label82
                 x: 155
-                y: 129
+                y: 114
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -2765,16 +2865,18 @@ Item {
             TextField {
                 id: textField48
                 x: 8
-                y: 242
+                y: 227
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label83
                 x: 155
-                y: 242
+                y: 227
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -2787,16 +2889,18 @@ Item {
             TextField {
                 id: textField49
                 x: 8
-                y: 206
+                y: 191
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label84
                 x: 155
-                y: 206
+                y: 191
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -2809,16 +2913,18 @@ Item {
             TextField {
                 id: textField51
                 x: 8
-                y: 314
+                y: 299
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label86
                 x: 155
-                y: 314
+                y: 299
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -2831,16 +2937,18 @@ Item {
             TextField {
                 id: textField52
                 x: 8
-                y: 350
+                y: 335
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label87
                 x: 155
-                y: 350
+                y: 335
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -2853,16 +2961,18 @@ Item {
             TextField {
                 id: textField54
                 x: 652
-                y: 93
+                y: 78
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label89
                 x: 799
-                y: 93
+                y: 78
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -2875,16 +2985,18 @@ Item {
             TextField {
                 id: textField55
                 x: 652
-                y: 129
+                y: 114
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label90
                 x: 799
-                y: 129
+                y: 114
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -2897,16 +3009,18 @@ Item {
             TextField {
                 id: textField57
                 x: 652
-                y: 206
+                y: 191
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label92
                 x: 799
-                y: 206
+                y: 191
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -2919,16 +3033,18 @@ Item {
             TextField {
                 id: textField58
                 x: 652
-                y: 242
+                y: 227
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label93
                 x: 799
-                y: 242
+                y: 227
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -2941,16 +3057,18 @@ Item {
             TextField {
                 id: textField59
                 x: 652
-                y: 314
+                y: 299
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label94
                 x: 799
-                y: 314
+                y: 299
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -2963,16 +3081,18 @@ Item {
             TextField {
                 id: textField60
                 x: 652
-                y: 350
+                y: 335
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label95
                 x: 799
-                y: 350
+                y: 335
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -2985,7 +3105,7 @@ Item {
             Label {
                 id: label99
                 x: 8
-                y: 57
+                y: 42
                 width: 604
                 height: 30
                 color: "#ffffff"
@@ -2998,7 +3118,7 @@ Item {
             Label {
                 id: label100
                 x: 8
-                y: 170
+                y: 155
                 width: 604
                 height: 30
                 color: "#ffffff"
@@ -3011,7 +3131,7 @@ Item {
             Label {
                 id: label85
                 x: 8
-                y: 278
+                y: 263
                 width: 604
                 height: 30
                 color: "#ffffff"
@@ -3024,7 +3144,7 @@ Item {
             Label {
                 id: label101
                 x: 652
-                y: 57
+                y: 42
                 width: 604
                 height: 30
                 color: "#ffffff"
@@ -3037,7 +3157,7 @@ Item {
             Label {
                 id: label102
                 x: 652
-                y: 170
+                y: 155
                 width: 604
                 height: 30
                 color: "#ffffff"
@@ -3050,7 +3170,7 @@ Item {
             Label {
                 id: label103
                 x: 652
-                y: 278
+                y: 263
                 width: 604
                 height: 30
                 color: "#ffffff"
@@ -3063,16 +3183,18 @@ Item {
             TextField {
                 id: textField53
                 x: 8
-                y: 432
+                y: 417
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label88
                 x: 155
-                y: 432
+                y: 417
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -3085,16 +3207,18 @@ Item {
             TextField {
                 id: textField56
                 x: 8
-                y: 468
+                y: 453
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label91
                 x: 155
-                y: 468
+                y: 453
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -3107,7 +3231,7 @@ Item {
             Label {
                 id: label104
                 x: 8
-                y: 396
+                y: 381
                 width: 604
                 height: 30
                 color: "#ffffff"
@@ -3120,7 +3244,7 @@ Item {
             Label {
                 id: label105
                 x: 799
-                y: 430
+                y: 415
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -3133,7 +3257,7 @@ Item {
             Label {
                 id: label106
                 x: 799
-                y: 466
+                y: 451
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -3146,25 +3270,29 @@ Item {
             TextField {
                 id: textField64
                 x: 652
-                y: 430
+                y: 415
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             TextField {
                 id: textField65
                 x: 652
-                y: 466
+                y: 451
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
+                horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
             }
 
             Label {
                 id: label107
                 x: 652
-                y: 396
+                y: 381
                 width: 604
                 height: 30
                 color: "#ffffff"
@@ -3185,23 +3313,22 @@ Item {
             }
         }
     }
-    InputPanel {
-        id: keyboardPanel
-        visible: true
-        anchors.horizontalCenter: parent.horizontalCenter
-        anchors.bottom: parent.bottom
-        width: 1280
-        Component.onCompleted: {
-            keyboard.style.keyboardBackground = null
-            keyboard.style.selectionListBackground = null
-        }
-    }
+    //    InputPanel {
+    //        id: keyboardPanel
+    //        visible: true
+    //        anchors.horizontalCenter: parent.horizontalCenter
+    //        anchors.bottom: parent.bottom
+    //        width: 1280
+    //        Component.onCompleted: {
+    //            keyboard.style.keyboardBackground = null
+    //            keyboard.style.selectionListBackground = null
+    //        }
+    //    }
 } //        InputPanel {//            //            //            //            //            //            //                 // the keyboard background//                 // the horizontal bar at the//            }//        }//        Component.onCompleted: console.log(Object.keys(keyboardPanel.keyboard.style).sort())//        qml: [alternateKeysListBackground,alternateKeysListBackgroundChanged,alternateKeysListBottomMargin,alternateKeysListBottomMarginChanged,alternateKeysListDelegate,alternateKeysListDelegateChanged,alternateKeysListHighlight,alternateKeysListHighlightChanged,alternateKeysListItemHeight,alternateKeysListItemHeightChanged,alternateKeysListItemWidth,alternateKeysListItemWidthChanged,alternateKeysListLeftMargin,alternateKeysListLeftMarginChanged,alternateKeysListRightMargin,alternateKeysListRightMarginChanged,alternateKeysListTopMargin,alternateKeysListTopMarginChanged,backspaceKeyPanel,backspaceKeyPanelChanged,characterPreviewDelegate,characterPreviewDelegateChanged,characterPreviewMargin,characterPreviewMarginChanged,compactSelectionList,compactSelectionListChanged,enterKeyPanel,enterKeyPanelChanged,fontFamily,fontFamilyChanged,fullScreenInputBackground,fullScreenInputBackgroundChanged,fullScreenInputColor,fullScreenInputColorChanged,fullScreenInputContainerBackground,fullScreenInputContainerBackgroundChanged,fullScreenInputCursor,fullScreenInputCursorChanged,fullScreenInputFont,fullScreenInputFontChanged,fullScreenInputMargins,fullScreenInputMarginsChanged,fullScreenInputPadding,fullScreenInputPaddingChanged,fullScreenInputPasswordCharacter,fullScreenInputPasswordCharacterChanged,fullScreenInputSelectedTextColor,fullScreenInputSelectedTextColorChanged,fullScreenInputSelectionColor,fullScreenInputSelectionColorChanged,handwritingKeyPanel,handwritingKeyPanelChanged,hideKeyPanel,hideKeyPanelChanged,inputLocale,inputLocaleChanged,inputLocaleIndicatorColor,inputLocaleIndicatorColorChanged,inputLocaleIndicatorHighlightTimer,inputLocaleIndicatorHighlightTimerChanged,keyBackgroundMargin,keyBackgroundMarginChanged,keyContentMargin,keyContentMarginChanged,keyIconScale,keyIconScaleChanged,keyPanel,keyPanelChanged,keyboardBackground,keyboardBackgroundChanged,keyboardDesignHeight,keyboardDesignHeightChanged,keyboardDesignWidth,keyboardDesignWidthChanged,keyboardHeight,keyboardHeightChanged,keyboardRelativeBottomMargin,keyboardRelativeBottomMarginChanged,keyboardRelativeLeftMargin,keyboardRelativeLeftMarginChanged,keyboardRelativeRightMargin,keyboardRelativeRightMarginChanged,keyboardRelativeTopMargin,keyboardRelativeTopMarginChanged,languageKeyPanel,languageKeyPanelChanged,languageListAdd,languageListAddChanged,languageListBackground,languageListBackgroundChanged,languageListDelegate,languageListDelegateChanged,languageListHighlight,languageListHighlightChanged,languageListRemove,languageListRemoveChanged,languagePopupListEnabled,languagePopupListEnabledChanged,modeKeyPanel,modeKeyPanelChanged,navigationHighlight,navigationHighlightChanged,objectName,objectNameChanged,popupListAdd,popupListAddChanged,popupListBackground,popupListBackgroundChanged,popupListDelegate,popupListDelegateChanged,popupListHighlight,popupListHighlightChanged,popupListRemove,popupListRemoveChanged,resourcePrefix,resourcePrefixChanged,scaleHint,scaleHintChanged,selectionHandle,selectionHandleChanged,selectionListAdd,selectionListAddChanged,selectionListBackground,selectionListBackgroundChanged,selectionListDelegate,selectionListDelegateChanged,selectionListHeight,selectionListHeightChanged,selectionListHighlight,selectionListHighlightChanged,selectionListRemove,selectionListRemoveChanged,shiftKeyPanel,shiftKeyPanelChanged,spaceKeyPanel,spaceKeyPanelChanged,symbolKeyPanel,symbolKeyPanelChanged,traceCanvasDelegate,traceCanvasDelegateChanged,traceInputKeyPanelDelegate,traceInputKeyPanelDelegateChanged]//        Keyboard {//            property bool showKeyboard: false//            NumberAnimation on y {//                to: 1400//                duration: 500//                running: !keyboard.showKeyboard//            }//            NumberAnimation on y {//                from: 1400//                to: 630//                duration: 500//                running: keyboard.showKeyboard//            }//            id: keyboard//            //            y: 1200 ///624//            //            width: 1280//            //            height: 400//            x: 0//            y: 1400//            width: 1280//            height: 400//            anchors.left: parent.left//            anchors.right: parent.right//            //            anchors.bottom: parent.bottom//            //            anchors.bottomMargin: 0//            anchors.rightMargin: 0//            anchors.leftMargin: 0//            show: true//        }
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}D{i:165}D{i:202}D{i:266}
-D{i:270}D{i:271}D{i:240}D{i:282}
+    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}
 }
 ##^##*/
 

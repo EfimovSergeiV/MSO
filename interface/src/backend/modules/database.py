@@ -2,7 +2,7 @@ from curses import keyname
 import json, psycopg2, sqlite3, datetime, logging
 from traceback import print_tb
 from psycopg2.extras import RealDictCursor
-from psycopg2 import Error
+from psycopg2 import Error, ProgrammingError
 from pathlib import Path
 from random import randint
 
@@ -742,10 +742,12 @@ def update_programm(programm_id=None, list_data=None):
     conn.close()
 
 
-
+import json
 def get_programm(id=None):
     """ Получение программы из БД """
     db = RequestsDB()
+
+    programm_data = {}
 
     sql_programm = f"""SELECT * FROM programm_programmmodel WHERE id = { id }"""
     db.create_cursor(sql_programm)
@@ -759,8 +761,9 @@ def get_programm(id=None):
     sql_corrector_section = f"""SELECT * FROM programm_correctorsectionmodel WHERE corrector_id = { corrector["id"] }"""
     db.create_cursor(sql_corrector_section)
     correctors = db.cursor.fetchall()
-    for corrector in correctors:
-        print(corrector)
+    programm_data['programm_correctorparammodel'] = correctors
+    # for corrector in correctors:
+    #     print(corrector)
 
     sql_reflow = f"""SELECT * FROM programm_reflowparammodel WHERE programm_id = { programm["id"] }"""
     db.create_cursor(sql_reflow)
@@ -769,14 +772,24 @@ def get_programm(id=None):
     sql_reflow_section = f"""SELECT * FROM programm_reflowsectionmodel WHERE reflow_id = { reflow["id"] }"""
     db.create_cursor(sql_reflow_section)
     reflows = db.cursor.fetchall()
-    for reflow in reflows:
-        print(reflow)
+    # print(f'REFLOWS: { reflows }')
+    programm_data['programm_reflowparammodel'] = reflows
+    # for reflow in reflows:
+    #     print(reflow)
 
     for model in models:
         sql = f"""SELECT * FROM { model } WHERE programm_id = { programm['id'] }"""
         db.create_cursor(sql)
         data = db.cursor.fetchone()
-        print(data)
+        programm_data[model] = data
+        # print(f'{ model }: { data }')
+        
+
+
+
+    # FOR DATA VISUALIZATION
+    json_formatted_str = json.dumps(programm_data, indent=4)
+    print('\nDATA:\n', json_formatted_str)
 
     
 def list_programm():
@@ -800,5 +813,5 @@ def remove_programm(id):
 
 
 # list_programm()
-# get_programm(id=5)
+get_programm(id=5)
 # create_programm()
