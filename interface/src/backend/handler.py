@@ -2,6 +2,7 @@ import time, logging
 from PySide2.QtCore import QObject, Signal, Slot, QThread
 from .modules import charts, database
 
+import json
 
 class Handler(QObject):
     """ Управление модулями приложения (Обработчик)"""
@@ -34,7 +35,9 @@ class Handler(QObject):
 
     @Slot(list)
     def save_programm(self, data):
-        print(f"CREATE REFLOW DATA { data }")
+        # print(f"CREATE REFLOW DATA { data }")
+        json_formatted_str = json.dumps(data, ensure_ascii=False, indent=4)
+        print('\nDATA:\n', json_formatted_str)
 
 
 

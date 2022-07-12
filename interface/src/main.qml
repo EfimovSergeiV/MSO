@@ -54,7 +54,7 @@ Window {
     //  For production
     Component.onCompleted: {
 
-        //        mainWindow.showFullScreen()
+        mainWindow.showFullScreen()
         //        handler.running_application()
     }
     Connections {
