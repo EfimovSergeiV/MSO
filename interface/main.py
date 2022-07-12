@@ -7,7 +7,7 @@ from PySide2.QtWidgets import QApplication
 from PySide2.QtQml import QQmlApplicationEngine
 
 
-os.environ["QT_IM_MODULE"] = "qtvirtualkeyboard"
+# os.environ["QT_IM_MODULE"] = "qtvirtualkeyboard"
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

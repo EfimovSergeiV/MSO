@@ -23,11 +23,13 @@ Item {
     }
 
     property var programm: [{
-            "name": programmName.text,
-            "description": programmDescription.text,
-            "min_diameter": minDiameter.text,
-            "max_diameter": maxDiameter.text,
-            "corrector": [{
+            "programm_programmmodel": {
+                "name": programmName.text,
+                "description": programmDescription.text,
+                "max_diameter": maxDiameter.text,
+                "min_diameter": minDiameter.text
+            },
+            "programm_correctorparammodel": [{
                     "c_0": sec0c0.text,
                     "c_1": sec0c1.text,
                     "c_2": sec0c2.text,
@@ -88,7 +90,7 @@ Item {
                     "c_3": sec9c3.text,
                     "section": 9
                 }],
-            "reflow": [{
+            "programm_reflowparammodel": [{
                     "r_0": sec0r0.text,
                     "r_1": sec0r1.text,
                     "r_2": sec0r2.text,
@@ -148,19 +150,95 @@ Item {
                     "r_2": sec9r2.text,
                     "r_3": sec9r3.text,
                     "section": 9
-                }]
+                }],
+            "programm_preheatingmodel": {
+                "ph_0": ph0.text,
+                "ph_1": ph1.text,
+                "ph_2": ph2.text,
+                "ph_3": ph3.text,
+                "ph_4": ph4.text,
+                "ph_5": ph5.text,
+                "ph_6": ph6.text,
+                "ph_7": ph7.text,
+                "ph_8": ph8.text,
+                "ph_9": ph9.text,
+                "ph_10": ph10.text,
+                "ph_11": ph11.text,
+                "ph_12": ph12.text
+            },
+            "programm_otherparametersensormodel": {
+                "oth_0": oth0.text,
+                "oth_1": oth1.text,
+                "oth_2": oth2.text,
+                "oth_3": oth3.text,
+                "oth_4": oth4.text,
+                "oth_5": oth5.text,
+                "oth_6": oth6.text,
+                "oth_7": oth7.text,
+                "oth_8": oth8.text,
+                "oth_9": oth9.text,
+                "oth_10": oth10.text,
+                "oth_11": oth11.text,
+                "oth_12": oth12.text,
+                "oth_13": oth13.text,
+                "oth_14": oth14.text,
+                "oth_15": oth15.text,
+                "oth_16": oth16.text,
+                "oth_17": oth17.text
+            },
+            "programm_burningmodel": {
+                "b_0": b0.text,
+                "b_1": b1.text,
+                "b_2": b2.text,
+                "b_3": b3.text,
+                "b_4": b4.text,
+                "b_5": b5.text,
+                "b_6": b6.text,
+                "b_7": b7.text
+            },
+            "programm_clampmodel": {
+                "cl_0": cl0.text,
+                "cl_1": cl1.text,
+                "cl_2": cl2.text,
+                "cl_3": cl3.text,
+                "cl_4": cl4.text,
+                "cl_5": cl5.text,
+                "cl_6": cl6.text
+            },
+            "programm_sedimentpressuresensormodel": {
+                "min_value": minSedimentPressureSensor.text,
+                "max_value": maxSedimentPressureSensor.text
+            },
+            "programm_primaryvoltagesensormodel": {
+                "min_value": minPrimaryVoltageSensor.text,
+                "max_value": maxPrimaryVoltageSensor.text
+            },
+            "programm_positionsensormodel": {
+                "min_value": minPositionSensor.text,
+                "max_value": maxPositionSensor.text
+            },
+            "programm_pkpressuremetersensormodel": {
+                "min_value": minPKPressureMeterSensor.text,
+                "max_value": maxPKPressureMeterSensor.text
+            },
+            "programm_oiltemperaturesensormodel": {
+                "min_value": minOilTemperatureSensor.text,
+                "max_value": maxOilTemperatureSensor.text
+            },
+            "programm_nkpressuremetersensormodel": {
+                "min_value": minNKPressureMeterSensor.text,
+                "max_value": maxNKPressureMeterSensor.text
+            },
+            "programm_hydraulicpressuresensormodel": {
+                "min_value": minHydraulicPressureSensor.text,
+                "max_value": maxHydraulicPressureSensor.text
+            },
+            "programm_currentsensormodel": {
+                "min_value": minCurrentSensor.text,
+                "max_value": maxCurrentSensor.text
+            }
         }]
 
-    //    function showParamSection(section) {
-    //        console.log(section)
-    //        if (section === "correctorRectangle") {
-    //            correctorRectangle.visible = true
-    //            reflowRectangle.visible = false
-    //        } else {
-    //            correctorRectangle.visible = false
-    //            reflowRectangle.visible = true
-    //        }
-    //    }
     Rectangle {
         id: windowRectangle
         color: "#133656"
@@ -1396,9 +1474,9 @@ Item {
             }
 
             TextField {
-                id: textField
+                id: programmName
                 x: 8
-                y: 8
+                y: 54
                 width: 611
                 height: 40
                 placeholderText: qsTr("Название программы")
@@ -1406,27 +1484,27 @@ Item {
 
             Rectangle {
                 id: rectangle2
-                x: 625
-                y: 8
-                width: 631
-                height: 488
+                x: 8
+                y: 122
+                width: 1248
+                height: 374
                 color: "#ffffff"
                 radius: 3
 
                 TextArea {
-                    id: textArea
+                    id: programmDescription
                     x: 6
-                    y: 8
-                    width: 617
-                    height: 472
+                    y: 7
+                    width: 1234
+                    height: 359
                     placeholderText: qsTr("Описание программы")
                 }
             }
 
             Label {
                 id: label16
-                x: 8
-                y: 62
+                x: 645
+                y: 13
                 width: 611
                 height: 35
                 color: "#ffffff"
@@ -1437,8 +1515,8 @@ Item {
 
             Label {
                 id: label17
-                x: 285
-                y: 103
+                x: 922
+                y: 54
                 width: 58
                 height: 40
                 color: "#ffffff"
@@ -1450,9 +1528,9 @@ Item {
             }
 
             TextField {
-                id: textField1
-                x: 8
-                y: 103
+                id: minDiameter
+                x: 645
+                y: 54
                 width: 255
                 height: 40
                 horizontalAlignment: Text.AlignHCenter
@@ -1460,13 +1538,25 @@ Item {
             }
 
             TextField {
-                id: textField2
-                x: 362
-                y: 103
+                id: maxDiameter
+                x: 999
+                y: 54
                 width: 257
                 height: 40
                 horizontalAlignment: Text.AlignHCenter
                 placeholderText: qsTr("Максимальный")
+            }
+
+            Label {
+                id: label108
+                x: 8
+                y: 13
+                width: 611
+                height: 35
+                color: "#ffffff"
+                text: "Программа"
+                verticalAlignment: Text.AlignVCenter
+                font.pointSize: 12
             }
         }
         Rectangle {
@@ -2802,7 +2892,7 @@ Item {
             }
 
             TextField {
-                id: textField46
+                id: minPositionSensor
                 x: 8
                 y: 78
                 width: 141
@@ -2839,7 +2929,7 @@ Item {
             }
 
             TextField {
-                id: textField47
+                id: maxPositionSensor
                 x: 8
                 y: 114
                 width: 141
@@ -2863,7 +2953,7 @@ Item {
             }
 
             TextField {
-                id: textField48
+                id: maxPrimaryVoltageSensor
                 x: 8
                 y: 227
                 width: 141
@@ -2887,7 +2977,7 @@ Item {
             }
 
             TextField {
-                id: textField49
+                id: minPrimaryVoltageSensor
                 x: 8
                 y: 191
                 width: 141
@@ -2911,7 +3001,7 @@ Item {
             }
 
             TextField {
-                id: textField51
+                id: minPKPressureMeterSensor
                 x: 8
                 y: 299
                 width: 141
@@ -2935,7 +3025,7 @@ Item {
             }
 
             TextField {
-                id: textField52
+                id: maxPKPressureMeterSensor
                 x: 8
                 y: 335
                 width: 141
@@ -2959,9 +3049,9 @@ Item {
             }
 
             TextField {
-                id: textField54
-                x: 652
-                y: 78
+                id: minHydraulicPressureSensor
+                x: 8
+                y: 415
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
@@ -2971,8 +3061,8 @@ Item {
 
             Label {
                 id: label89
-                x: 799
-                y: 78
+                x: 155
+                y: 415
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -2983,9 +3073,9 @@ Item {
             }
 
             TextField {
-                id: textField55
-                x: 652
-                y: 114
+                id: maxHydraulicPressureSensor
+                x: 8
+                y: 451
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
@@ -2995,8 +3085,8 @@ Item {
 
             Label {
                 id: label90
-                x: 799
-                y: 114
+                x: 155
+                y: 451
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -3007,9 +3097,9 @@ Item {
             }
 
             TextField {
-                id: textField57
-                x: 652
-                y: 191
+                id: minCurrentSensor
+                x: 643
+                y: 78
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
@@ -3019,8 +3109,8 @@ Item {
 
             Label {
                 id: label92
-                x: 799
-                y: 191
+                x: 790
+                y: 78
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -3031,9 +3121,9 @@ Item {
             }
 
             TextField {
-                id: textField58
-                x: 652
-                y: 227
+                id: maxCurrentSensor
+                x: 643
+                y: 114
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
@@ -3043,8 +3133,8 @@ Item {
 
             Label {
                 id: label93
-                x: 799
-                y: 227
+                x: 790
+                y: 114
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -3055,9 +3145,9 @@ Item {
             }
 
             TextField {
-                id: textField59
-                x: 652
-                y: 299
+                id: minSedimentPressureSensor
+                x: 643
+                y: 191
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
@@ -3067,8 +3157,8 @@ Item {
 
             Label {
                 id: label94
-                x: 799
-                y: 299
+                x: 790
+                y: 191
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -3079,9 +3169,9 @@ Item {
             }
 
             TextField {
-                id: textField60
-                x: 652
-                y: 335
+                id: maxSedimentPressureSensor
+                x: 643
+                y: 227
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
@@ -3091,8 +3181,8 @@ Item {
 
             Label {
                 id: label95
-                x: 799
-                y: 335
+                x: 790
+                y: 227
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -3143,8 +3233,8 @@ Item {
 
             Label {
                 id: label101
-                x: 652
-                y: 42
+                x: 8
+                y: 379
                 width: 604
                 height: 30
                 color: "#ffffff"
@@ -3156,8 +3246,8 @@ Item {
 
             Label {
                 id: label102
-                x: 652
-                y: 155
+                x: 643
+                y: 42
                 width: 604
                 height: 30
                 color: "#ffffff"
@@ -3169,8 +3259,8 @@ Item {
 
             Label {
                 id: label103
-                x: 652
-                y: 263
+                x: 643
+                y: 155
                 width: 604
                 height: 30
                 color: "#ffffff"
@@ -3181,9 +3271,9 @@ Item {
             }
 
             TextField {
-                id: textField53
-                x: 8
-                y: 417
+                id: minNKPressureMeterSensor
+                x: 643
+                y: 299
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
@@ -3193,8 +3283,8 @@ Item {
 
             Label {
                 id: label88
-                x: 155
-                y: 417
+                x: 790
+                y: 299
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -3205,9 +3295,9 @@ Item {
             }
 
             TextField {
-                id: textField56
-                x: 8
-                y: 453
+                id: maxNKPressureMeterSensor
+                x: 643
+                y: 335
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
@@ -3217,8 +3307,8 @@ Item {
 
             Label {
                 id: label91
-                x: 155
-                y: 453
+                x: 790
+                y: 335
                 width: 457
                 height: 30
                 color: "#ffffff"
@@ -3230,8 +3320,8 @@ Item {
 
             Label {
                 id: label104
-                x: 8
-                y: 381
+                x: 643
+                y: 263
                 width: 604
                 height: 30
                 color: "#ffffff"
@@ -3243,7 +3333,7 @@ Item {
 
             Label {
                 id: label105
-                x: 799
+                x: 790
                 y: 415
                 width: 457
                 height: 30
@@ -3256,7 +3346,7 @@ Item {
 
             Label {
                 id: label106
-                x: 799
+                x: 790
                 y: 451
                 width: 457
                 height: 30
@@ -3268,8 +3358,8 @@ Item {
             }
 
             TextField {
-                id: textField64
-                x: 652
+                id: minOilTemperatureSensor
+                x: 643
                 y: 415
                 width: 141
                 height: 30
@@ -3279,8 +3369,8 @@ Item {
             }
 
             TextField {
-                id: textField65
-                x: 652
+                id: maxOilTemperatureSensor
+                x: 643
                 y: 451
                 width: 141
                 height: 30
@@ -3291,8 +3381,8 @@ Item {
 
             Label {
                 id: label107
-                x: 652
-                y: 381
+                x: 643
+                y: 379
                 width: 604
                 height: 30
                 color: "#ffffff"
@@ -3328,7 +3418,7 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}
+    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}D{i:134}
 }
 ##^##*/
 

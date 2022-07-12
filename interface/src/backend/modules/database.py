@@ -1,4 +1,5 @@
 from curses import keyname
+from encodings import utf_8
 import json, psycopg2, sqlite3, datetime, logging
 from traceback import print_tb
 from psycopg2.extras import RealDictCursor
@@ -752,7 +753,7 @@ def get_programm(id=None):
     sql_programm = f"""SELECT * FROM programm_programmmodel WHERE id = { id }"""
     db.create_cursor(sql_programm)
     programm = db.cursor.fetchone()
-    print(programm)
+    programm_data['programm_programmmodel'] = programm
 
     sql_corrector = f"""SELECT * FROM programm_correctorparammodel WHERE programm_id = { programm["id"] }"""
     db.create_cursor(sql_corrector)
@@ -788,7 +789,8 @@ def get_programm(id=None):
 
 
     # FOR DATA VISUALIZATION
-    json_formatted_str = json.dumps(programm_data, indent=4)
+    print(programm_data)
+    json_formatted_str = json.dumps(programm_data, ensure_ascii=False, indent=4)
     print('\nDATA:\n', json_formatted_str)
 
     
