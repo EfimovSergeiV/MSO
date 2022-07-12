@@ -1649,7 +1649,7 @@ Item {
             TextField {
                 id: ph2
                 x: 9
-                y: 256
+                y: 162
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
@@ -1673,7 +1673,7 @@ Item {
             TextField {
                 id: ph3
                 x: 9
-                y: 396
+                y: 210
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
@@ -1697,7 +1697,7 @@ Item {
             TextField {
                 id: ph4
                 x: 9
-                y: 161
+                y: 256
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
@@ -1745,7 +1745,7 @@ Item {
             TextField {
                 id: ph6
                 x: 9
-                y: 444
+                y: 350
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
@@ -1769,7 +1769,7 @@ Item {
             TextField {
                 id: ph7
                 x: 9
-                y: 207
+                y: 396
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
@@ -1793,7 +1793,7 @@ Item {
             TextField {
                 id: ph8
                 x: 9
-                y: 350
+                y: 444
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
@@ -3418,7 +3418,7 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}D{i:134}
+    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}
 }
 ##^##*/
 
