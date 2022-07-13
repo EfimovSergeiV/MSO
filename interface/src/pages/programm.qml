@@ -1625,6 +1625,9 @@ Item {
                 inputMethodHints: Qt.ImhDigitsOnly
                 placeholderText: qsTr("Минимальный")
                 onAccepted: maxDiameter.focus = true
+                validator: RegExpValidator {
+                    regExp: /(\d{1,3})([.,]\d{1,2})?$/
+                }
             }
 
             TextField {
@@ -1636,6 +1639,9 @@ Item {
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
                 placeholderText: qsTr("Максимальный")
+                validator: RegExpValidator {
+                    regExp: /(\d{1,3})([.,]\d{1,2})?$/
+                }
                 onAccepted: {
                     changeRectangle(correctorRectangle)
                     sec0c0.focus = true
