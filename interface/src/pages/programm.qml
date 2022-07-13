@@ -390,6 +390,7 @@ Item {
                 width: 1248
                 height: 50
                 spacing: 5
+
                 TextField {
                     id: sec0c0
                     width: 120
@@ -397,6 +398,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec0c1.focus = true
                 }
 
                 TextField {
@@ -406,6 +408,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec1c1.focus = true
                 }
 
                 TextField {
@@ -415,6 +418,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec2c1.focus = true
                 }
 
                 TextField {
@@ -424,6 +428,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec3c1.focus = true
                 }
 
                 TextField {
@@ -433,6 +438,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec4c1.focus = true
                 }
 
                 TextField {
@@ -442,6 +448,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec5c1.focus = true
                 }
 
                 TextField {
@@ -451,6 +458,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec6c1.focus = true
                 }
 
                 TextField {
@@ -460,6 +468,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec7c1.focus = true
                 }
 
                 TextField {
@@ -469,6 +478,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec8c1.focus = true
                 }
 
                 TextField {
@@ -478,6 +488,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec9c1.focus = true
                 }
             }
 
@@ -1480,12 +1491,13 @@ Item {
                 width: 611
                 height: 40
                 placeholderText: qsTr("Название программы")
+                onAccepted: programmDescription.focus = true
             }
 
             Rectangle {
                 id: rectangle2
                 x: 8
-                y: 122
+                y: 113
                 width: 1248
                 height: 374
                 color: "#ffffff"
@@ -1534,7 +1546,9 @@ Item {
                 width: 255
                 height: 40
                 horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
                 placeholderText: qsTr("Минимальный")
+                onAccepted: maxDiameter.focus = true
             }
 
             TextField {
@@ -1544,7 +1558,12 @@ Item {
                 width: 257
                 height: 40
                 horizontalAlignment: Text.AlignHCenter
+                inputMethodHints: Qt.ImhDigitsOnly
                 placeholderText: qsTr("Максимальный")
+                onAccepted: {
+                    changeRectangle(correctorRectangle)
+                    sec0c0.focus = true
+                }
             }
 
             Label {
@@ -1554,7 +1573,7 @@ Item {
                 width: 611
                 height: 35
                 color: "#ffffff"
-                text: "Программа"
+                text: "Программа  сварки"
                 verticalAlignment: Text.AlignVCenter
                 font.pointSize: 12
             }
@@ -2531,7 +2550,7 @@ Item {
             TextField {
                 id: oth4
                 x: 10
-                y: 303
+                y: 257
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
@@ -2555,7 +2574,7 @@ Item {
             TextField {
                 id: oth5
                 x: 10
-                y: 349
+                y: 303
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
@@ -2579,7 +2598,7 @@ Item {
             TextField {
                 id: oth6
                 x: 10
-                y: 395
+                y: 349
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
@@ -2603,7 +2622,7 @@ Item {
             TextField {
                 id: oth7
                 x: 10
-                y: 441
+                y: 395
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
@@ -2626,8 +2645,8 @@ Item {
 
             TextField {
                 id: oth8
-                x: 654
-                y: 73
+                x: 10
+                y: 441
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
@@ -2651,7 +2670,7 @@ Item {
             TextField {
                 id: oth9
                 x: 654
-                y: 119
+                y: 73
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
@@ -2675,7 +2694,7 @@ Item {
             TextField {
                 id: oth10
                 x: 654
-                y: 165
+                y: 119
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
@@ -2699,7 +2718,7 @@ Item {
             TextField {
                 id: oth11
                 x: 654
-                y: 211
+                y: 165
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
@@ -2723,7 +2742,7 @@ Item {
             TextField {
                 id: oth12
                 x: 654
-                y: 257
+                y: 211
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
@@ -2747,7 +2766,7 @@ Item {
             TextField {
                 id: oth13
                 x: 654
-                y: 395
+                y: 257
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
@@ -2771,7 +2790,7 @@ Item {
             TextField {
                 id: oth14
                 x: 654
-                y: 441
+                y: 303
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
@@ -2794,8 +2813,8 @@ Item {
 
             TextField {
                 id: oth15
-                x: 10
-                y: 257
+                x: 654
+                y: 349
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
@@ -2819,7 +2838,7 @@ Item {
             TextField {
                 id: oth16
                 x: 654
-                y: 303
+                y: 395
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
@@ -2843,7 +2862,7 @@ Item {
             TextField {
                 id: oth17
                 x: 654
-                y: 349
+                y: 441
                 width: 141
                 height: 40
                 placeholderText: qsTr("0")
@@ -2953,9 +2972,9 @@ Item {
             }
 
             TextField {
-                id: maxPrimaryVoltageSensor
+                id: minPrimaryVoltageSensor
                 x: 8
-                y: 227
+                y: 191
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
@@ -2977,9 +2996,9 @@ Item {
             }
 
             TextField {
-                id: minPrimaryVoltageSensor
+                id: maxPrimaryVoltageSensor
                 x: 8
-                y: 191
+                y: 227
                 width: 141
                 height: 30
                 placeholderText: qsTr("0")
@@ -3403,6 +3422,7 @@ Item {
             }
         }
     }
+
     //    InputPanel {
     //        id: keyboardPanel
     //        visible: true
