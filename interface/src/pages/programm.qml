@@ -29,7 +29,7 @@ Item {
                 "max_diameter": maxDiameter.text,
                 "min_diameter": minDiameter.text
             },
-            "programm_correctorparammodel": [{
+            "programm_correctorsectionmodel": [{
                     "c_0": sec0c0.text,
                     "c_1": sec0c1.text,
                     "c_2": sec0c2.text,
@@ -90,7 +90,7 @@ Item {
                     "c_3": sec9c3.text,
                     "section": 9
                 }],
-            "programm_reflowparammodel": [{
+            "programm_reflowsectionmodel": [{
                     "r_0": sec0r0.text,
                     "r_1": sec0r1.text,
                     "r_2": sec0r2.text,
@@ -2459,7 +2459,7 @@ Item {
 
         StepperBtn {
             id: button8
-            x: 214
+            x: 219
             y: 518
             text: qsTr("Корректор")
             onClicked: {
@@ -2470,7 +2470,7 @@ Item {
 
         StepperBtn {
             id: button14
-            x: 420
+            x: 431
             y: 518
             text: "Оплавление"
             onClicked: {
@@ -2480,7 +2480,7 @@ Item {
 
         StepperBtn {
             id: button9
-            x: 660
+            x: 645
             y: 518
             text: qsTr("Подогрев")
             onClicked: {
@@ -2490,7 +2490,7 @@ Item {
 
         StepperBtn {
             id: button10
-            x: 866
+            x: 859
             y: 518
             text: "Выжигание"
             onClicked: {
@@ -2501,7 +2501,7 @@ Item {
         StepperBtn {
             id: button11
             x: 1072
-            y: 574
+            y: 579
             text: "Сохранить"
             onClicked: {
                 handler.save_programm(item1.programm)
@@ -2511,7 +2511,7 @@ Item {
         StepperBtn {
             id: button12
             x: 8
-            y: 574
+            y: 579
             text: qsTr("Выход")
             onClicked: {
                 stackView.push(Qt.resolvedUrl("index.qml"))
@@ -3567,8 +3567,8 @@ Item {
 
         StepperBtn {
             id: button15
-            x: 214
-            y: 574
+            x: 219
+            y: 579
             text: qsTr("Настройка датчиков")
             onClicked: {
                 changeRectangle(rectangle14)

@@ -282,270 +282,270 @@ default_db = DATABASE['psql']
 dt_now = datetime.datetime.now()
 diameter = randint(0, 50)
 
-weldingProgrammData = {
-    # programm_programmmodel
-    "programm_programmmodel": {
-        "name": f"Программа сварки { diameter } - { diameter + 2 }",
-        "min_diameter": diameter,
-        "max_diameter": diameter + 2,
-        "description": f"Описание программы сварки { diameter }",
-        "created_at": str(dt_now),
-        "updated_at": str(dt_now),
-    },
-    # programm_preheatingmodel
-    "programm_preheatingmodel": {
-        "ph_0": randint(0, 50),
-        "ph_1": randint(0, 50),
-        "ph_2": randint(0, 50),
-        "ph_3": randint(0, 50),
-        "ph_4": randint(0, 50),
-        "ph_5": randint(0, 50),
-        "ph_6": randint(0, 50),
-        "ph_7": randint(0, 50),
-        "ph_8": randint(0, 50),
-        "ph_9": randint(0, 50),
-        "ph_10": randint(0, 50),
-        "ph_11": randint(0, 50),
-        "ph_12": randint(0, 50),
-    },
-    # programm_otherparametersensormodel
-    "programm_otherparametersensormodel": {
-        "oth_0": randint(0, 50),
-        "oth_1": randint(0, 50),
-        "oth_2": randint(0, 50),
-        "oth_3": randint(0, 50),
-        "oth_4": randint(0, 50),
-        "oth_5": randint(0, 50),
-        "oth_6": randint(0, 50),
-        "oth_7": randint(0, 50),
-        "oth_8": randint(0, 50),
-        "oth_9": randint(0, 50),
-        "oth_10": randint(0, 50),
-        "oth_11": randint(0, 50),
-        "oth_12": randint(0, 50),
-        "oth_13": randint(0, 50),
-        "oth_14": randint(0, 50),
-        "oth_15": randint(0, 50),
-        "oth_16": randint(0, 50),
-        "oth_17": randint(0, 50),
-    },
-    # programm_primaryvoltagesensormodel
-    "programm_primaryvoltagesensormodel": {
-        "min_voltage": randint(0, 25),
-        "max_voltage": randint(25, 50),
-    },
-    # programm_oiltemperaturesensormodel
-    "programm_oiltemperaturesensormodel": {
-        "min_value": randint(0, 25),
-        "max_value": randint(25, 50),
-    },
-    # programm_hydraulicpressuresensormodel
-    "programm_hydraulicpressuresensormodel": {
-        "min_value": randint(0, 25),
-        "max_value": randint(25, 50),
-    },
-    # programm_nkpressuremetersensormodel
-    "programm_nkpressuremetersensormodel": {
-        "min_value": randint(0, 25),
-        "max_value": randint(25, 50),
-    },
-    # programm_pkpressuremetersensormodel
-    "programm_pkpressuremetersensormodel": {
-        "min_value": randint(0, 25),
-        "max_value": randint(25, 50),
-    },
-    # programm_sedimentpressuresensormodel
-    "programm_sedimentpressuresensormodel": {
-        "min_value": randint(0, 25),
-        "max_value": randint(25, 50),
-    },
-    # programm_primaryvoltagesensormodel
-    "programm_primaryvoltagesensormodel": {
-        "min_value": randint(0, 25),
-        "max_value": randint(25, 50),
-    },
-    # programm_currentsensormodel
-    "programm_currentsensormodel": {
-        "min_value": randint(0, 25),
-        "max_value": randint(25, 50),
-    },
-    # programm_positionsensormodel
-    "programm_positionsensormodel": {
-        "min_value": randint(0, 25),
-        "max_value": randint(25, 50),
-    },
-    # programm_burningmodel
-    "programm_burningmodel": {
-        "b_0": randint(0, 50),
-        "b_1": randint(0, 50),
-        "b_2": randint(0, 50),
-        "b_3": randint(0, 50),
-        "b_4": randint(0, 50),
-        "b_5": randint(0, 50),
-        "b_6": randint(0, 50),
-        "b_7": randint(0, 50),
-    },
-    # programm_clampmodel
-    "programm_clampmodel": {
-        "cl_0": randint(0, 50),
-        "cl_1": randint(0, 50),
-        "cl_2": randint(0, 50),
-        "cl_3": randint(0, 50),
-        "cl_4": randint(0, 50),
-        "cl_5": randint(0, 50),
-        "cl_6": randint(0, 50),
-    },
-    # programm_correctorparammodel
-    "programm_correctorparammodel": {},
-    # programm_correctorsectionmodel
-    "programm_correctorsectionmodel": [
-        {
-            "section": 0,
-            "c_0": randint(0, 50),
-            "c_1": randint(0, 50),
-            "c_2": randint(0, 50),
-            "c_3": randint(0, 50),
-        },
-        {
-            "section": 1,
-            "c_0": randint(0, 50),
-            "c_1": randint(0, 50),
-            "c_2": randint(0, 50),
-            "c_3": randint(0, 50),
-        },
-                {
-            "section": 2,
-            "c_0": randint(0, 50),
-            "c_1": randint(0, 50),
-            "c_2": randint(0, 50),
-            "c_3": randint(0, 50),
-        },
-        {
-            "section": 3,
-            "c_0": randint(0, 50),
-            "c_1": randint(0, 50),
-            "c_2": randint(0, 50),
-            "c_3": randint(0, 50),
-        },
-        {
-            "section": 4,
-            "c_0": randint(0, 50),
-            "c_1": randint(0, 50),
-            "c_2": randint(0, 50),
-            "c_3": randint(0, 50),
-        },
-        {
-            "section": 5,
-            "c_0": randint(0, 50),
-            "c_1": randint(0, 50),
-            "c_2": randint(0, 50),
-            "c_3": randint(0, 50),
-        },
-        {
-            "section": 6,
-            "c_0": randint(0, 50),
-            "c_1": randint(0, 50),
-            "c_2": randint(0, 50),
-            "c_3": randint(0, 50),
-        },
-        {
-            "section": 7,
-            "c_0": randint(0, 50),
-            "c_1": randint(0, 50),
-            "c_2": randint(0, 50),
-            "c_3": randint(0, 50),
-        },
-                {
-            "section": 8,
-            "c_0": randint(0, 50),
-            "c_1": randint(0, 50),
-            "c_2": randint(0, 50),
-            "c_3": randint(0, 50),
-        },
-        {
-            "section": 9,
-            "c_0": randint(0, 50),
-            "c_1": randint(0, 50),
-            "c_2": randint(0, 50),
-            "c_3": randint(0, 50),
-        },
-    ],
-    # programm_reflowparammodel
-    "programm_reflowparammodel": {},
-    # programm_reflowsectionmodel
-    "programm_reflowsectionmodel": [
-        {
-            "section": 0,
-            "r_0": randint(0, 50),
-            "r_1": randint(0, 50),
-            "r_2": randint(0, 50),
-            "r_3": randint(0, 50),
-        },
-        {
-            "section": 1,
-            "r_0": randint(0, 50),
-            "r_1": randint(0, 50),
-            "r_2": randint(0, 50),
-            "r_3": randint(0, 50),
-        },
-        {
-            "section": 2,
-            "r_0": randint(0, 50),
-            "r_1": randint(0, 50),
-            "r_2": randint(0, 50),
-            "r_3": randint(0, 50),
-        },
-        {
-            "section": 3,
-            "r_0": randint(0, 50),
-            "r_1": randint(0, 50),
-            "r_2": randint(0, 50),
-            "r_3": randint(0, 50),
-        },
-                {
-            "section": 4,
-            "r_0": randint(0, 50),
-            "r_1": randint(0, 50),
-            "r_2": randint(0, 50),
-            "r_3": randint(0, 50),
-        },
-        {
-            "section": 5,
-            "r_0": randint(0, 50),
-            "r_1": randint(0, 50),
-            "r_2": randint(0, 50),
-            "r_3": randint(0, 50),
-        },
-        {
-            "section": 6,
-            "r_0": randint(0, 50),
-            "r_1": randint(0, 50),
-            "r_2": randint(0, 50),
-            "r_3": randint(0, 50),
-        },
-        {
-            "section": 7,
-            "r_0": randint(0, 50),
-            "r_1": randint(0, 50),
-            "r_2": randint(0, 50),
-            "r_3": randint(0, 50),
-        },
-        {
-            "section": 8,
-            "r_0": randint(0, 50),
-            "r_1": randint(0, 50),
-            "r_2": randint(0, 50),
-            "r_3": randint(0, 50),
-        },
-        {
-            "section": 9,
-            "r_0": randint(0, 50),
-            "r_1": randint(0, 50),
-            "r_2": randint(0, 50),
-            "r_3": randint(0, 50),
-        },
-    ]
-}
+# weldingProgrammData = {
+#     # programm_programmmodel
+#     "programm_programmmodel": {
+#         "name": f"Программа сварки { diameter } - { diameter + 2 }",
+#         "min_diameter": diameter,
+#         "max_diameter": diameter + 2,
+#         "description": f"Описание программы сварки { diameter }",
+#         # "created_at": str(dt_now),
+#         # "updated_at": str(dt_now),
+#     },
+#     # programm_preheatingmodel
+#     "programm_preheatingmodel": {
+#         "ph_0": randint(0, 50),
+#         "ph_1": randint(0, 50),
+#         "ph_2": randint(0, 50),
+#         "ph_3": randint(0, 50),
+#         "ph_4": randint(0, 50),
+#         "ph_5": randint(0, 50),
+#         "ph_6": randint(0, 50),
+#         "ph_7": randint(0, 50),
+#         "ph_8": randint(0, 50),
+#         "ph_9": randint(0, 50),
+#         "ph_10": randint(0, 50),
+#         "ph_11": randint(0, 50),
+#         "ph_12": randint(0, 50),
+#     },
+#     # programm_otherparametersensormodel
+#     "programm_otherparametersensormodel": {
+#         "oth_0": randint(0, 50),
+#         "oth_1": randint(0, 50),
+#         "oth_2": randint(0, 50),
+#         "oth_3": randint(0, 50),
+#         "oth_4": randint(0, 50),
+#         "oth_5": randint(0, 50),
+#         "oth_6": randint(0, 50),
+#         "oth_7": randint(0, 50),
+#         "oth_8": randint(0, 50),
+#         "oth_9": randint(0, 50),
+#         "oth_10": randint(0, 50),
+#         "oth_11": randint(0, 50),
+#         "oth_12": randint(0, 50),
+#         "oth_13": randint(0, 50),
+#         "oth_14": randint(0, 50),
+#         "oth_15": randint(0, 50),
+#         "oth_16": randint(0, 50),
+#         "oth_17": randint(0, 50),
+#     },
+#     # programm_primaryvoltagesensormodel
+#     "programm_primaryvoltagesensormodel": {
+#         "min_voltage": randint(0, 25),
+#         "max_voltage": randint(25, 50),
+#     },
+#     # programm_oiltemperaturesensormodel
+#     "programm_oiltemperaturesensormodel": {
+#         "min_value": randint(0, 25),
+#         "max_value": randint(25, 50),
+#     },
+#     # programm_hydraulicpressuresensormodel
+#     "programm_hydraulicpressuresensormodel": {
+#         "min_value": randint(0, 25),
+#         "max_value": randint(25, 50),
+#     },
+#     # programm_nkpressuremetersensormodel
+#     "programm_nkpressuremetersensormodel": {
+#         "min_value": randint(0, 25),
+#         "max_value": randint(25, 50),
+#     },
+#     # programm_pkpressuremetersensormodel
+#     "programm_pkpressuremetersensormodel": {
+#         "min_value": randint(0, 25),
+#         "max_value": randint(25, 50),
+#     },
+#     # programm_sedimentpressuresensormodel
+#     "programm_sedimentpressuresensormodel": {
+#         "min_value": randint(0, 25),
+#         "max_value": randint(25, 50),
+#     },
+#     # programm_primaryvoltagesensormodel
+#     "programm_primaryvoltagesensormodel": {
+#         "min_value": randint(0, 25),
+#         "max_value": randint(25, 50),
+#     },
+#     # programm_currentsensormodel
+#     "programm_currentsensormodel": {
+#         "min_value": randint(0, 25),
+#         "max_value": randint(25, 50),
+#     },
+#     # programm_positionsensormodel
+#     "programm_positionsensormodel": {
+#         "min_value": randint(0, 25),
+#         "max_value": randint(25, 50),
+#     },
+#     # programm_burningmodel
+#     "programm_burningmodel": {
+#         "b_0": randint(0, 50),
+#         "b_1": randint(0, 50),
+#         "b_2": randint(0, 50),
+#         "b_3": randint(0, 50),
+#         "b_4": randint(0, 50),
+#         "b_5": randint(0, 50),
+#         "b_6": randint(0, 50),
+#         "b_7": randint(0, 50),
+#     },
+#     # programm_clampmodel
+#     "programm_clampmodel": {
+#         "cl_0": randint(0, 50),
+#         "cl_1": randint(0, 50),
+#         "cl_2": randint(0, 50),
+#         "cl_3": randint(0, 50),
+#         "cl_4": randint(0, 50),
+#         "cl_5": randint(0, 50),
+#         "cl_6": randint(0, 50),
+#     },
+#     # programm_correctorparammodel
+#     # "programm_correctorparammodel": {},
+#     # programm_correctorsectionmodel
+#     "programm_correctorsectionmodel": [
+#         {
+#             "section": 0,
+#             "c_0": randint(0, 50),
+#             "c_1": randint(0, 50),
+#             "c_2": randint(0, 50),
+#             "c_3": randint(0, 50),
+#         },
+#         {
+#             "section": 1,
+#             "c_0": randint(0, 50),
+#             "c_1": randint(0, 50),
+#             "c_2": randint(0, 50),
+#             "c_3": randint(0, 50),
+#         },
+#                 {
+#             "section": 2,
+#             "c_0": randint(0, 50),
+#             "c_1": randint(0, 50),
+#             "c_2": randint(0, 50),
+#             "c_3": randint(0, 50),
+#         },
+#         {
+#             "section": 3,
+#             "c_0": randint(0, 50),
+#             "c_1": randint(0, 50),
+#             "c_2": randint(0, 50),
+#             "c_3": randint(0, 50),
+#         },
+#         {
+#             "section": 4,
+#             "c_0": randint(0, 50),
+#             "c_1": randint(0, 50),
+#             "c_2": randint(0, 50),
+#             "c_3": randint(0, 50),
+#         },
+#         {
+#             "section": 5,
+#             "c_0": randint(0, 50),
+#             "c_1": randint(0, 50),
+#             "c_2": randint(0, 50),
+#             "c_3": randint(0, 50),
+#         },
+#         {
+#             "section": 6,
+#             "c_0": randint(0, 50),
+#             "c_1": randint(0, 50),
+#             "c_2": randint(0, 50),
+#             "c_3": randint(0, 50),
+#         },
+#         {
+#             "section": 7,
+#             "c_0": randint(0, 50),
+#             "c_1": randint(0, 50),
+#             "c_2": randint(0, 50),
+#             "c_3": randint(0, 50),
+#         },
+#                 {
+#             "section": 8,
+#             "c_0": randint(0, 50),
+#             "c_1": randint(0, 50),
+#             "c_2": randint(0, 50),
+#             "c_3": randint(0, 50),
+#         },
+#         {
+#             "section": 9,
+#             "c_0": randint(0, 50),
+#             "c_1": randint(0, 50),
+#             "c_2": randint(0, 50),
+#             "c_3": randint(0, 50),
+#         },
+#     ],
+#     # programm_reflowparammodel
+#     # "programm_reflowparammodel": {},
+#     # programm_reflowsectionmodel
+#     "programm_reflowsectionmodel": [
+#         {
+#             "section": 0,
+#             "r_0": randint(0, 50),
+#             "r_1": randint(0, 50),
+#             "r_2": randint(0, 50),
+#             "r_3": randint(0, 50),
+#         },
+#         {
+#             "section": 1,
+#             "r_0": randint(0, 50),
+#             "r_1": randint(0, 50),
+#             "r_2": randint(0, 50),
+#             "r_3": randint(0, 50),
+#         },
+#         {
+#             "section": 2,
+#             "r_0": randint(0, 50),
+#             "r_1": randint(0, 50),
+#             "r_2": randint(0, 50),
+#             "r_3": randint(0, 50),
+#         },
+#         {
+#             "section": 3,
+#             "r_0": randint(0, 50),
+#             "r_1": randint(0, 50),
+#             "r_2": randint(0, 50),
+#             "r_3": randint(0, 50),
+#         },
+#                 {
+#             "section": 4,
+#             "r_0": randint(0, 50),
+#             "r_1": randint(0, 50),
+#             "r_2": randint(0, 50),
+#             "r_3": randint(0, 50),
+#         },
+#         {
+#             "section": 5,
+#             "r_0": randint(0, 50),
+#             "r_1": randint(0, 50),
+#             "r_2": randint(0, 50),
+#             "r_3": randint(0, 50),
+#         },
+#         {
+#             "section": 6,
+#             "r_0": randint(0, 50),
+#             "r_1": randint(0, 50),
+#             "r_2": randint(0, 50),
+#             "r_3": randint(0, 50),
+#         },
+#         {
+#             "section": 7,
+#             "r_0": randint(0, 50),
+#             "r_1": randint(0, 50),
+#             "r_2": randint(0, 50),
+#             "r_3": randint(0, 50),
+#         },
+#         {
+#             "section": 8,
+#             "r_0": randint(0, 50),
+#             "r_1": randint(0, 50),
+#             "r_2": randint(0, 50),
+#             "r_3": randint(0, 50),
+#         },
+#         {
+#             "section": 9,
+#             "r_0": randint(0, 50),
+#             "r_1": randint(0, 50),
+#             "r_2": randint(0, 50),
+#             "r_3": randint(0, 50),
+#         },
+#     ]
+# }
 
 models = [
     # 'programm_programmmodel',
@@ -653,12 +653,6 @@ class RequestsDB():
     conn.row_factory = dict_factory
     cursor = conn.cursor()
 
-    def request(self):
-        pass
-
-    def create_programm(self):
-        pass
-
     def create_cursor(self, sql_request):
         """ Создаём курсор для запросов к БД """
         cursor_object = self.cursor.execute(sql_request)
@@ -667,26 +661,35 @@ class RequestsDB():
     def commit_cursor(self):
         """ Коммитим изменения в БД """
         self.conn.commit()
-        self.conn.close()
+        # self.conn.close()
 
 
-def create_programm(list_data=None):
+def create_programm(id=None, data=None):
     """ Создание программы сварки """
 
     db = RequestsDB()
     foreign_keys = {}
+
+    weldingProgrammData = data
     
     programm = weldingProgrammData.pop("programm_programmmodel")
+    
+    #CRUNCH DATATIME
+    programm['created_at'] = str(dt_now)
+    programm['updated_at'] = str(dt_now)
+
+
     request = f"""INSERT INTO programm_programmmodel{tuple(programm.keys())} VALUES {tuple(programm.values())}"""
     programm = db.create_cursor(request)
     foreign_keys['programm_programmmodel'] = {'programm_id': programm.lastrowid}
 
-    corrector = weldingProgrammData.pop("programm_correctorparammodel")
+
+    corrector = {}
     request = f"""INSERT INTO programm_correctorparammodel('programm_id') VALUES ({programm.lastrowid})"""
     corrector = db.create_cursor(request)
     foreign_keys['programm_correctorsectionmodel'] = {'corrector_id': corrector.lastrowid}
     
-    reflow = weldingProgrammData.pop("programm_reflowparammodel")
+    reflow = {}
     request = f"""INSERT INTO programm_reflowparammodel('programm_id') VALUES ({programm.lastrowid})"""
     reflow = db.create_cursor(request)
     foreign_keys['programm_reflowsectionmodel'] = { 'reflow_id': reflow.lastrowid }
@@ -720,7 +723,7 @@ def update_programm(programm_id=None, list_data=None):
 
     conn = get_db()
     cursor = conn.cursor()
-    
+    weldingProgrammData = {}
 
     for model in weldingProgrammData:
         

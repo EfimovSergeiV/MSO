@@ -39,6 +39,8 @@ class Handler(QObject):
         json_formatted_str = json.dumps(data, ensure_ascii=False, indent=4)
         print('\nDATA:\n', json_formatted_str)
 
+        database.create_programm(data = data[0])
+
 
 
 
