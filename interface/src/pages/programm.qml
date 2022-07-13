@@ -518,6 +518,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec0c2.focus = true
                 }
 
                 TextField {
@@ -527,6 +528,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec1c2.focus = true
                 }
 
                 TextField {
@@ -536,6 +538,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec2c2.focus = true
                 }
 
                 TextField {
@@ -545,6 +548,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec3c2.focus = true
                 }
 
                 TextField {
@@ -554,6 +558,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec4c2.focus = true
                 }
 
                 TextField {
@@ -563,6 +568,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec5c2.focus = true
                 }
 
                 TextField {
@@ -572,6 +578,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec6c2.focus = true
                 }
 
                 TextField {
@@ -581,6 +588,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec7c2.focus = true
                 }
 
                 TextField {
@@ -590,6 +598,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec8c2.focus = true
                 }
 
                 TextField {
@@ -599,6 +608,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec9c2.focus = true
                 }
             }
 
@@ -628,6 +638,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec0c3.focus = true
                 }
 
                 TextField {
@@ -637,6 +648,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec1c3.focus = true
                 }
 
                 TextField {
@@ -646,6 +658,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec2c3.focus = true
                 }
 
                 TextField {
@@ -655,6 +668,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec3c3.focus = true
                 }
 
                 TextField {
@@ -664,6 +678,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec4c3.focus = true
                 }
 
                 TextField {
@@ -673,6 +688,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec5c3.focus = true
                 }
 
                 TextField {
@@ -682,6 +698,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec6c3.focus = true
                 }
 
                 TextField {
@@ -691,6 +708,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec7c3.focus = true
                 }
 
                 TextField {
@@ -700,6 +718,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec8c3.focus = true
                 }
 
                 TextField {
@@ -709,6 +728,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec9c3.focus = true
                 }
             }
 
@@ -738,6 +758,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec1c0.focus = true
                 }
 
                 TextField {
@@ -747,6 +768,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec2c0.focus = true
                 }
 
                 TextField {
@@ -756,6 +778,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec3c0.focus = true
                 }
 
                 TextField {
@@ -765,6 +788,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec4c0.focus = true
                 }
 
                 TextField {
@@ -774,6 +798,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec5c0.focus = true
                 }
 
                 TextField {
@@ -783,6 +808,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec6c0.focus = true
                 }
 
                 TextField {
@@ -792,6 +818,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec7c0.focus = true
                 }
 
                 TextField {
@@ -801,6 +828,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec8c0.focus = true
                 }
 
                 TextField {
@@ -810,6 +838,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec9c0.focus = true
                 }
 
                 TextField {
@@ -819,6 +848,10 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: {
+                        changeRectangle(reflowRectangle)
+                        sec0r0.focus = true
+                    }
                 }
             }
 
@@ -1020,6 +1053,7 @@ Item {
                     placeholderText: qsTr("0 sec0")
                     horizontalAlignment: Text.AlignHCenter
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec0r1.focus = true
                 }
 
                 TextField {
@@ -1029,6 +1063,7 @@ Item {
                     placeholderText: qsTr("0 sec1")
                     horizontalAlignment: Text.AlignHCenter
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec1r1.focus = true
                 }
 
                 TextField {
@@ -1038,6 +1073,7 @@ Item {
                     placeholderText: qsTr("0")
                     horizontalAlignment: Text.AlignHCenter
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec2r1.focus = true
                 }
 
                 TextField {
@@ -1047,6 +1083,7 @@ Item {
                     placeholderText: qsTr("0")
                     horizontalAlignment: Text.AlignHCenter
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec3r1.focus = true
                 }
 
                 TextField {
@@ -1056,6 +1093,7 @@ Item {
                     placeholderText: qsTr("0")
                     horizontalAlignment: Text.AlignHCenter
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec4r1.focus = true
                 }
 
                 TextField {
@@ -1065,6 +1103,7 @@ Item {
                     placeholderText: qsTr("0")
                     horizontalAlignment: Text.AlignHCenter
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec5r1.focus = true
                 }
 
                 TextField {
@@ -1074,6 +1113,7 @@ Item {
                     placeholderText: qsTr("0")
                     horizontalAlignment: Text.AlignHCenter
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec6r1.focus = true
                 }
 
                 TextField {
@@ -1083,6 +1123,7 @@ Item {
                     placeholderText: qsTr("0")
                     horizontalAlignment: Text.AlignHCenter
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec7r1.focus = true
                 }
 
                 TextField {
@@ -1092,6 +1133,7 @@ Item {
                     placeholderText: qsTr("0")
                     horizontalAlignment: Text.AlignHCenter
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec8r1.focus = true
                 }
 
                 TextField {
@@ -1101,6 +1143,7 @@ Item {
                     placeholderText: qsTr("0")
                     horizontalAlignment: Text.AlignHCenter
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec9r1.focus = true
                 }
             }
 
@@ -1129,6 +1172,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec0r2.focus = true
                 }
 
                 TextField {
@@ -1138,6 +1182,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec1r2.focus = true
                 }
 
                 TextField {
@@ -1147,6 +1192,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec2r2.focus = true
                 }
 
                 TextField {
@@ -1156,6 +1202,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec3r2.focus = true
                 }
 
                 TextField {
@@ -1165,6 +1212,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec4r2.focus = true
                 }
 
                 TextField {
@@ -1174,6 +1222,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec5r2.focus = true
                 }
 
                 TextField {
@@ -1183,6 +1232,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec6r2.focus = true
                 }
 
                 TextField {
@@ -1192,6 +1242,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec7r2.focus = true
                 }
 
                 TextField {
@@ -1201,6 +1252,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec8r2.focus = true
                 }
 
                 TextField {
@@ -1210,6 +1262,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec9r2.focus = true
                 }
             }
 
@@ -1238,6 +1291,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec0r3.focus = true
                 }
 
                 TextField {
@@ -1247,6 +1301,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec1r3.focus = true
                 }
 
                 TextField {
@@ -1256,6 +1311,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec2r3.focus = true
                 }
 
                 TextField {
@@ -1265,6 +1321,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec3r3.focus = true
                 }
 
                 TextField {
@@ -1274,6 +1331,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec4r3.focus = true
                 }
 
                 TextField {
@@ -1283,6 +1341,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec5r3.focus = true
                 }
 
                 TextField {
@@ -1292,6 +1351,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec6r3.focus = true
                 }
 
                 TextField {
@@ -1301,6 +1361,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec7r3.focus = true
                 }
 
                 TextField {
@@ -1310,6 +1371,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec8r3.focus = true
                 }
 
                 TextField {
@@ -1319,6 +1381,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec9r3.focus = true
                 }
             }
 
@@ -1336,6 +1399,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec1r0.focus = true
                 }
 
                 TextField {
@@ -1345,6 +1409,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec2r0.focus = true
                 }
 
                 TextField {
@@ -1354,6 +1419,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec3r0.focus = true
                 }
 
                 TextField {
@@ -1363,6 +1429,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec4r0.focus = true
                 }
 
                 TextField {
@@ -1372,6 +1439,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec5r0.focus = true
                 }
 
                 TextField {
@@ -1381,6 +1449,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec6r0.focus = true
                 }
 
                 TextField {
@@ -1390,6 +1459,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec7r0.focus = true
                 }
 
                 TextField {
@@ -1399,6 +1469,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec8r0.focus = true
                 }
 
                 TextField {
@@ -1408,6 +1479,7 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: sec9r0.focus = true
                 }
 
                 TextField {
@@ -1417,6 +1489,10 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     placeholderText: qsTr("0")
                     inputMethodHints: Qt.ImhDigitsOnly
+                    onAccepted: {
+                        changeRectangle(rectangle11)
+                        ph0.focus = true
+                    }
                 }
             }
 
@@ -1626,6 +1702,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: ph1.focus = true
             }
 
             Label {
@@ -1650,6 +1727,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: ph2.focus = true
             }
 
             Label {
@@ -1674,6 +1752,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: ph3.focus = true
             }
 
             Label {
@@ -1698,6 +1777,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: ph4.focus = true
             }
 
             Label {
@@ -1722,6 +1802,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: ph5.focus = true
             }
 
             Label {
@@ -1746,6 +1827,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: ph6.focus = true
             }
 
             Label {
@@ -1770,6 +1852,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: ph7.focus = true
             }
 
             Label {
@@ -1794,6 +1877,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: ph8.focus = true
             }
 
             Label {
@@ -1818,6 +1902,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: ph9.focus = true
             }
 
             Label {
@@ -1842,6 +1927,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: ph10.focus = true
             }
 
             Label {
@@ -1866,6 +1952,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: ph11.focus = true
             }
 
             Label {
@@ -1890,6 +1977,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: ph12.focus = true
             }
 
             Label {
@@ -1914,6 +2002,10 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: {
+                    changeRectangle(rectangle12)
+                    b0.focus = true
+                }
             }
 
             Label {
@@ -1965,6 +2057,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: b1.focus = true
             }
 
             Label {
@@ -2002,6 +2095,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: b2.focus = true
             }
 
             Label {
@@ -2026,6 +2120,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: b3.focus = true
             }
 
             Label {
@@ -2050,6 +2145,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: b4.focus = true
             }
 
             Label {
@@ -2074,6 +2170,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: b5.focus = true
             }
 
             Label {
@@ -2098,6 +2195,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: b6.focus = true
             }
 
             Label {
@@ -2122,6 +2220,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: b7.focus = true
             }
 
             Label {
@@ -2146,6 +2245,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: cl0.focus = true
             }
 
             Label {
@@ -2170,6 +2270,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: cl1.focus = true
             }
 
             Label {
@@ -2194,6 +2295,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: cl2.focus = true
             }
 
             Label {
@@ -2218,6 +2320,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: cl3.focus = true
             }
 
             Label {
@@ -2242,6 +2345,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: cl4.focus = true
             }
 
             Label {
@@ -2266,6 +2370,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: cl5.focus = true
             }
 
             Label {
@@ -2290,6 +2395,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: cl6.focus = true
             }
 
             Label {
@@ -2314,6 +2420,10 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: {
+                    changeRectangle(rectangle13)
+                    oth0.focus = true
+                }
             }
 
             Label {
@@ -2447,6 +2557,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: oth1.focus = true
             }
 
             Label {
@@ -2484,6 +2595,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: oth2.focus = true
             }
 
             Label {
@@ -2508,6 +2620,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: oth3.focus = true
             }
 
             Label {
@@ -2532,6 +2645,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: oth4.focus = true
             }
 
             Label {
@@ -2556,6 +2670,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: oth5.focus = true
             }
 
             Label {
@@ -2580,6 +2695,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: oth6.focus = true
             }
 
             Label {
@@ -2604,6 +2720,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: oth7.focus = true
             }
 
             Label {
@@ -2628,6 +2745,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: oth8.focus = true
             }
 
             Label {
@@ -2652,6 +2770,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: oth9.focus = true
             }
 
             Label {
@@ -2676,6 +2795,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: oth10.focus = true
             }
 
             Label {
@@ -2700,6 +2820,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: oth11.focus = true
             }
 
             Label {
@@ -2724,6 +2845,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: oth12.focus = true
             }
 
             Label {
@@ -2748,6 +2870,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: oth13.focus = true
             }
 
             Label {
@@ -2772,6 +2895,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: oth14.focus = true
             }
 
             Label {
@@ -2796,6 +2920,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: oth15.focus = true
             }
 
             Label {
@@ -2820,6 +2945,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: oth16.focus = true
             }
 
             Label {
@@ -2844,6 +2970,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: oth17.focus = true
             }
 
             Label {
@@ -2868,6 +2995,10 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: {
+                    changeRectangle(rectangle14)
+                    minPositionSensor.focus = true
+                }
             }
 
             Label {
@@ -2919,6 +3050,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: maxPositionSensor.focus = true
             }
 
             Label {
@@ -2956,6 +3088,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: minPrimaryVoltageSensor.focus = true
             }
 
             Label {
@@ -2980,6 +3113,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: maxPrimaryVoltageSensor.focus = true
             }
 
             Label {
@@ -3004,6 +3138,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: minPKPressureMeterSensor.focus = true
             }
 
             Label {
@@ -3028,6 +3163,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: maxPKPressureMeterSensor.focus = true
             }
 
             Label {
@@ -3052,6 +3188,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: minHydraulicPressureSensor.focus = true
             }
 
             Label {
@@ -3076,6 +3213,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: maxHydraulicPressureSensor.focus = true
             }
 
             Label {
@@ -3100,6 +3238,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: minCurrentSensor.focus = true
             }
 
             Label {
@@ -3124,6 +3263,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: maxCurrentSensor.focus = true
             }
 
             Label {
@@ -3148,6 +3288,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: minSedimentPressureSensor.focus = true
             }
 
             Label {
@@ -3172,6 +3313,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: maxSedimentPressureSensor.focus = true
             }
 
             Label {
@@ -3196,6 +3338,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: minNKPressureMeterSensor.focus = true
             }
 
             Label {
@@ -3298,6 +3441,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: maxNKPressureMeterSensor.focus = true
             }
 
             Label {
@@ -3322,6 +3466,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: minOilTemperatureSensor.focus = true
             }
 
             Label {
@@ -3385,6 +3530,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: maxOilTemperatureSensor.focus = true
             }
 
             TextField {
@@ -3396,6 +3542,7 @@ Item {
                 placeholderText: qsTr("0")
                 horizontalAlignment: Text.AlignHCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                onAccepted: console.log("Saving???")
             }
 
             Label {
