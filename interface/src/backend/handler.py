@@ -32,14 +32,16 @@ class Handler(QObject):
 
 
 
-
+    programmCreatedId = Signal(int)
     @Slot(list)
     def save_programm(self, data):
         # print(f"CREATE REFLOW DATA { data }")
         json_formatted_str = json.dumps(data, ensure_ascii=False, indent=4)
         print('\nDATA:\n', json_formatted_str)
 
-        database.create_programm(data = data[0])
+        id = database.create_or_update(data = data[0])
+        print(f'THIS IS ID: {id}')
+        self.programmCreatedId.emit(id)
 
 
 

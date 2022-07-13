@@ -13,6 +13,7 @@ Item {
     id: item1
 
     property var selectRect: programmRectangle
+    property int progId: 0
 
     function changeRectangle(rectangle) {
         selectRect.hide = false
@@ -24,6 +25,7 @@ Item {
 
     property var programm: [{
             "programm_programmmodel": {
+                "id": item1.progId,
                 "name": programmName.text,
                 "description": programmDescription.text,
                 "max_diameter": maxDiameter.text,
@@ -3573,6 +3575,13 @@ Item {
             onClicked: {
                 changeRectangle(rectangle14)
             }
+        }
+    }
+    Connections {
+        target: handler
+
+        function onProgrammCreatedId(id) {
+            item1.progId = id
         }
     }
 
