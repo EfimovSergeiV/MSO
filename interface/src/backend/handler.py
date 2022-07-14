@@ -38,13 +38,8 @@ class Handler(QObject):
     programmCreatedId = Signal(int)
     @Slot(list)
     def save_programm(self, data):
-        json_formatted_str = json.dumps(data, ensure_ascii=False, indent=4)
-        print('\nDATA:\n', json_formatted_str)
 
-        # db = Database()
-
-        # id = db.create(data = data[0])
-        id = create_or_update()
+        id = create_or_update(data[0])
         print(f'THIS IS ID: {id}')
         self.programmCreatedId.emit(id)
 
