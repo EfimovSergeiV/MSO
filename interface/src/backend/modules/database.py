@@ -6,6 +6,15 @@
 import json, psycopg2, sqlite3, datetime, logging
 from psycopg2.extras import RealDictCursor
 from pathlib import Path
+BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent.parent
+
+
+def dict_factory(cursor, row):
+    """ Преабразуем ответ курсора в словарь """
+    d = {}
+    for idx, col in enumerate(cursor.description):
+        d[col[0]] = row[idx]
+    return d
 
 
 class DatabaseSchemaEditor:
@@ -34,11 +43,21 @@ class DatabaseSchemaEditor:
 class Database(DatabaseSchemaEditor):
     """ ??? Засунуть сюда запросы """
 
+
+
     def create_cursor(self, request):
 
-        print(request)
-        response = 10
-        return response
+        conn = sqlite3.connect(f'{ BASE_DIR }/db.sqlite3')
+        conn.row_factory = dict_factory
+        cursor = conn.cursor()
+
+        response = cursor.execute(request)
+        print(f'THIS IS CREATE REUEST: {request}')
+
+        conn.commit()
+        conn.close()
+
+        return response.lastrowid
 
 
 
@@ -79,7 +98,8 @@ def create_or_update(data):
         print("PROGRAMM UPDATE")
     else:
         request = db.create_request(table="programm_programmmodel", column=tuple(columns), value=tuple(values))
-
+        response = db.create_cursor(request)
+        print(f"RESPONSE: {response}")
 
     
     for model in data:
