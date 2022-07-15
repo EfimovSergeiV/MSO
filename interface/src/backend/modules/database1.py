@@ -687,7 +687,6 @@ def create_programm(id=None, data=None):
     programm = db.create_cursor(request)
     foreign_keys['programm_programmmodel'] = {'programm_id': programm.lastrowid}
 
-
     corrector = {}
     request = f"""INSERT INTO programm_correctorparammodel('programm_id') VALUES ({programm.lastrowid})"""
     corrector = db.create_cursor(request)

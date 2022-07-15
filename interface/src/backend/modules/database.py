@@ -34,11 +34,19 @@ class DatabaseSchemaEditor:
 class Database(DatabaseSchemaEditor):
     """ ??? Засунуть сюда запросы """
 
-    def create(self, request):
+    def create_cursor(self, request):
 
         print(request)
-        return 4
+        response = 10
+        return response
 
+
+
+now_datetime = datetime.datetime.now()
+related_models = (
+    'programm_correctorsectionmodel',
+    'programm_reflowsectionmodel'
+)
 
 def select_one():
     pass
@@ -49,23 +57,51 @@ def select_many():
 def create_or_update(data):
     """ Создание или обновление программы """
     json_formatted_str = json.dumps(data, ensure_ascii=False, indent=4)
-    print('\nDATA:\n', json_formatted_str)
+    print('\nDATA:\n', json_formatted_str, '\n')
     db = Database()
+
+
+    # Раскидать по IF-ам Тут создаём программу
+    data_programm = data.pop("programm_programmmodel")
+
+    if data_programm['id'] == 0:
+        del data_programm['id']
+        programm_exist = False
+
+    else:
+        programm_exist = True
+        print(f"ID PROGRAMM {data_programm['id']}, METHOD: UPDATE")
+
+    data_programm['created_at'] = str(now_datetime)
+    data_programm['updated_at'] = str(now_datetime)
+    columns, values = data_programm.keys(), data_programm.values()
+    if programm_exist:
+        print("PROGRAMM UPDATE")
+    else:
+        request = db.create_request(table="programm_programmmodel", column=tuple(columns), value=tuple(values))
+
+
     
     for model in data:
         data_model = data[model]
 
         if type(data_model) != list:
             columns, values = data_model.keys(), data_model.values()
-            request = db.create_request(table=model, column=tuple(columns), value=tuple(values))
-            print(request)
+            if programm_exist:
+                print('UPDATE METHOD PROGRAMM')
+            else:
+                request = db.create_request(table=model, column=tuple(columns), value=tuple(values))
+                print(request)
 
         else:
             # THIS FOR RELATED FIELDS
             for data_related in data_model:
                 columns, values = data_related.keys(), data_related.values()
-                request = db.create_request(table=model, column=tuple(columns), value=tuple(values))
-                print(request)
+                if programm_exist:
+                    print('UPDATE METHOD PROGRAMM')
+                else:
+                    request = db.create_request(table=model, column=tuple(columns), value=tuple(values))
+                    print(request)
 
     return 4
 
