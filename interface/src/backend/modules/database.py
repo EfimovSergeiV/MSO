@@ -32,7 +32,7 @@ class DatabaseSchemaEditor:
         return self.sql_create % { "table": table, "column": column, "value": value }
 
     def update_request(self, table, column, value, id):
-        self.sql_update % { "table": table, "column": column, "value": value, "id": id}
+        return self.sql_update % { "table": table, "column": column, "value": value, "id": id}
 
     def delete_request(self, table, id):
         return self.sql_delete % { "table": table, "id": id }
@@ -94,14 +94,22 @@ def create_or_update(data):
     data_programm['created_at'] = str(now_datetime)
     data_programm['updated_at'] = str(now_datetime)
     columns, values = data_programm.keys(), data_programm.values()
+
     if programm_exist:
-        print("PROGRAMM UPDATE")
+        print(f"\n\n\nDATA progra {data_programm['id']}\n\n\n\n")
+        request = db.update_request(table="programm_programmmodel", column=tuple(columns), value=tuple(values), id=data_programm['id'])
     else:
         request = db.create_request(table="programm_programmmodel", column=tuple(columns), value=tuple(values))
-        response = db.create_cursor(request)
-        print(f"RESPONSE: {response}")
 
+
+
+
+    response = db.create_cursor(request) # По факту не created а full комплект
+    programm_id = response if data_programm['id'] != 0 else response  # !!! проблема идентификатора программы для фронта
+    print(f"RESPONCE {response}")
     
+
+
     for model in data:
         data_model = data[model]
 
@@ -123,7 +131,9 @@ def create_or_update(data):
                     request = db.create_request(table=model, column=tuple(columns), value=tuple(values))
                     print(request)
 
-    return 4
+    return programm_id
+
+
 
 def delete():
     pass
