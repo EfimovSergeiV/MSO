@@ -86,53 +86,53 @@ def create_or_update(data):
     if data_programm['id'] == 0:
         del data_programm['id']
         programm_exist = False
+        data_programm['created_at'] = str(now_datetime)
 
     else:
         programm_exist = True
         print(f"ID PROGRAMM {data_programm['id']}, METHOD: UPDATE")
 
-    data_programm['created_at'] = str(now_datetime)
     data_programm['updated_at'] = str(now_datetime)
     columns, values = data_programm.keys(), data_programm.values()
 
     if programm_exist:
-        request = db.update_request(table="programm_programmmodel", column=tuple(columns), value=tuple(values), id=data_programm['id'])
+        request = db.update_request(table="programm_programmmodel", column=tuple(columns), value=tuple(values), id=data_programm['id'])    
+    
     else:
         request = db.create_request(table="programm_programmmodel", column=tuple(columns), value=tuple(values))
 
-    print(f"PROGR: {data_programm}\nREQUEST: { request }")
-
-
-
-    # response = db.create_cursor(request) # По факту не created а full комплект
-    # #programm_id = response if data_programm['id'] != 0 else response  # !!! проблема идентификатора программы для фронта
-    # print(f"RESPONSE: {response}")
     
+    response = db.create_cursor(request)
 
 
+    # for model in data:
+    #     data_model = data[model]
 
-    for model in data:
-        data_model = data[model]
+    #     if type(data_model) != list:
+    #         columns, values = data_model.keys(), data_model.values()
+    #         if programm_exist:
+    #             print('UPDATE METHOD PROGRAMM')
+    #         else:
+    #             request = db.create_request(table=model, column=tuple(columns), value=tuple(values))
+    #             print(request)
 
-        if type(data_model) != list:
-            columns, values = data_model.keys(), data_model.values()
-            if programm_exist:
-                print('UPDATE METHOD PROGRAMM')
-            else:
-                request = db.create_request(table=model, column=tuple(columns), value=tuple(values))
-                print(request)
+    #     else:
+    #         # THIS FOR RELATED FIELDS
+    #         for data_related in data_model:
+    #             columns, values = data_related.keys(), data_related.values()
+    #             if programm_exist:
+    #                 print('UPDATE METHOD PROGRAMM')
+    #             else:
+    #                 request = db.create_request(table=model, column=tuple(columns), value=tuple(values))
+    #                 print(request)
 
-        else:
-            # THIS FOR RELATED FIELDS
-            for data_related in data_model:
-                columns, values = data_related.keys(), data_related.values()
-                if programm_exist:
-                    print('UPDATE METHOD PROGRAMM')
-                else:
-                    request = db.create_request(table=model, column=tuple(columns), value=tuple(values))
-                    print(request)
+    # Отправляем ID созданной программы, если была создана новая
+    if programm_exist:
+        return False
+    else:
+        return response
 
-    # return programm_id
+
 
 
 

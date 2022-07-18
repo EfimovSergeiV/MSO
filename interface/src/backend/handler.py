@@ -40,8 +40,9 @@ class Handler(QObject):
     def save_programm(self, data):
 
         id = create_or_update(data[0])
-        print(f'THIS IS ID: {id}')
-        self.programmCreatedId.emit(id)
+        
+        if id:
+            self.programmCreatedId.emit(id)
 
 
 
