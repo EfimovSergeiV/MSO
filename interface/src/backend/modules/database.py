@@ -75,8 +75,8 @@ def select_many():
 
 def create_or_update(data):
     """ Создание или обновление программы """
-    json_formatted_str = json.dumps(data, ensure_ascii=False, indent=4)
-    print('\nDATA:\n', json_formatted_str, '\n')
+    # json_formatted_str = json.dumps(data, ensure_ascii=False, indent=4)
+    # print('\nDATA:\n', json_formatted_str, '\n')
     db = Database()
 
 
@@ -96,18 +96,19 @@ def create_or_update(data):
     columns, values = data_programm.keys(), data_programm.values()
 
     if programm_exist:
-        print(f"\n\n\nDATA progra {data_programm['id']}\n\n\n\n")
         request = db.update_request(table="programm_programmmodel", column=tuple(columns), value=tuple(values), id=data_programm['id'])
     else:
         request = db.create_request(table="programm_programmmodel", column=tuple(columns), value=tuple(values))
 
+    print(f"PROGR: {data_programm}\nREQUEST: { request }")
 
 
 
-    response = db.create_cursor(request) # По факту не created а full комплект
-    programm_id = response if data_programm['id'] != 0 else response  # !!! проблема идентификатора программы для фронта
-    print(f"RESPONCE {response}")
+    # response = db.create_cursor(request) # По факту не created а full комплект
+    # #programm_id = response if data_programm['id'] != 0 else response  # !!! проблема идентификатора программы для фронта
+    # print(f"RESPONSE: {response}")
     
+
 
 
     for model in data:
@@ -131,7 +132,7 @@ def create_or_update(data):
                     request = db.create_request(table=model, column=tuple(columns), value=tuple(values))
                     print(request)
 
-    return programm_id
+    # return programm_id
 
 
 
