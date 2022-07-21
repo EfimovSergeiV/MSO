@@ -97,7 +97,7 @@ def create(data):
     conn.close()
 
 
-def update():
+def update(data):
     pass
 
 
