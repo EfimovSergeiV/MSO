@@ -1,4 +1,6 @@
+#!/usr/bin/env python3
 # This Python file uses the following encoding: utf-8
+
 import os, sys
 from pathlib import Path
 from src.backend.handler import *
