@@ -19,31 +19,34 @@ def dict_factory(cursor, row):
     return d
 
 
-def select():
+def select(id):
     conn = sqlite3.connect(f'{ BASE_DIR }/db.sqlite3')
     conn.row_factory = dict_factory
     cursor = conn.cursor()
+    print(id)
     
-    table, related_field, id = "programm_programmmodel", "id", 60
+    table, related_field, id = "programm_programmmodel", "id", id
     response = cursor.execute("SELECT * FROM %(table)s WHERE %(related_field)s = %(id)s" % { "table": table, "related_field": related_field, "id": id })
     data = response.fetchone()
     print(table, data)
 
+
+    
     for table in ['programm_correctorparammodel', 'programm_reflowparammodel',]:
-        related_field, id = "programm_id", 60
+        related_field, id = "programm_id", id
         response = cursor.execute("SELECT * FROM %(table)s WHERE %(related_field)s = %(id)s" % { "table": table, "related_field": related_field, "id": id })
         data = response.fetchone()
-        print(table, data)
+        crunch = data['id']
 
     models = {'programm_correctorsectionmodel': 'corrector_id', 'programm_reflowsectionmodel': 'reflow_id'}
     for table in models:
-        id = 30 #ID корректора или оплавления
-        response = cursor.execute("SELECT * FROM %(table)s WHERE %(related_field)s = %(id)s" % { "table": table, "related_field": models[table], "id": id })
+        related_id = crunch #ID корректора или оплавления
+        response = cursor.execute("SELECT * FROM %(table)s WHERE %(related_field)s = %(id)s" % { "table": table, "related_field": models[table], "id": related_id })
         data = response.fetchall()
         print(table, data)
 
     for table in ['programm_sedimentpressuresensormodel','programm_primaryvoltagesensormodel','programm_preheatingmodel','programm_positionsensormodel','programm_pkpressuremetersensormodel','programm_otherparametersensormodel','programm_oiltemperaturesensormodel','programm_nkpressuremetersensormodel','programm_hydraulicpressuresensormodel','programm_currentsensormodel','programm_burningmodel','programm_clampmodel',]:
-        related_field, id = "programm_id", 60
+        related_field, id = "programm_id", id
         response = cursor.execute("SELECT * FROM %(table)s WHERE %(related_field)s = %(id)s" % { "table": table, "related_field": related_field, "id": id })
         data = response.fetchone()
         print(table, data)
@@ -97,8 +100,18 @@ def create(data):
     conn.close()
 
 
-def update(data):
-    pass
+def update(id, data=None):
+    alter_data = select(id)
+
+
+
+
+
+    json_formatted_str = json.dumps(alter_data, ensure_ascii=False, indent=4)
+    print('\nDATA:\n', json_formatted_str, '\n')
+
+
+
 
 
 
@@ -370,6 +383,6 @@ data = {
     ]
 }
 
-
-
-update(data)
+select(id=105)
+# create(data)
+# update(id=105)
