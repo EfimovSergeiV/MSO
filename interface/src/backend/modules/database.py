@@ -24,12 +24,14 @@ def select(id):
     conn.row_factory = dict_factory
     cursor = conn.cursor()
     print(id)
+
+    result = {}
     
     table, related_field, id = "programm_programmmodel", "id", id
     response = cursor.execute("SELECT * FROM %(table)s WHERE %(related_field)s = %(id)s" % { "table": table, "related_field": related_field, "id": id })
     data = response.fetchone()
     print(table, data)
-
+    result["programm_programmmodel"] = data
 
     
     for table in ['programm_correctorparammodel', 'programm_reflowparammodel',]:
@@ -44,14 +46,17 @@ def select(id):
         response = cursor.execute("SELECT * FROM %(table)s WHERE %(related_field)s = %(id)s" % { "table": table, "related_field": models[table], "id": related_id })
         data = response.fetchall()
         print(table, data)
+        result[table] = data
 
     for table in ['programm_sedimentpressuresensormodel','programm_primaryvoltagesensormodel','programm_preheatingmodel','programm_positionsensormodel','programm_pkpressuremetersensormodel','programm_otherparametersensormodel','programm_oiltemperaturesensormodel','programm_nkpressuremetersensormodel','programm_hydraulicpressuresensormodel','programm_currentsensormodel','programm_burningmodel','programm_clampmodel',]:
         related_field, id = "programm_id", id
         response = cursor.execute("SELECT * FROM %(table)s WHERE %(related_field)s = %(id)s" % { "table": table, "related_field": related_field, "id": id })
         data = response.fetchone()
         print(table, data)
+        result[table] = data
 
     conn.close()
+    return result
 
 
 
@@ -104,9 +109,7 @@ def update(id, data=None):
     alter_data = select(id)
 
 
-
-
-
+    request = f"""UPDATE programm_programmmodel SET {id} WHERE id = {id}"""
     json_formatted_str = json.dumps(alter_data, ensure_ascii=False, indent=4)
     print('\nDATA:\n', json_formatted_str, '\n')
 
@@ -383,6 +386,6 @@ data = {
     ]
 }
 
-select(id=105)
+# select(id=105)
 # create(data)
-# update(id=105)
+update(id=105)
