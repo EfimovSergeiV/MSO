@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.15
+import QtQuick.Controls.Material 2.15
 
 Item {
     id: indexPage
@@ -9,7 +10,7 @@ Item {
         x: 0
         y: 0
         anchors.fill: parent
-        color: "#133656"
+        color: "#004f90"
 
         Rectangle {
             id: rectangle1
@@ -17,37 +18,13 @@ Item {
             y: 412
             width: 348
             radius: 5
-            color: "#7e000000"
+            color: "#63000000"
             anchors.left: parent.left
             anchors.top: parent.top
             anchors.bottom: rectangle3.top
             anchors.bottomMargin: 6
             anchors.topMargin: 8
             anchors.leftMargin: 8
-
-            Button {
-                id: button
-                x: 8
-                y: 49
-                width: 332
-                height: 40
-                text: "Визуализация"
-                onClicked: {
-                    stackView.push(Qt.resolvedUrl("action.qml"))
-                }
-            }
-
-            Button {
-                id: button3
-                x: 8
-                y: 101
-                width: 332
-                height: 40
-                text: "График"
-                onClicked: {
-                    stackView.push(Qt.resolvedUrl("charts.qml"))
-                }
-            }
 
             Label {
                 id: label2
@@ -64,14 +41,50 @@ Item {
             }
 
             Button {
-                id: button4
                 x: 8
-                y: 794
+                y: 55
                 width: 332
-                height: 40
-                text: "Выход"
-                anchors.bottom: parent.bottom
-                anchors.bottomMargin: 8
+                height: 80
+                text: qsTr("Визуализация")
+                font.pointSize: 16
+                highlighted: true
+                Material.background: Material.Blue
+            }
+
+            Button {
+                x: 8
+                y: 153
+                width: 332
+                height: 80
+                text: qsTr("График")
+                Material.background: Material.Blue
+                highlighted: true
+                onClicked: {
+                    stackView.push(Qt.resolvedUrl("charts.qml"))
+                }
+            }
+
+            Button {
+                x: 8
+                y: 249
+                width: 332
+                height: 80
+                text: qsTr("Button")
+                Material.background: Material.Blue
+                highlighted: true
+                onClicked: {
+                    stackView.push(Qt.resolvedUrl("charts.qml"))
+                }
+            }
+
+            Button {
+                x: 8
+                y: 672
+                width: 332
+                height: 80
+                text: qsTr("Выход")
+                Material.background: Material.Blue
+                highlighted: true
                 onClicked: {
                     handler.close_application()
                 }
@@ -85,7 +98,7 @@ Item {
             width: 910
             radius: 5
             height: 1008
-            color: "#7f000000"
+            color: "#60000000"
             anchors.left: rectangle1.right
             anchors.right: parent.right
             anchors.top: parent.top
@@ -111,18 +124,20 @@ Item {
                 font.bold: true
                 font.pointSize: 8
             }
+
+            Material.accent: Material.Blue
         }
 
         Rectangle {
             id: rectangle3
             x: 8
-            y: 856
+            y: 774
             width: 348
-            height: 160
+            height: 242
             radius: 5
             anchors.bottom: parent.bottom
             anchors.bottomMargin: 8
-            color: "#7f000000"
+            color: "#80000000"
 
             Label {
                 id: label1
@@ -135,26 +150,28 @@ Item {
                 verticalAlignment: Text.AlignVCenter
                 font.pointSize: 16
             }
+
             Button {
-                id: button1
                 x: 8
-                y: 53
+                y: 56
                 width: 332
-                height: 40
+                height: 80
                 text: qsTr("Программы")
-                anchors.bottom: parent.bottom
-                anchors.bottomMargin: 67
+                Material.background: Material.Blue
+                highlighted: true
                 onClicked: {
                     stackView.push(Qt.resolvedUrl("programms.qml"))
                 }
             }
+
             Button {
-                id: button2
                 x: 8
-                y: 112
+                y: 147
                 width: 332
-                height: 40
-                text: "Прочее"
+                height: 80
+                text: qsTr("Настройки")
+                Material.background: Material.Blue
+                highlighted: true
                 onClicked: {
                     stackView.push(Qt.resolvedUrl("settings.qml"))
                 }
@@ -183,7 +200,8 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}
+    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}D{i:5}D{i:6}D{i:7}
+D{i:12}D{i:13}
 }
 ##^##*/
 

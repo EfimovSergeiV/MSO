@@ -10,6 +10,18 @@ from PySide2.QtQml import QQmlApplicationEngine
 
 
 # os.environ["QT_IM_MODULE"] = "qtvirtualkeyboard"
+os.environ["QT_QUICK_CONTROLS_STYLE"] = "Material" #"Imagine" "Fusion" "Universal"
+os.environ["QT_QUICK_CONTROLS_MATERIAL_VARIANT"] = "Normal"
+
+os.environ["QT_QUICK_CONTROLS_MATERIAL_PRIMARY"] = "BlueGrey"
+os.environ["QT_QUICK_CONTROLS_MATERIAL_ACCENT"] = "BlueGrey"
+# os.environ["QT_QUICK_CONTROLS_MATERIAL_VARIANT"] = "Normal"
+# os.environ["QT_QUICK_CONTROLS_MATERIAL_VARIANT"] = "Normal"
+# os.environ["QT_QUICK_CONTROLS_MATERIAL_VARIANT"] = "Normal"
+
+
+
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
