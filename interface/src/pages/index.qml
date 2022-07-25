@@ -16,9 +16,9 @@ Item {
             id: rectangle1
             x: 0
             y: 412
-            width: 348
+            width: 340
             radius: 5
-            color: "#63000000"
+            color: "#50000000"
             anchors.left: parent.left
             anchors.top: parent.top
             anchors.bottom: rectangle3.top
@@ -36,27 +36,27 @@ Item {
                 text: "Процесс:"
                 verticalAlignment: Text.AlignVCenter
                 font.styleName: "Light"
-                font.pointSize: 16
-                font.bold: true
+                font.pointSize: 14
             }
 
             Button {
                 x: 8
                 y: 55
-                width: 332
+                width: 324
                 height: 80
                 text: qsTr("Визуализация")
-                font.pointSize: 16
+                font.pointSize: 14
                 highlighted: true
                 Material.background: Material.Blue
             }
 
             Button {
                 x: 8
-                y: 153
-                width: 332
+                y: 141
+                width: 324
                 height: 80
                 text: qsTr("График")
+                font.pointSize: 14
                 Material.background: Material.Blue
                 highlighted: true
                 onClicked: {
@@ -66,10 +66,11 @@ Item {
 
             Button {
                 x: 8
-                y: 249
-                width: 332
+                y: 227
+                width: 324
                 height: 80
-                text: qsTr("Button")
+                text: qsTr("Кнопка")
+                font.pointSize: 14
                 Material.background: Material.Blue
                 highlighted: true
                 onClicked: {
@@ -80,9 +81,10 @@ Item {
             Button {
                 x: 8
                 y: 672
-                width: 332
+                width: 324
                 height: 80
                 text: qsTr("Выход")
+                font.pointSize: 14
                 Material.background: Material.Blue
                 highlighted: true
                 onClicked: {
@@ -98,7 +100,7 @@ Item {
             width: 910
             radius: 5
             height: 1008
-            color: "#60000000"
+            color: "#50000000"
             anchors.left: rectangle1.right
             anchors.right: parent.right
             anchors.top: parent.top
@@ -132,12 +134,12 @@ Item {
             id: rectangle3
             x: 8
             y: 774
-            width: 348
+            width: 340
             height: 242
             radius: 5
             anchors.bottom: parent.bottom
             anchors.bottomMargin: 8
-            color: "#80000000"
+            color: "#50000000"
 
             Label {
                 id: label1
@@ -148,15 +150,16 @@ Item {
                 color: "#ffffff"
                 text: "Настройки:"
                 verticalAlignment: Text.AlignVCenter
-                font.pointSize: 16
+                font.pointSize: 14
             }
 
             Button {
                 x: 8
-                y: 56
-                width: 332
+                y: 68
+                width: 324
                 height: 80
                 text: qsTr("Программы")
+                font.pointSize: 14
                 Material.background: Material.Blue
                 highlighted: true
                 onClicked: {
@@ -166,10 +169,11 @@ Item {
 
             Button {
                 x: 8
-                y: 147
-                width: 332
+                y: 154
+                width: 324
                 height: 80
                 text: qsTr("Настройки")
+                font.pointSize: 14
                 Material.background: Material.Blue
                 highlighted: true
                 onClicked: {
@@ -180,8 +184,8 @@ Item {
 
         Image {
             id: image
-            x: 1044
-            y: 968
+            x: 1036
+            y: 960
             width: 219
             height: 37
             anchors.right: parent.right
