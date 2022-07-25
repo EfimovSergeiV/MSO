@@ -38,11 +38,11 @@ class Handler(QObject):
     programmCreatedId = Signal(int)
     @Slot(list)
     def save_programm(self, data):
-
-        id = create_or_update(data[0])
+        print(data)
+        # id = create_or_update(data[0])
         
-        if id:
-            self.programmCreatedId.emit(id)
+        # if id:
+        #     self.programmCreatedId.emit(id)
 
 
 
