@@ -13,7 +13,7 @@ Item {
         ScrollView {
             id: scrollView
             x: 4
-            y: 27
+            y: 109
             width: 1272
             height: 518
             ScrollBar.horizontal.interactive: false
@@ -21,10 +21,10 @@ Item {
 
             ListView {
                 id: showWeldingProgramm
-                x: 0
-                y: 0
-                width: 800
-                height: 480
+                x: 8
+                y: 100
+                width: 1264
+                height: 524
                 focus: true
                 model: ListModel {
                     id: listProgramms
@@ -57,7 +57,6 @@ Item {
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         font.pointSize: 14
-                        font.bold: true
                         width: 424
                         height: 40
                     }
@@ -69,7 +68,6 @@ Item {
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         font.pointSize: 14
-                        font.bold: true
                         width: 240
                         height: 40
                     }
