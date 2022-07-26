@@ -63,11 +63,16 @@ Rectangle {
 
     TextField {
         id: minPositionSensor
-        x: 8
-        y: 78
+        x: 142
+        y: 155
         width: 141
-        height: 30
-        placeholderText: qsTr("0")
+        height: 40
+        color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
+        placeholderText: qsTr("min")
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: maxPositionSensor.focus = true
@@ -75,12 +80,12 @@ Rectangle {
 
     Label {
         id: label80
-        x: 155
-        y: 78
-        width: 457
-        height: 30
+        x: 489
+        y: 155
+        width: 90
+        height: 40
         color: "#ffffff"
-        text: "Минимальное значение, мм"
+        text: ", мм"
         horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
@@ -101,36 +106,33 @@ Rectangle {
 
     TextField {
         id: maxPositionSensor
-        x: 8
-        y: 114
+        x: 336
+        y: 155
         width: 141
-        height: 30
-        placeholderText: qsTr("0")
+        height: 40
+        color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
+        placeholderText: qsTr("max")
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: minPrimaryVoltageSensor.focus = true
     }
 
-    Label {
-        id: label82
-        x: 155
-        y: 114
-        width: 457
-        height: 30
-        color: "#ffffff"
-        text: "Максимальное положение, мм"
-        horizontalAlignment: Text.AlignLeft
-        verticalAlignment: Text.AlignVCenter
-        font.pointSize: 14
-    }
-
     TextField {
         id: minPrimaryVoltageSensor
-        x: 8
-        y: 191
+        x: 141
+        y: 263
         width: 141
-        height: 30
-        placeholderText: qsTr("0")
+        height: 40
+        color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
+        placeholderText: qsTr("min")
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: maxPrimaryVoltageSensor.focus = true
@@ -138,12 +140,12 @@ Rectangle {
 
     Label {
         id: label83
-        x: 155
-        y: 227
-        width: 457
-        height: 30
+        x: 482
+        y: 263
+        width: 90
+        height: 40
         color: "#ffffff"
-        text: "Максимальное значение, В"
+        text: ", В"
         horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
@@ -151,11 +153,16 @@ Rectangle {
 
     TextField {
         id: maxPrimaryVoltageSensor
-        x: 8
-        y: 227
+        x: 335
+        y: 263
         width: 141
-        height: 30
-        placeholderText: qsTr("0")
+        height: 40
+        color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
+        placeholderText: qsTr("max")
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: minPKPressureMeterSensor.focus = true
@@ -163,24 +170,29 @@ Rectangle {
 
     Label {
         id: label84
-        x: 155
-        y: 191
-        width: 457
-        height: 30
+        x: 289
+        y: 263
+        width: 40
+        height: 40
         color: "#ffffff"
-        text: "Минимальное значение, В"
-        horizontalAlignment: Text.AlignLeft
+        text: "-"
+        horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
     }
 
     TextField {
         id: minPKPressureMeterSensor
-        x: 8
-        y: 299
+        x: 142
+        y: 350
         width: 141
-        height: 30
-        placeholderText: qsTr("0")
+        height: 40
+        color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
+        placeholderText: qsTr("min")
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: maxPKPressureMeterSensor.focus = true
@@ -188,12 +200,12 @@ Rectangle {
 
     Label {
         id: label86
-        x: 155
-        y: 299
-        width: 457
-        height: 30
+        x: 489
+        y: 350
+        width: 90
+        height: 40
         color: "#ffffff"
-        text: "Минимальное значение, Бар"
+        text: ", Бар"
         horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
@@ -201,11 +213,16 @@ Rectangle {
 
     TextField {
         id: maxPKPressureMeterSensor
-        x: 8
-        y: 335
+        x: 336
+        y: 350
         width: 141
-        height: 30
-        placeholderText: qsTr("0")
+        height: 40
+        color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
+        placeholderText: qsTr("max")
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: minHydraulicPressureSensor.focus = true
@@ -213,24 +230,29 @@ Rectangle {
 
     Label {
         id: label87
-        x: 155
-        y: 335
-        width: 457
-        height: 30
+        x: 289
+        y: 350
+        width: 40
+        height: 40
         color: "#ffffff"
-        text: "Максимальное значение, Бар"
-        horizontalAlignment: Text.AlignLeft
+        text: "-"
+        horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
     }
 
     TextField {
         id: minHydraulicPressureSensor
-        x: 8
-        y: 415
+        x: 141
+        y: 448
         width: 141
-        height: 30
-        placeholderText: qsTr("0")
+        height: 40
+        color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
+        placeholderText: qsTr("min")
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: maxHydraulicPressureSensor.focus = true
@@ -238,12 +260,12 @@ Rectangle {
 
     Label {
         id: label89
-        x: 155
-        y: 415
-        width: 457
-        height: 30
+        x: 482
+        y: 448
+        width: 90
+        height: 40
         color: "#ffffff"
-        text: "Минимальное значение, Бар"
+        text: ", Бар"
         horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
@@ -251,11 +273,16 @@ Rectangle {
 
     TextField {
         id: maxHydraulicPressureSensor
-        x: 8
-        y: 451
+        x: 334
+        y: 448
         width: 141
-        height: 30
-        placeholderText: qsTr("0")
+        height: 40
+        color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
+        placeholderText: qsTr("max")
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: minCurrentSensor.focus = true
@@ -263,24 +290,29 @@ Rectangle {
 
     Label {
         id: label90
-        x: 155
-        y: 451
-        width: 457
-        height: 30
+        x: 288
+        y: 448
+        width: 40
+        height: 40
         color: "#ffffff"
-        text: "Максимальное значение, Бар"
-        horizontalAlignment: Text.AlignLeft
+        text: "-"
+        horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
     }
 
     TextField {
         id: minCurrentSensor
-        x: 643
-        y: 78
+        x: 787
+        y: 155
         width: 141
-        height: 30
-        placeholderText: qsTr("0")
+        height: 40
+        color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
+        placeholderText: qsTr("min")
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: maxCurrentSensor.focus = true
@@ -288,12 +320,12 @@ Rectangle {
 
     Label {
         id: label92
-        x: 790
-        y: 78
-        width: 457
-        height: 30
+        x: 1127
+        y: 155
+        width: 90
+        height: 40
         color: "#ffffff"
-        text: "Минимальное значение, А"
+        text: ", А"
         horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
@@ -301,11 +333,16 @@ Rectangle {
 
     TextField {
         id: maxCurrentSensor
-        x: 643
-        y: 114
+        x: 980
+        y: 155
         width: 141
-        height: 30
-        placeholderText: qsTr("0")
+        height: 40
+        color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
+        placeholderText: qsTr("max")
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: minSedimentPressureSensor.focus = true
@@ -313,24 +350,29 @@ Rectangle {
 
     Label {
         id: label93
-        x: 790
-        y: 114
-        width: 457
-        height: 30
+        x: 934
+        y: 155
+        width: 40
+        height: 40
         color: "#ffffff"
-        text: "Максимальное значение , А"
-        horizontalAlignment: Text.AlignLeft
+        text: "-"
+        horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
     }
 
     TextField {
         id: minSedimentPressureSensor
-        x: 643
-        y: 191
+        x: 787
+        y: 263
         width: 141
-        height: 30
-        placeholderText: qsTr("0")
+        height: 40
+        color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
+        placeholderText: qsTr("min")
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: maxSedimentPressureSensor.focus = true
@@ -338,12 +380,12 @@ Rectangle {
 
     Label {
         id: label94
-        x: 790
-        y: 191
-        width: 457
-        height: 30
+        x: 1127
+        y: 263
+        width: 90
+        height: 40
         color: "#ffffff"
-        text: "Минимальное значение, Бар"
+        text: ",Бар"
         horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
@@ -351,11 +393,16 @@ Rectangle {
 
     TextField {
         id: maxSedimentPressureSensor
-        x: 643
-        y: 227
+        x: 980
+        y: 263
         width: 141
-        height: 30
-        placeholderText: qsTr("0")
+        height: 40
+        color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
+        placeholderText: qsTr("max")
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: minNKPressureMeterSensor.focus = true
@@ -363,21 +410,21 @@ Rectangle {
 
     Label {
         id: label95
-        x: 790
-        y: 227
-        width: 457
-        height: 30
+        x: 934
+        y: 263
+        width: 40
+        height: 40
         color: "#ffffff"
-        text: "Максимальное значение, Бар"
-        horizontalAlignment: Text.AlignLeft
+        text: "-"
+        horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
     }
 
     Label {
         id: label99
-        x: 8
-        y: 42
+        x: 7
+        y: 112
         width: 604
         height: 30
         color: "#ffffff"
@@ -390,11 +437,11 @@ Rectangle {
     Label {
         id: label100
         x: 8
-        y: 155
+        y: 220
         width: 604
         height: 30
         color: "#ffffff"
-        text: qsTr("Датчик напряженияпервичной обмотки")
+        text: qsTr("Датчик напряжения первичной обмотки")
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
@@ -403,7 +450,7 @@ Rectangle {
     Label {
         id: label85
         x: 8
-        y: 263
+        y: 314
         width: 604
         height: 30
         color: "#ffffff"
@@ -415,8 +462,8 @@ Rectangle {
 
     Label {
         id: label101
-        x: 8
-        y: 379
+        x: 7
+        y: 412
         width: 604
         height: 30
         color: "#ffffff"
@@ -429,8 +476,8 @@ Rectangle {
     Label {
         id: label102
         x: 643
-        y: 42
-        width: 604
+        y: 112
+        width: 613
         height: 30
         color: "#ffffff"
         text: qsTr("Датчик тока")
@@ -442,8 +489,8 @@ Rectangle {
     Label {
         id: label103
         x: 643
-        y: 155
-        width: 604
+        y: 220
+        width: 613
         height: 30
         color: "#ffffff"
         text: qsTr("Датчик давления осадки")
@@ -454,11 +501,16 @@ Rectangle {
 
     TextField {
         id: minNKPressureMeterSensor
-        x: 643
-        y: 299
+        x: 787
+        y: 350
         width: 141
-        height: 30
-        placeholderText: qsTr("0")
+        height: 40
+        color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
+        placeholderText: qsTr("min")
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: maxNKPressureMeterSensor.focus = true
@@ -466,12 +518,12 @@ Rectangle {
 
     Label {
         id: label88
-        x: 790
-        y: 299
-        width: 457
-        height: 30
+        x: 1127
+        y: 350
+        width: 90
+        height: 40
         color: "#ffffff"
-        text: "Минимальное значение, Бар"
+        text: ", Бар"
         horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
@@ -479,11 +531,16 @@ Rectangle {
 
     TextField {
         id: maxNKPressureMeterSensor
-        x: 643
-        y: 335
+        x: 980
+        y: 350
         width: 141
-        height: 30
-        placeholderText: qsTr("0")
+        height: 40
+        color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
+        placeholderText: qsTr("max")
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: minOilTemperatureSensor.focus = true
@@ -491,13 +548,13 @@ Rectangle {
 
     Label {
         id: label91
-        x: 790
-        y: 335
-        width: 457
-        height: 30
+        x: 934
+        y: 350
+        width: 40
+        height: 40
         color: "#ffffff"
-        text: "Максимальное значение, Бар"
-        horizontalAlignment: Text.AlignLeft
+        text: "-"
+        horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
     }
@@ -505,7 +562,7 @@ Rectangle {
     Label {
         id: label104
         x: 643
-        y: 263
+        y: 314
         width: 604
         height: 30
         color: "#ffffff"
@@ -517,12 +574,12 @@ Rectangle {
 
     Label {
         id: label105
-        x: 790
-        y: 415
-        width: 457
-        height: 30
+        x: 1127
+        y: 448
+        width: 90
+        height: 40
         color: "#ffffff"
-        text: "Минимальное значение, С"
+        text: ", С"
         horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
@@ -530,24 +587,29 @@ Rectangle {
 
     Label {
         id: label106
-        x: 790
-        y: 451
-        width: 457
-        height: 30
+        x: 934
+        y: 448
+        width: 40
+        height: 40
         color: "#ffffff"
-        text: "Максимальное значение, С"
-        horizontalAlignment: Text.AlignLeft
+        text: "-"
+        horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
     }
 
     TextField {
         id: minOilTemperatureSensor
-        x: 643
-        y: 415
+        x: 787
+        y: 448
         width: 141
-        height: 30
-        placeholderText: qsTr("0")
+        height: 40
+        color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
+        placeholderText: qsTr("min")
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: maxOilTemperatureSensor.focus = true
@@ -555,11 +617,16 @@ Rectangle {
 
     TextField {
         id: maxOilTemperatureSensor
-        x: 643
-        y: 451
+        x: 980
+        y: 448
         width: 141
-        height: 30
-        placeholderText: qsTr("0")
+        height: 40
+        color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
+        placeholderText: qsTr("max")
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: console.log("Saving???")
@@ -568,11 +635,24 @@ Rectangle {
     Label {
         id: label107
         x: 643
-        y: 379
-        width: 604
+        y: 412
+        width: 613
         height: 30
         color: "#ffffff"
         text: qsTr("Датчик температуры масла")
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
+        font.pointSize: 14
+    }
+
+    Label {
+        id: label82
+        x: 289
+        y: 155
+        width: 40
+        height: 40
+        color: "#ffffff"
+        text: "-"
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
@@ -581,7 +661,7 @@ Rectangle {
 
 /*##^##
 Designer {
-    D{i:0;formeditorZoom:0.66}
+    D{i:0;formeditorZoom:0.75}D{i:41}
 }
 ##^##*/
 
