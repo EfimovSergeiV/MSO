@@ -200,12 +200,12 @@ Item {
             y: 586
             width: 310
             height: 60
-            text: qsTr("Параметры цикла свар")
+            text: qsTr("Настройка датчиков")
             Material.background: Material.Blue
             font.pointSize: 14
             highlighted: true
             onClicked: {
-                changeRectangle(programmSec)
+                changeRectangle(sensorSec)
             }
         }
 
@@ -231,17 +231,17 @@ Item {
         }
     }
 
-    InputPanel {
-        id: keyboardPanel
-        visible: true
-        anchors.horizontalCenter: parent.horizontalCenter
-        anchors.bottom: parent.bottom
-        width: 1280
-        Component.onCompleted: {
-            keyboard.style.keyboardBackground = null
-            keyboard.style.selectionListBackground = null
-        }
-    }
+    //    InputPanel {
+    //        id: keyboardPanel
+    //        visible: true
+    //        anchors.horizontalCenter: parent.horizontalCenter
+    //        anchors.bottom: parent.bottom
+    //        width: 1280
+    //        Component.onCompleted: {
+    //            keyboard.style.keyboardBackground = null
+    //            keyboard.style.selectionListBackground = null
+    //        }
+    //    }
 }
 
 /*##^##
