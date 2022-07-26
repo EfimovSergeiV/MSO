@@ -48,6 +48,9 @@ Item {
                 font.pointSize: 14
                 highlighted: true
                 Material.background: Material.Blue
+                onClicked: {
+                    stackView.push(Qt.resolvedUrl("action.qml"))
+                }
             }
 
             Button {
@@ -204,8 +207,7 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}D{i:5}D{i:6}D{i:7}
-D{i:12}D{i:13}
+    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}
 }
 ##^##*/
 

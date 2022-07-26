@@ -1,20 +1,23 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.15
+import QtQuick.Controls.Material 2.15
 
 Item {
     id: item1
     Rectangle {
         id: rectangle
-        color: "#ffffff"
+        color: "#004f90"
         anchors.fill: parent
 
         Button {
-            id: button
-            x: 1025
-            y: 976
-            width: 247
-            height: 40
-            text: qsTr("Exit")
+            x: 948
+            y: 936
+            width: 324
+            height: 80
+            text: qsTr("Выход")
+            font.pointSize: 14
+            Material.background: Material.Blue
+            highlighted: true
             onClicked: {
                 stackView.push(Qt.resolvedUrl("index.qml"))
             }
@@ -24,7 +27,7 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}D{i:1}
+    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}
 }
 ##^##*/
 
