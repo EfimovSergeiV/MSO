@@ -88,7 +88,7 @@ Rectangle {
         text: qsTr("Настройка датчиков")
         horizontalAlignment: Text.AlignRight
         verticalAlignment: Text.AlignVCenter
-        font.pointSize: 16
+        font.pointSize: 14
     }
 
     TextField {
@@ -557,7 +557,7 @@ Rectangle {
 
 /*##^##
 Designer {
-    D{i:0;formeditorZoom:0.75}D{i:33}
+    D{i:0;formeditorZoom:0.75}
 }
 ##^##*/
 
