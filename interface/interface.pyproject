@@ -14,6 +14,11 @@
         "src/controls/keyboard/KeyButton.qml",
         "src/controls/StepperBtn.qml",
         "src/pages/sections/ProgrammSection.qml",
-        "src/pages/sections/CorrectorSection.qml"
+        "src/pages/sections/CorrectorSection.qml",
+        "src/pages/sections/ReflowSection.qml",
+        "src/pages/sections/PreheatingSection.qml",
+        "src/pages/sections/BurningSection.qml",
+        "src/pages/sections/OtherSection.qml",
+        "src/pages/sections/SensorSection.qml"
         ]
 }
