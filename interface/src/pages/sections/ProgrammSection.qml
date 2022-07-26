@@ -17,7 +17,7 @@ Rectangle {
     x: 0
     y: 0
     width: 1264
-    height: 504
+    height: 490
     color: "#50000000"
     radius: 5
     visible: true
@@ -55,7 +55,7 @@ Rectangle {
         x: 8
         y: 113
         width: 1248
-        height: 374
+        height: 357
         color: "#ffffff"
         radius: 3
 
@@ -64,7 +64,7 @@ Rectangle {
             x: 6
             y: 7
             width: 1234
-            height: 359
+            height: 341
             placeholderText: qsTr("Описание программы")
         }
     }
@@ -167,7 +167,7 @@ Rectangle {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:0.66;height:504;width:1264}
+    D{i:0;formeditorZoom:0.66;height:490;width:1264}
 }
 ##^##*/
 

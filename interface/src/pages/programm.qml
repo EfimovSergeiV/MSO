@@ -52,6 +52,7 @@ Item {
             id: programmSec
             x: 8
             y: 8
+            height: 490
             visible: true
         }
 
@@ -59,6 +60,7 @@ Item {
             id: burningSec
             x: 8
             y: 8
+            height: 490
             visible: false
         }
 
@@ -73,6 +75,7 @@ Item {
             id: sensorSec
             x: 8
             y: 8
+            height: 490
             visible: false
         }
 
@@ -80,6 +83,7 @@ Item {
             id: reflowSec
             x: 8
             y: 8
+            height: 490
             visible: false
         }
 
@@ -87,6 +91,7 @@ Item {
             id: preheatingSec
             x: 8
             y: 8
+            height: 490
             visible: false
         }
 
@@ -94,16 +99,18 @@ Item {
             id: otherSec
             x: 8
             y: 8
+            width: 1264
+            height: 490
             visible: false
         }
 
         Button {
             x: 8
-            y: 520
+            y: 504
             width: 200
             height: 60
             text: "Программа"
-            font.pointSize: 14
+            font.pointSize: 12
             Material.background: Material.Blue
             highlighted: true
             onClicked: {
@@ -113,12 +120,12 @@ Item {
 
         Button {
             x: 231
-            y: 520
+            y: 504
             width: 200
             height: 60
             text: qsTr("Корректор")
             Material.background: Material.Blue
-            font.pointSize: 14
+            font.pointSize: 12
             highlighted: true
             onClicked: {
                 changeRectangle(correctorSec)
@@ -127,12 +134,12 @@ Item {
 
         Button {
             x: 452
-            y: 520
+            y: 504
             width: 200
             height: 60
             text: qsTr("Оплавление")
             Material.background: Material.Blue
-            font.pointSize: 14
+            font.pointSize: 12
             highlighted: true
             onClicked: {
                 changeRectangle(reflowSec)
@@ -141,12 +148,12 @@ Item {
 
         Button {
             x: 671
-            y: 520
+            y: 504
             width: 200
             height: 60
             text: qsTr("Подогрев")
             Material.background: Material.Blue
-            font.pointSize: 14
+            font.pointSize: 12
             highlighted: true
             onClicked: {
                 changeRectangle(preheatingSec)
@@ -155,12 +162,12 @@ Item {
 
         Button {
             x: 561
-            y: 586
+            y: 570
             width: 310
             height: 60
             text: qsTr("Параметры цикла сварки")
             Material.background: Material.Blue
-            font.pointSize: 14
+            font.pointSize: 12
             highlighted: true
             onClicked: {
                 changeRectangle(otherSec)
@@ -169,12 +176,12 @@ Item {
 
         Button {
             x: 1072
-            y: 520
+            y: 504
             width: 200
             height: 60
             text: qsTr("Выйти")
-            Material.background: Material.Blue
-            font.pointSize: 14
+            Material.background: Material.DeepOrange
+            font.pointSize: 12
             highlighted: true
             onClicked: {
                 stackView.push(Qt.resolvedUrl("programms.qml"))
@@ -183,12 +190,12 @@ Item {
 
         Button {
             x: 8
-            y: 586
+            y: 570
             width: 200
             height: 60
             text: qsTr("Выжигание")
             Material.background: Material.Blue
-            font.pointSize: 14
+            font.pointSize: 12
             highlighted: true
             onClicked: {
                 changeRectangle(burningSec)
@@ -197,12 +204,12 @@ Item {
 
         Button {
             x: 231
-            y: 586
+            y: 570
             width: 310
             height: 60
             text: qsTr("Настройка датчиков")
             Material.background: Material.Blue
-            font.pointSize: 14
+            font.pointSize: 12
             highlighted: true
             onClicked: {
                 changeRectangle(sensorSec)
@@ -211,12 +218,12 @@ Item {
 
         Button {
             x: 1072
-            y: 586
+            y: 570
             width: 200
             height: 60
             text: qsTr("Сохранить")
             Material.background: Material.Blue
-            font.pointSize: 14
+            font.pointSize: 12
             highlighted: true
             onClicked: {
                 handler.save_programm(item1.programm)

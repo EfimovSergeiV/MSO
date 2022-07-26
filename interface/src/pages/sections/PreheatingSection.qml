@@ -26,7 +26,7 @@ Rectangle {
     x: 0
     y: 0
     width: 1264
-    height: 504
+    height: 490
     color: "#50000000"
     radius: 5
     visible: true
@@ -64,6 +64,11 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
+                color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: ph1.focus = true
@@ -89,6 +94,11 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
+                color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: ph2.focus = true
@@ -114,6 +124,11 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
+                color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: ph3.focus = true
@@ -139,6 +154,11 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
+                color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: ph4.focus = true
@@ -164,6 +184,11 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
+                color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: ph5.focus = true
@@ -189,6 +214,11 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
+                color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: ph6.focus = true
@@ -214,6 +244,11 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
+                color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: ph7.focus = true
@@ -239,6 +274,11 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
+                color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: ph8.focus = true
@@ -264,6 +304,11 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
+                color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: ph9.focus = true
@@ -289,6 +334,11 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
+                color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: ph10.focus = true
@@ -314,6 +364,11 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
+                color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: ph11.focus = true
@@ -339,6 +394,11 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
+                color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: ph12.focus = true
@@ -364,6 +424,11 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
+                color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: {

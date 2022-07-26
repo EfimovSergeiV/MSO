@@ -43,7 +43,7 @@ Rectangle {
     x: 0
     y: 0
     width: 1264
-    height: 504
+    height: 490
     visible: true
     color: "#50000000"
     radius: 5
@@ -63,8 +63,8 @@ Rectangle {
 
     TextField {
         id: minPositionSensor
-        x: 142
-        y: 155
+        x: 8
+        y: 87
         width: 141
         height: 40
         color: "#ffffff"
@@ -79,35 +79,22 @@ Rectangle {
     }
 
     Label {
-        id: label80
-        x: 489
-        y: 155
-        width: 90
-        height: 40
-        color: "#ffffff"
-        text: ", мм"
-        horizontalAlignment: Text.AlignLeft
-        verticalAlignment: Text.AlignVCenter
-        font.pointSize: 14
-    }
-
-    Label {
         id: label81
-        x: 8
+        x: 652
         y: 8
         width: 604
         height: 30
         color: "#ffffff"
         text: qsTr("Настройка датчиков")
-        horizontalAlignment: Text.AlignLeft
+        horizontalAlignment: Text.AlignRight
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 16
     }
 
     TextField {
         id: maxPositionSensor
-        x: 336
-        y: 155
+        x: 201
+        y: 87
         width: 141
         height: 40
         color: "#ffffff"
@@ -123,8 +110,8 @@ Rectangle {
 
     TextField {
         id: minPrimaryVoltageSensor
-        x: 141
-        y: 263
+        x: 8
+        y: 271
         width: 141
         height: 40
         color: "#ffffff"
@@ -138,23 +125,10 @@ Rectangle {
         onAccepted: maxPrimaryVoltageSensor.focus = true
     }
 
-    Label {
-        id: label83
-        x: 482
-        y: 263
-        width: 90
-        height: 40
-        color: "#ffffff"
-        text: ", В"
-        horizontalAlignment: Text.AlignLeft
-        verticalAlignment: Text.AlignVCenter
-        font.pointSize: 14
-    }
-
     TextField {
         id: maxPrimaryVoltageSensor
-        x: 335
-        y: 263
+        x: 201
+        y: 271
         width: 141
         height: 40
         color: "#ffffff"
@@ -170,8 +144,8 @@ Rectangle {
 
     Label {
         id: label84
-        x: 289
-        y: 263
+        x: 156
+        y: 271
         width: 40
         height: 40
         color: "#ffffff"
@@ -183,8 +157,8 @@ Rectangle {
 
     TextField {
         id: minPKPressureMeterSensor
-        x: 142
-        y: 350
+        x: 8
+        y: 179
         width: 141
         height: 40
         color: "#ffffff"
@@ -198,23 +172,10 @@ Rectangle {
         onAccepted: maxPKPressureMeterSensor.focus = true
     }
 
-    Label {
-        id: label86
-        x: 489
-        y: 350
-        width: 90
-        height: 40
-        color: "#ffffff"
-        text: ", Бар"
-        horizontalAlignment: Text.AlignLeft
-        verticalAlignment: Text.AlignVCenter
-        font.pointSize: 14
-    }
-
     TextField {
         id: maxPKPressureMeterSensor
-        x: 336
-        y: 350
+        x: 201
+        y: 179
         width: 141
         height: 40
         color: "#ffffff"
@@ -230,8 +191,8 @@ Rectangle {
 
     Label {
         id: label87
-        x: 289
-        y: 350
+        x: 155
+        y: 179
         width: 40
         height: 40
         color: "#ffffff"
@@ -243,8 +204,8 @@ Rectangle {
 
     TextField {
         id: minHydraulicPressureSensor
-        x: 141
-        y: 448
+        x: 8
+        y: 317
         width: 141
         height: 40
         color: "#ffffff"
@@ -258,23 +219,10 @@ Rectangle {
         onAccepted: maxHydraulicPressureSensor.focus = true
     }
 
-    Label {
-        id: label89
-        x: 482
-        y: 448
-        width: 90
-        height: 40
-        color: "#ffffff"
-        text: ", Бар"
-        horizontalAlignment: Text.AlignLeft
-        verticalAlignment: Text.AlignVCenter
-        font.pointSize: 14
-    }
-
     TextField {
         id: maxHydraulicPressureSensor
-        x: 334
-        y: 448
+        x: 201
+        y: 317
         width: 141
         height: 40
         color: "#ffffff"
@@ -290,8 +238,8 @@ Rectangle {
 
     Label {
         id: label90
-        x: 288
-        y: 448
+        x: 155
+        y: 317
         width: 40
         height: 40
         color: "#ffffff"
@@ -303,8 +251,8 @@ Rectangle {
 
     TextField {
         id: minCurrentSensor
-        x: 787
-        y: 155
+        x: 8
+        y: 133
         width: 141
         height: 40
         color: "#ffffff"
@@ -318,23 +266,10 @@ Rectangle {
         onAccepted: maxCurrentSensor.focus = true
     }
 
-    Label {
-        id: label92
-        x: 1127
-        y: 155
-        width: 90
-        height: 40
-        color: "#ffffff"
-        text: ", А"
-        horizontalAlignment: Text.AlignLeft
-        verticalAlignment: Text.AlignVCenter
-        font.pointSize: 14
-    }
-
     TextField {
         id: maxCurrentSensor
-        x: 980
-        y: 155
+        x: 201
+        y: 133
         width: 141
         height: 40
         color: "#ffffff"
@@ -350,8 +285,8 @@ Rectangle {
 
     Label {
         id: label93
-        x: 934
-        y: 155
+        x: 155
+        y: 133
         width: 40
         height: 40
         color: "#ffffff"
@@ -363,8 +298,8 @@ Rectangle {
 
     TextField {
         id: minSedimentPressureSensor
-        x: 787
-        y: 263
+        x: 8
+        y: 363
         width: 141
         height: 40
         color: "#ffffff"
@@ -378,23 +313,10 @@ Rectangle {
         onAccepted: maxSedimentPressureSensor.focus = true
     }
 
-    Label {
-        id: label94
-        x: 1127
-        y: 263
-        width: 90
-        height: 40
-        color: "#ffffff"
-        text: ",Бар"
-        horizontalAlignment: Text.AlignLeft
-        verticalAlignment: Text.AlignVCenter
-        font.pointSize: 14
-    }
-
     TextField {
         id: maxSedimentPressureSensor
-        x: 980
-        y: 263
+        x: 201
+        y: 363
         width: 141
         height: 40
         color: "#ffffff"
@@ -410,8 +332,8 @@ Rectangle {
 
     Label {
         id: label95
-        x: 934
-        y: 263
+        x: 155
+        y: 363
         width: 40
         height: 40
         color: "#ffffff"
@@ -423,86 +345,86 @@ Rectangle {
 
     Label {
         id: label99
-        x: 7
-        y: 112
-        width: 604
-        height: 30
+        x: 355
+        y: 87
+        width: 258
+        height: 40
         color: "#ffffff"
-        text: qsTr("Датчик положения")
-        horizontalAlignment: Text.AlignHCenter
+        text: qsTr("Датчик положения, мм")
+        horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
     }
 
     Label {
         id: label100
-        x: 8
-        y: 220
-        width: 604
-        height: 30
+        x: 355
+        y: 271
+        width: 396
+        height: 40
         color: "#ffffff"
-        text: qsTr("Датчик напряжения первичной обмотки")
-        horizontalAlignment: Text.AlignHCenter
+        text: qsTr("Датчик напряжения первичной обмотки, В")
+        horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
     }
 
     Label {
         id: label85
-        x: 8
-        y: 314
-        width: 604
-        height: 30
+        x: 355
+        y: 179
+        width: 258
+        height: 40
         color: "#ffffff"
-        text: qsTr("Датчик давления ПК")
-        horizontalAlignment: Text.AlignHCenter
+        text: qsTr("Датчик давления ПК, Бар")
+        horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
     }
 
     Label {
         id: label101
-        x: 7
-        y: 412
-        width: 604
-        height: 30
+        x: 355
+        y: 317
+        width: 396
+        height: 40
         color: "#ffffff"
-        text: qsTr("Датчик давления Гидростанции")
-        horizontalAlignment: Text.AlignHCenter
+        text: qsTr("Датчик давления Гидростанции, Бар")
+        horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
     }
 
     Label {
         id: label102
-        x: 643
-        y: 112
-        width: 613
-        height: 30
+        x: 355
+        y: 133
+        width: 258
+        height: 40
         color: "#ffffff"
-        text: qsTr("Датчик тока")
-        horizontalAlignment: Text.AlignHCenter
+        text: qsTr("Датчик тока, А")
+        horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
     }
 
     Label {
         id: label103
-        x: 643
-        y: 220
-        width: 613
-        height: 30
+        x: 355
+        y: 363
+        width: 337
+        height: 40
         color: "#ffffff"
-        text: qsTr("Датчик давления осадки")
-        horizontalAlignment: Text.AlignHCenter
+        text: qsTr("Датчик давления осадки, Бар")
+        horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
     }
 
     TextField {
         id: minNKPressureMeterSensor
-        x: 787
-        y: 350
+        x: 8
+        y: 225
         width: 141
         height: 40
         color: "#ffffff"
@@ -516,23 +438,10 @@ Rectangle {
         onAccepted: maxNKPressureMeterSensor.focus = true
     }
 
-    Label {
-        id: label88
-        x: 1127
-        y: 350
-        width: 90
-        height: 40
-        color: "#ffffff"
-        text: ", Бар"
-        horizontalAlignment: Text.AlignLeft
-        verticalAlignment: Text.AlignVCenter
-        font.pointSize: 14
-    }
-
     TextField {
         id: maxNKPressureMeterSensor
-        x: 980
-        y: 350
+        x: 201
+        y: 225
         width: 141
         height: 40
         color: "#ffffff"
@@ -548,8 +457,8 @@ Rectangle {
 
     Label {
         id: label91
-        x: 934
-        y: 350
+        x: 155
+        y: 225
         width: 40
         height: 40
         color: "#ffffff"
@@ -561,25 +470,12 @@ Rectangle {
 
     Label {
         id: label104
-        x: 643
-        y: 314
-        width: 604
-        height: 30
-        color: "#ffffff"
-        text: qsTr("Датчик давления НК")
-        horizontalAlignment: Text.AlignHCenter
-        verticalAlignment: Text.AlignVCenter
-        font.pointSize: 14
-    }
-
-    Label {
-        id: label105
-        x: 1127
-        y: 448
-        width: 90
+        x: 355
+        y: 225
+        width: 258
         height: 40
         color: "#ffffff"
-        text: ", С"
+        text: qsTr("Датчик давления НК, Бар")
         horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
@@ -587,8 +483,8 @@ Rectangle {
 
     Label {
         id: label106
-        x: 934
-        y: 448
+        x: 155
+        y: 409
         width: 40
         height: 40
         color: "#ffffff"
@@ -600,8 +496,8 @@ Rectangle {
 
     TextField {
         id: minOilTemperatureSensor
-        x: 787
-        y: 448
+        x: 8
+        y: 409
         width: 141
         height: 40
         color: "#ffffff"
@@ -617,8 +513,8 @@ Rectangle {
 
     TextField {
         id: maxOilTemperatureSensor
-        x: 980
-        y: 448
+        x: 201
+        y: 409
         width: 141
         height: 40
         color: "#ffffff"
@@ -634,21 +530,21 @@ Rectangle {
 
     Label {
         id: label107
-        x: 643
-        y: 412
-        width: 613
-        height: 30
+        x: 355
+        y: 409
+        width: 337
+        height: 40
         color: "#ffffff"
-        text: qsTr("Датчик температуры масла")
-        horizontalAlignment: Text.AlignHCenter
+        text: qsTr("Датчик температуры масла, Бар")
+        horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
     }
 
     Label {
         id: label82
-        x: 289
-        y: 155
+        x: 155
+        y: 87
         width: 40
         height: 40
         color: "#ffffff"
@@ -661,7 +557,7 @@ Rectangle {
 
 /*##^##
 Designer {
-    D{i:0;formeditorZoom:0.75}D{i:41}
+    D{i:0;formeditorZoom:0.75}D{i:33}
 }
 ##^##*/
 
