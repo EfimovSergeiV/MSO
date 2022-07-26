@@ -6,6 +6,22 @@ Rectangle {
     property bool hide: false
     property bool show: false
 
+    property var datastruct: {
+        "ph_0": ph0.text,
+        "ph_1": ph1.text,
+        "ph_2": ph2.text,
+        "ph_3": ph3.text,
+        "ph_4": ph4.text,
+        "ph_5": ph5.text,
+        "ph_6": ph6.text,
+        "ph_7": ph7.text,
+        "ph_8": ph8.text,
+        "ph_9": ph9.text,
+        "ph_10": ph10.text,
+        "ph_11": ph11.text,
+        "ph_12": ph12.text
+    }
+
     id: rectangle11
     x: 0
     y: 0

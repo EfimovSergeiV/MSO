@@ -6,6 +6,27 @@ Rectangle {
     property bool hide: false
     property bool show: false
 
+    property var datastruct: {
+        "oth_0": oth0.text,
+        "oth_1": oth1.text,
+        "oth_2": oth2.text,
+        "oth_3": oth3.text,
+        "oth_4": oth4.text,
+        "oth_5": oth5.text,
+        "oth_6": oth6.text,
+        "oth_7": oth7.text,
+        "oth_8": oth8.text,
+        "oth_9": oth9.text,
+        "oth_10": oth10.text,
+        "oth_11": oth11.text,
+        "oth_12": oth12.text,
+        "oth_13": oth13.text,
+        "oth_14": oth14.text,
+        "oth_15": oth15.text,
+        "oth_16": oth16.text,
+        "oth_17": oth17.text
+    }
+
     id: rectangle13
     x: 6432
     y: 8

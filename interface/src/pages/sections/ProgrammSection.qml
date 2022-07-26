@@ -6,6 +6,13 @@ Rectangle {
     property bool hide: false
     property bool show: false
 
+    property var datastruct: {
+        "name": programmName.text,
+        "description": programmDescription.text,
+        "max_diameter": maxDiameter.text,
+        "min_diameter": minDiameter.text
+    }
+
     id: programmRectangle
     x: 0
     y: 0

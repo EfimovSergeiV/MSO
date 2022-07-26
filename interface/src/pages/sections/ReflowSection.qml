@@ -6,6 +6,68 @@ Rectangle {
     property bool hide: false
     property bool show: false
 
+    property var datastruct: [{
+            "r_0": sec0r0.text,
+            "r_1": sec0r1.text,
+            "r_2": sec0r2.text,
+            "r_3": sec0r3.text,
+            "section": 0
+        }, {
+            "r_0": sec1r0.text,
+            "r_1": sec1r1.text,
+            "r_2": sec1r2.text,
+            "r_3": sec1r3.text,
+            "section": 1
+        }, {
+            "r_0": sec2r0.text,
+            "r_1": sec2r1.text,
+            "r_2": sec2r2.text,
+            "r_3": sec2r3.text,
+            "section": 2
+        }, {
+            "r_1": sec3r1.text,
+            "r_2": sec3r2.text,
+            "r_3": sec3r3.text,
+            "r_0": sec3r0.text,
+            "section": 3
+        }, {
+            "r_0": sec4r0.text,
+            "r_1": sec4r1.text,
+            "r_2": sec4r2.text,
+            "r_3": sec4r3.text,
+            "section": 4
+        }, {
+            "r_0": sec5r0.text,
+            "r_1": sec5r1.text,
+            "r_2": sec5r2.text,
+            "r_3": sec5r3.text,
+            "section": 5
+        }, {
+            "r_0": sec6r0.text,
+            "r_1": sec6r1.text,
+            "r_2": sec6r2.text,
+            "r_3": sec6r3.text,
+            "section": 6
+        }, {
+            "r_0": sec7r0.text,
+            "r_1": sec7r1.text,
+            "r_2": sec7r2.text,
+            "r_3": sec7r3.text,
+            "section": 7
+        }, {
+            "r_0": sec8r0.text,
+            "r_1": sec8r1.text,
+            "r_2": sec8r2.text,
+            "r_3": sec8r3.text,
+            "section": 8
+        }, {
+            "r_0": sec9r0.text,
+            "r_1": sec9r1.text,
+            "r_2": sec9r2.text,
+            "r_3": sec9r3.text,
+            "section": 9
+        }]
+
     id: reflowRectangle
     x: 0
     y: 0

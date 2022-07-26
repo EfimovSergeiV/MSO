@@ -6,6 +6,27 @@ Rectangle {
     property bool hide: false
     property bool show: false
 
+    property var datastruct: {
+        "b_0": b0.text,
+        "b_1": b1.text,
+        "b_2": b2.text,
+        "b_3": b3.text,
+        "b_4": b4.text,
+        "b_5": b5.text,
+        "b_6": b6.text,
+        "b_7": b7.text
+    }
+
+    property var datastructcl: {
+        "cl_0": cl0.text,
+        "cl_1": cl1.text,
+        "cl_2": cl2.text,
+        "cl_3": cl3.text,
+        "cl_4": cl4.text,
+        "cl_5": cl5.text,
+        "cl_6": cl6.text
+    }
+
     id: rectangle12
     x: 5143
     y: 8

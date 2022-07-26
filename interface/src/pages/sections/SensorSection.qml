@@ -6,6 +6,39 @@ Rectangle {
     property bool hide: false
     property bool show: false
 
+    property var sedimentpressuresensormodel: {
+        "min_value": minSedimentPressureSensor.text,
+        "max_value": maxSedimentPressureSensor.text
+    }
+    property var primaryvoltagesensormodel: {
+        "min_value": minPrimaryVoltageSensor.text,
+        "max_value": maxPrimaryVoltageSensor.text
+    }
+    property var positionsensormodel: {
+        "min_value": minPositionSensor.text,
+        "max_value": maxPositionSensor.text
+    }
+    property var pkpressuremetersensormodel: {
+        "min_value": minPKPressureMeterSensor.text,
+        "max_value": maxPKPressureMeterSensor.text
+    }
+    property var oiltemperaturesensormodel: {
+        "min_value": minOilTemperatureSensor.text,
+        "max_value": maxOilTemperatureSensor.text
+    }
+    property var nkpressuremetersensormodel: {
+        "min_value": minNKPressureMeterSensor.text,
+        "max_value": maxNKPressureMeterSensor.text
+    }
+    property var hydraulicpressuresensormodel: {
+        "min_value": minHydraulicPressureSensor.text,
+        "max_value": maxHydraulicPressureSensor.text
+    }
+    property var currentsensormodel: {
+        "min_value": minCurrentSensor.text,
+        "max_value": maxCurrentSensor.text
+    }
+
     id: rectangle14
     x: 0
     y: 0

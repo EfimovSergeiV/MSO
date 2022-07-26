@@ -6,6 +6,68 @@ Rectangle {
     property bool hide: false
     property bool show: false
 
+    property var datastruct: [{
+            "c_0": sec0c0.text,
+            "c_1": sec0c1.text,
+            "c_2": sec0c2.text,
+            "c_3": sec0c3.text,
+            "section": 0
+        }, {
+            "c_0": sec1c0.text,
+            "c_1": sec1c1.text,
+            "c_2": sec1c2.text,
+            "c_3": sec1c3.text,
+            "section": 1
+        }, {
+            "c_0": sec2c0.text,
+            "c_1": sec2c1.text,
+            "c_2": sec2c2.text,
+            "c_3": sec2c3.text,
+            "section": 2
+        }, {
+            "c_1": sec3c1.text,
+            "c_2": sec3c2.text,
+            "c_3": sec3c3.text,
+            "c_0": sec3c0.text,
+            "section": 3
+        }, {
+            "c_0": sec4c0.text,
+            "c_1": sec4c1.text,
+            "c_2": sec4c2.text,
+            "c_3": sec4c3.text,
+            "section": 4
+        }, {
+            "c_0": sec5c0.text,
+            "c_1": sec5c1.text,
+            "c_2": sec5c2.text,
+            "c_3": sec5c3.text,
+            "section": 5
+        }, {
+            "c_0": sec6c0.text,
+            "c_1": sec6c1.text,
+            "c_2": sec6c2.text,
+            "c_3": sec6c3.text,
+            "section": 6
+        }, {
+            "c_0": sec7c0.text,
+            "c_1": sec7c1.text,
+            "c_2": sec7c2.text,
+            "c_3": sec7c3.text,
+            "section": 7
+        }, {
+            "c_0": sec8c0.text,
+            "c_1": sec8c1.text,
+            "c_2": sec8c2.text,
+            "c_3": sec8c3.text,
+            "section": 8
+        }, {
+            "c_0": sec9c0.text,
+            "c_1": sec9c1.text,
+            "c_2": sec9c2.text,
+            "c_3": sec9c3.text,
+            "section": 9
+        }]
+
     id: correctorRectangle
     x: 0
     y: 0
@@ -650,3 +712,4 @@ Designer {
     D{i:0;formeditorZoom:0.66}
 }
 ##^##*/
+
