@@ -1,4 +1,5 @@
-import QtQuick 2.0
+import QtQuick 2.15
+import QtQuick.Window 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Controls.Material 2.15
 
@@ -8,6 +9,73 @@ Item {
         id: rectangle
         color: "#004f90"
         anchors.fill: parent
+
+        ScrollView {
+            id: scrollView
+            x: 4
+            y: 27
+            width: 1272
+            height: 518
+            ScrollBar.horizontal.interactive: false
+            ScrollBar.vertical.interactive: true
+
+            ListView {
+                id: showWeldingProgramm
+                x: 0
+                y: 0
+                width: 800
+                height: 480
+                focus: true
+                model: ListModel {
+                    id: listProgramms
+                }
+                delegate: Row {
+                    id: row1
+                    x: 8
+                    y: 62
+                    width: 784
+                    height: 60
+
+                    Button {
+                        width: 120
+                        height: 50
+                        text: qsTr("Выбрать")
+                        Material.background: Material.Blue
+                        font.pointSize: 12
+                        highlighted: true
+                        onClicked: {
+                            console.log(id)
+                            //                            bottomRect.running = !bottomRect.running
+                            //                            stackView.push(Qt.resolvedUrl("action.qml"))
+                        }
+                    }
+
+                    Label {
+                        id: label4
+                        text: name
+                        color: "#ffffff"
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        font.pointSize: 14
+                        font.bold: true
+                        width: 424
+                        height: 40
+                    }
+
+                    Label {
+                        id: label5
+                        text: max_diameter + " - " + min_diameter + ", mm"
+                        color: "#ffffff"
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        font.pointSize: 14
+                        font.bold: true
+                        width: 240
+                        height: 40
+                    }
+                }
+            }
+        }
 
         Button {
             x: 948
@@ -35,6 +103,21 @@ Item {
             onClicked: {
                 stackView.push(Qt.resolvedUrl("programm.qml"))
             }
+        }
+    }
+
+    Component.onCompleted: handler.get_welding_programm()
+
+    Connections {
+        target: handler
+
+        function onWeldingProgramms(wb) {
+            listProgramms.append(wb)
+            //            if (wb.lenght) {
+
+            //            } else {
+            //                notProgrammLabel.visible = true
+            //            }
         }
     }
 }

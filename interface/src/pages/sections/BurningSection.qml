@@ -89,7 +89,7 @@ Rectangle {
         text: qsTr("Параметры выжигания")
         horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
-        font.pointSize: 16
+        font.pointSize: 14
     }
 
     TextField {

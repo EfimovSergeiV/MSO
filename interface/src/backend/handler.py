@@ -1,8 +1,6 @@
 import time, logging
 from PySide2.QtCore import QObject, Signal, Slot, QThread
-# from .modules import charts, database
-# from .modules.database import Database
-from .modules.database import create_or_update
+from .modules.database import select_all, create
 from .modules import charts
 
 import json
@@ -14,6 +12,15 @@ class Handler(QObject):
     programmData = Signal(list)
     chartData = Signal(list)
     closeApplication = Signal()
+
+    weldingProgramms = Signal(list)
+    # Слоты
+    @Slot()
+    def get_welding_programm(self):
+        """ Получение программ сварки """
+        programm = select_all()
+        self.weldingProgramms.emit(programm)
+
 
 
     # Поток построения графиков
@@ -40,6 +47,8 @@ class Handler(QObject):
     def save_programm(self, data):
         json_formatted_str = json.dumps(data[0], ensure_ascii=False, indent=4)
         print('\nDATA:\n', json_formatted_str, '\n')
+        create(data[0])
+        
 
 
 

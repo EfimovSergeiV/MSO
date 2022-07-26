@@ -60,6 +60,21 @@ def select(id):
 
 
 
+def select_all():
+    result = []
+    conn = sqlite3.connect(f'{ BASE_DIR }/db.sqlite3')
+    conn.row_factory = dict_factory
+    cursor = conn.cursor()
+
+    table = "programm_programmmodel"
+    response = cursor.execute("SELECT * FROM %(table)s" % { "table": table, })
+    result = response.fetchall()
+
+    conn.close()
+    return result
+
+
+
 
 def create(data):
     json_formatted_str = json.dumps(data, ensure_ascii=False, indent=4)
@@ -387,6 +402,8 @@ data = {
     ]
 }
 
+
+# select_all()
 # select(id=105)
-# create(data)
-update(id=105)
+create(data)
+# update(id=105)

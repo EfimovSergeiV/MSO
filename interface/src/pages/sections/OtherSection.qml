@@ -89,7 +89,7 @@ Rectangle {
         text: qsTr("Параметры цикла сварки")
         horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
-        font.pointSize: 16
+        font.pointSize: 14
     }
 
     TextField {
