@@ -12,19 +12,19 @@ Item {
 
         ScrollView {
             id: scrollView
-            x: 8
-            y: 386
-            width: 1272
-            height: 518
+            x: 38
+            y: 91
+            width: 1205
+            height: 774
             ScrollBar.horizontal.interactive: false
             ScrollBar.vertical.interactive: true
 
             ListView {
                 id: showWeldingProgramm
-                x: 8
-                y: 450
-                width: 1264
-                height: 524
+                x: 0
+                y: 8
+                width: 1272
+                height: 510
                 focus: true
                 model: ListModel {
                     id: listProgramms
@@ -33,43 +33,93 @@ Item {
                     id: row1
                     x: 8
                     y: 62
-                    width: 784
+                    width: 1100
                     height: 60
 
-                    Button {
-                        width: 120
-                        height: 50
-                        text: qsTr("Выбрать")
-                        Material.background: Material.Blue
-                        font.pointSize: 12
-                        highlighted: true
-                        onClicked: {
-                            console.log(id)
-                            //                            bottomRect.running = !bottomRect.running
-                            //                            stackView.push(Qt.resolvedUrl("action.qml"))
+                    Rectangle {
+                        id: rectangle1
+                        x: 38
+                        y: 26
+                        width: 1147
+                        height: 70
+                        color: "#15000000"
+                        radius: 5
+
+                        Button {
+                            id: button
+                            x: 951
+                            y: 4
+                            width: 188
+                            height: 60
+                            text: qsTr("Удалить")
+                            highlighted: true
+                            Material.background: Material.Red
+                            onClicked: {
+                                console.log(id)
+                            }
                         }
-                    }
 
-                    Label {
-                        id: label4
-                        text: name
-                        color: "#ffffff"
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        font.pointSize: 14
-                        width: 424
-                        height: 40
-                    }
+                        Button {
+                            id: button1
+                            x: 762
+                            y: 4
+                            width: 183
+                            height: 60
+                            text: "Редактировать"
+                            highlighted: true
+                            Material.background: Material.Green
+                            onClicked: {
+                                console.log(id)
+                            }
+                        }
 
-                    Label {
-                        id: label5
-                        text: max_diameter + " - " + min_diameter + ", mm"
-                        color: "#ffffff"
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        font.pointSize: 14
-                        width: 240
-                        height: 40
+                        Label {
+                            id: label
+                            x: 7
+                            y: 5
+                            width: 460
+                            height: 60
+                            color: "#ffffff"
+                            text: name
+                            horizontalAlignment: Text.AlignLeft
+                            verticalAlignment: Text.AlignVCenter
+                        }
+
+                        Label {
+                            id: label1
+                            x: 473
+                            y: 4
+                            width: 120
+                            height: 60
+                            color: "#ffffff"
+                            text: max_diameter
+                            horizontalAlignment: Text.AlignRight
+                            verticalAlignment: Text.AlignVCenter
+                        }
+
+                        Label {
+                            id: label2
+                            x: 600
+                            y: 4
+                            width: 30
+                            height: 60
+                            color: "#ffffff"
+                            text: qsTr("-")
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                        }
+
+                        Label {
+                            id: label3
+                            x: 636
+                            y: 4
+                            width: 120
+                            height: 60
+                            color: "#ffffff"
+                            text: qsTr(min_diameter + " (мм)")
+                            horizontalAlignment: Text.AlignLeft
+                            verticalAlignment: Text.AlignVCenter
+                        }
                     }
                 }
             }
@@ -102,87 +152,6 @@ Item {
                 stackView.push(Qt.resolvedUrl("programm.qml"))
             }
         }
-
-        Rectangle {
-            id: rectangle1
-            x: 8
-            y: 8
-            width: 1264
-            height: 70
-            color: "#15000000"
-            radius: 5
-
-            Button {
-                id: button
-                x: 1068
-                y: 4
-                width: 188
-                height: 60
-                text: qsTr("Удалить")
-                highlighted: true
-                Material.background: Material.Red
-            }
-
-            Button {
-                id: button1
-                x: 879
-                y: 4
-                width: 183
-                height: 60
-                text: "Редактировать"
-                rotation: 0
-                highlighted: true
-                Material.background: Material.Green
-            }
-
-            Label {
-                id: label
-                x: 12
-                y: 4
-                width: 533
-                height: 60
-                color: "#ffffff"
-                text: qsTr("Label")
-                horizontalAlignment: Text.AlignLeft
-                verticalAlignment: Text.AlignVCenter
-            }
-
-            Label {
-                id: label1
-                x: 551
-                y: 4
-                width: 140
-                height: 60
-                color: "#ffffff"
-                text: qsTr("Label")
-                horizontalAlignment: Text.AlignRight
-                verticalAlignment: Text.AlignVCenter
-            }
-
-            Label {
-                id: label2
-                x: 697
-                y: 4
-                width: 30
-                height: 60
-                color: "#ffffff"
-                text: qsTr("-")
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-            }
-
-            Label {
-                id: label3
-                x: 733
-                y: 4
-                width: 140
-                height: 60
-                color: "#ffffff"
-                text: qsTr("Label")
-                horizontalAlignment: Text.AlignLeft
-                verticalAlignment: Text.AlignVCenter
-            }
-        }
     }
 
     Component.onCompleted: handler.get_welding_programm()
@@ -203,7 +172,7 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:3;height:1024;width:1280}
+    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}
 }
 ##^##*/
 

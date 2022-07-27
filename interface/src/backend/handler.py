@@ -13,6 +13,7 @@ class Handler(QObject):
     chartData = Signal(list)
     closeApplication = Signal()
 
+
     weldingProgramms = Signal(list)
     # Слоты
     @Slot()
