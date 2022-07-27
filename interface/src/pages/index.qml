@@ -1,4 +1,5 @@
 import QtQuick 2.15
+import QtQuick.Dialogs 1.3
 import QtQuick.Controls 2.15
 import QtQuick.Controls.Material 2.15
 import QtQuick.Extras 1.4
@@ -6,12 +7,69 @@ import QtQuick.Extras 1.4
 Item {
     id: indexPage
 
+    property bool truePass: false
+
+    function verifyPassword(password) {
+        console.log(password)
+        if (password === "123456") {
+            indexPage.truePass = true
+            testDialog.close()
+        } else {
+            console.log("NOVALID PASSWORD")
+        }
+    }
+
     Rectangle {
         id: rectangle
         x: 0
         y: 0
         anchors.fill: parent
         color: "#004f90"
+
+        Dialog {
+            id: testDialog
+            title: "Введите пароль"
+            standardButtons: Dialog.Cancel
+            //// CRUNCH
+            //            anchors.centerIn: parent
+            x: 340
+            y: 100
+            implicitWidth: 600
+            implicitHeight: 400
+            modal: true
+
+            header: {
+                color: "#000000"
+            }
+
+            contentItem: Rectangle {
+                id: rectangle8
+                x: 432
+                y: 438
+                width: 600
+                height: 400
+                color: "#ffffff"
+
+                TextField {
+                    id: textField
+                    x: 8
+                    y: 180
+                    width: 402
+                    height: 40
+                    placeholderText: qsTr("Введите пароль")
+                }
+
+                Button {
+                    id: button2
+                    x: 416
+                    y: 180
+                    width: 150
+                    height: 60
+                    text: "Ввести"
+                    onClicked: verifyPassword(textField.text)
+                }
+            }
+        }
 
         Rectangle {
             id: rectangle1
@@ -345,7 +403,11 @@ Item {
                 Material.background: Material.Blue
                 highlighted: true
                 onClicked: {
-                    stackView.push(Qt.resolvedUrl("programms.qml"))
+                    if (indexPage.truePass) {
+                        stackView.push(Qt.resolvedUrl("programms.qml"))
+                    } else {
+                        testDialog.open()
+                    }
                 }
             }
 
@@ -359,7 +421,11 @@ Item {
                 Material.background: Material.Blue
                 highlighted: true
                 onClicked: {
-                    stackView.push(Qt.resolvedUrl("settings.qml"))
+                    if (indexPage.truePass) {
+                        stackView.push(Qt.resolvedUrl("settings.qml"))
+                    } else {
+                        testDialog.open()
+                    }
                 }
             }
         }
@@ -401,7 +467,7 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:1.1;height:1024;width:1280}D{i:23}
+    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}
 }
 ##^##*/
 
