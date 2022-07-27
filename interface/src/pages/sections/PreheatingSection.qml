@@ -64,7 +64,7 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
-                color: "#ffffff"
+        color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
@@ -94,7 +94,7 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
-                color: "#ffffff"
+        color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
@@ -124,7 +124,7 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
-                color: "#ffffff"
+        color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
@@ -154,7 +154,7 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
-                color: "#ffffff"
+        color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
@@ -184,7 +184,7 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
-                color: "#ffffff"
+        color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
@@ -214,7 +214,7 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
-                color: "#ffffff"
+        color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
@@ -244,7 +244,7 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
-                color: "#ffffff"
+        color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
@@ -274,7 +274,7 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
-                color: "#ffffff"
+        color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
@@ -304,7 +304,7 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
-                color: "#ffffff"
+        color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
@@ -334,7 +334,7 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
-                color: "#ffffff"
+        color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
@@ -364,7 +364,7 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
-                color: "#ffffff"
+        color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
@@ -394,7 +394,7 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
-                color: "#ffffff"
+        color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
@@ -424,7 +424,7 @@ Rectangle {
         width: 141
         height: 40
         placeholderText: qsTr("0")
-                color: "#ffffff"
+        color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
