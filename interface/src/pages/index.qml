@@ -252,7 +252,7 @@ Item {
                             width: 292
                             height: 60
                             color: "#ffffff"
-                            text: "Программа сварки 12"
+                            text: name
                             verticalAlignment: Text.AlignVCenter
                             font.pointSize: 14
                         }
@@ -264,7 +264,7 @@ Item {
                             width: 95
                             height: 60
                             color: "#ffffff"
-                            text: "10"
+                            text: min_diameter
                             horizontalAlignment: Text.AlignRight
                             verticalAlignment: Text.AlignVCenter
                             font.pointSize: 14
@@ -290,7 +290,7 @@ Item {
                             width: 95
                             height: 60
                             color: "#ffffff"
-                            text: "20"
+                            text: max_diameter
                             horizontalAlignment: Text.AlignLeft
                             verticalAlignment: Text.AlignVCenter
                             font.pointSize: 14
@@ -323,9 +323,9 @@ Item {
                 Label {
                     id: label5
                     x: 0
-                    y: 0
-                    width: 406
-                    height: 70
+                    y: 5
+                    width: 259
+                    height: 60
                     color: "#ffffff"
                     text: qsTr("Название программы")
                     horizontalAlignment: Text.AlignHCenter
@@ -335,15 +335,38 @@ Item {
 
                 Label {
                     id: label9
-                    x: 412
-                    y: 0
-                    width: 490
-                    height: 70
+                    x: 265
+                    y: 5
+                    width: 272
+                    height: 60
                     color: "#ffffff"
                     text: qsTr("Допустимые диаметры")
-                    horizontalAlignment: Text.AlignLeft
+                    horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     font.styleName: "Light"
+                }
+
+                TextField {
+                    id: textField1
+                    x: 543
+                    y: 5
+                    width: 174
+                    height: 60
+                    color: "#ffffff"
+                    horizontalAlignment: Text.AlignHCenter
+                    placeholderTextColor: "#81ffffff"
+                    placeholderText: qsTr("Диаметр")
+                }
+
+                Button {
+                    id: button1
+                    x: 734
+                    y: 5
+                    width: 160
+                    height: 60
+                    text: "Найти"
+                    highlighted: true
+                    Material.background: Material.Teal
                 }
             }
             Rectangle {
@@ -367,6 +390,72 @@ Item {
                 verticalAlignment: Text.AlignVCenter
                 font.weight: Font.Light
                 font.pointSize: 14
+            }
+
+            Rectangle {
+                id: rectangle9
+                x: 8
+                y: 794
+                width: 902
+                height: 206
+                radius: 5
+                color: "#1bffffff"
+
+                Label {
+                    id: label8
+                    x: 8
+                    y: 8
+                    width: 143
+                    height: 26
+                    color: "#ffffff"
+                    text: "Выбрана програма:"
+                    verticalAlignment: Text.AlignVCenter
+                }
+
+                Label {
+                    id: label10
+                    x: 157
+                    y: 8
+                    width: 521
+                    height: 26
+                    color: "#ffffff"
+                    text: "Название программы"
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                }
+
+                Label {
+                    id: label11
+                    x: 684
+                    y: 8
+                    width: 210
+                    height: 26
+                    color: "#ffffff"
+                    text: qsTr("10 - 20 мм")
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                }
+
+                TextArea {
+                    id: textArea
+                    x: 8
+                    y: 71
+                    width: 670
+                    height: 127
+                    color: "#ffffff"
+                    placeholderTextColor: "#d1ffffff"
+                    placeholderText: qsTr("Нет описания")
+                }
+
+                Label {
+                    id: label12
+                    x: 8
+                    y: 40
+                    width: 670
+                    height: 25
+                    color: "#ffffff"
+                    text: "Описание:"
+                }
             }
         }
 
@@ -439,8 +528,8 @@ Item {
             anchors.right: parent.right
             anchors.bottom: parent.bottom
             source: "./cnt/logo.png"
-            anchors.rightMargin: 17
-            anchors.bottomMargin: 19
+            anchors.rightMargin: 25
+            anchors.bottomMargin: 27
             fillMode: Image.PreserveAspectFit
         }
     }
@@ -467,7 +556,7 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}
+    D{i:0;autoSize:true;formeditorZoom:1.1;height:1024;width:1280}
 }
 ##^##*/
 
