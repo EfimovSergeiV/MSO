@@ -10,6 +10,20 @@ Item {
         anchors.fill: parent
 
         Button {
+            x: 618
+            y: 936
+            width: 324
+            height: 80
+            text: qsTr("График")
+            font.pointSize: 14
+            Material.background: Material.Blue
+            highlighted: true
+            onClicked: {
+                stackView.push(Qt.resolvedUrl("charts.qml"))
+            }
+        }
+
+        Button {
             x: 948
             y: 936
             width: 324

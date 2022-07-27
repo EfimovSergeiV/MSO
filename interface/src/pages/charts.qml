@@ -31,6 +31,20 @@ Item {
         }
 
         Button {
+            x: 618
+            y: 936
+            width: 324
+            height: 80
+            text: qsTr("Визуализация")
+            font.pointSize: 14
+            Material.background: Material.Blue
+            highlighted: true
+            onClicked: {
+                stackView.push(Qt.resolvedUrl("action.qml"))
+            }
+        }
+
+        Button {
             x: 948
             y: 936
             width: 324
