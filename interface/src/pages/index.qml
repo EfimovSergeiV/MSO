@@ -245,7 +245,7 @@ Item {
                             width: 65
                             height: 60
                             color: "#ffffff"
-                            text: ",мм"
+                            text: "(мм)"
                             horizontalAlignment: Text.AlignLeft
                             verticalAlignment: Text.AlignVCenter
                             font.pointSize: 14

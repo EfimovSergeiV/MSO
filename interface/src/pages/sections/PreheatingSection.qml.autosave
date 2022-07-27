@@ -7,112 +7,78 @@ Rectangle {
     property bool show: false
 
     property var datastruct: {
-        "b_0": b0.text,
-        "b_1": b1.text,
-        "b_2": b2.text,
-        "b_3": b3.text,
-        "b_4": b4.text,
-        "b_5": b5.text,
-        "b_6": b6.text,
-        "b_7": b7.text
+        "ph_0": ph0.text,
+        "ph_1": ph1.text,
+        "ph_2": ph2.text,
+        "ph_3": ph3.text,
+        "ph_4": ph4.text,
+        "ph_5": ph5.text,
+        "ph_6": ph6.text,
+        "ph_7": ph7.text,
+        "ph_8": ph8.text,
+        "ph_9": ph9.text,
+        "ph_10": ph10.text,
+        "ph_11": ph11.text,
+        "ph_12": ph12.text
     }
 
-    property var datastructcl: {
-        "cl_0": cl0.text,
-        "cl_1": cl1.text,
-        "cl_2": cl2.text,
-        "cl_3": cl3.text,
-        "cl_4": cl4.text,
-        "cl_5": cl5.text,
-        "cl_6": cl6.text
-    }
-
-    id: rectangle12
-    x: 5143
-    y: 8
+    id: rectangle11
+    x: 0
+    y: 0
     width: 1264
     height: 490
-    visible: true
     color: "#50000000"
     radius: 5
+    border.color: "#ffffff"
+    visible: true
 
     NumberAnimation on x {
         to: -1300
         duration: 600
-        running: rectangle12.hide
+        running: rectangle11.hide
     }
 
     NumberAnimation on x {
         from: 1300
         to: 8
         duration: 600
-        running: rectangle12.show
-    }
-
-    TextField {
-        id: b0
-        x: 8
-        y: 73
-        width: 141
-        height: 40
-        placeholderText: qsTr("0")
-        color: "#ffffff"
-        placeholderTextColor: "#ffffff"
-        Material.accent: Material.Blue
-        Material.background: Material.Blue
-        Material.theme: Material.Dark
-        horizontalAlignment: Text.AlignHCenter
-        inputMethodHints: Qt.ImhDigitsOnly
-        onAccepted: b1.focus = true
+        running: rectangle11.show
     }
 
     Label {
-        id: label48
-        x: 155
-        y: 73
-        width: 457
-        height: 40
-        color: "#ffffff"
-        text: "Величина выжигания, м"
-        horizontalAlignment: Text.AlignLeft
-        verticalAlignment: Text.AlignVCenter
-        font.pointSize: 14
-    }
-
-    Label {
-        id: label49
+        id: label34
         x: 8
         y: 8
         width: 1248
         height: 32
         color: "#ffffff"
-        text: qsTr("Параметры выжигания")
+        text: qsTr("Параметры подогрева")
         horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
     }
 
     TextField {
-        id: b1
-        x: 8
-        y: 119
+        id: ph0
+        x: 9
+        y: 70
         width: 141
         height: 40
         placeholderText: qsTr("0")
-        color: "#ffffff"
+                color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
         Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
-        onAccepted: b2.focus = true
+        onAccepted: ph1.focus = true
     }
 
     Label {
-        id: label50
-        x: 155
-        y: 119
+        id: label35
+        x: 156
+        y: 70
         width: 457
         height: 40
         color: "#ffffff"
@@ -123,26 +89,116 @@ Rectangle {
     }
 
     TextField {
-        id: b2
-        x: 8
-        y: 165
+        id: ph1
+        x: 9
+        y: 116
         width: 141
         height: 40
         placeholderText: qsTr("0")
-        color: "#ffffff"
+                color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
         Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
-        onAccepted: b3.focus = true
+        onAccepted: ph2.focus = true
     }
 
     Label {
-        id: label51
-        x: 155
-        y: 165
+        id: label36
+        x: 156
+        y: 116
+        width: 457
+        height: 40
+        color: "#ffffff"
+        text: "Скорость уплотнения, мм/с"
+        horizontalAlignment: Text.AlignLeft
+        verticalAlignment: Text.AlignVCenter
+        font.pointSize: 14
+    }
+
+    TextField {
+        id: ph2
+        x: 9
+        y: 162
+        width: 141
+        height: 40
+        placeholderText: qsTr("0")
+                color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
+        horizontalAlignment: Text.AlignHCenter
+        inputMethodHints: Qt.ImhDigitsOnly
+        onAccepted: ph3.focus = true
+    }
+
+    Label {
+        id: label39
+        x: 156
+        y: 256
+        width: 457
+        height: 40
+        color: "#ffffff"
+        text: "Время уплотнения, мс"
+        horizontalAlignment: Text.AlignLeft
+        verticalAlignment: Text.AlignVCenter
+        font.pointSize: 14
+    }
+
+    TextField {
+        id: ph3
+        x: 9
+        y: 210
+        width: 141
+        height: 40
+        placeholderText: qsTr("0")
+                color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
+        horizontalAlignment: Text.AlignHCenter
+        inputMethodHints: Qt.ImhDigitsOnly
+        onAccepted: ph4.focus = true
+    }
+
+    Label {
+        id: label42
+        x: 156
+        y: 396
+        width: 457
+        height: 40
+        color: "#ffffff"
+        text: "Число импульсов"
+        horizontalAlignment: Text.AlignLeft
+        verticalAlignment: Text.AlignVCenter
+        font.pointSize: 14
+    }
+
+    TextField {
+        id: ph4
+        x: 9
+        y: 256
+        width: 141
+        height: 40
+        placeholderText: qsTr("0")
+                color: "#ffffff"
+        placeholderTextColor: "#ffffff"
+        Material.accent: Material.Blue
+        Material.background: Material.Blue
+        Material.theme: Material.Dark
+        horizontalAlignment: Text.AlignHCenter
+        inputMethodHints: Qt.ImhDigitsOnly
+        onAccepted: ph5.focus = true
+    }
+
+    Label {
+        id: label37
+        x: 156
+        y: 161
         width: 457
         height: 40
         color: "#ffffff"
@@ -153,146 +209,56 @@ Rectangle {
     }
 
     TextField {
-        id: b3
-        x: 8
-        y: 211
+        id: ph5
+        x: 9
+        y: 304
         width: 141
         height: 40
         placeholderText: qsTr("0")
-        color: "#ffffff"
+                color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
         Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
-        onAccepted: b4.focus = true
+        onAccepted: ph6.focus = true
     }
 
     Label {
-        id: label52
-        x: 155
-        y: 211
+        id: label40
+        x: 156
+        y: 304
         width: 457
         height: 40
         color: "#ffffff"
-        text: "Напряжжение выжигания"
+        text: "Время подогрева, мс"
         horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
     }
 
     TextField {
-        id: b4
-        x: 8
-        y: 303
+        id: ph6
+        x: 9
+        y: 350
         width: 141
         height: 40
         placeholderText: qsTr("0")
-        color: "#ffffff"
+                color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
         Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
-        onAccepted: b5.focus = true
+        onAccepted: ph7.focus = true
     }
 
     Label {
-        id: label54
-        x: 155
-        y: 303
-        width: 457
-        height: 40
-        color: "#ffffff"
-        text: "Ток коррекции, А"
-        horizontalAlignment: Text.AlignLeft
-        verticalAlignment: Text.AlignVCenter
-        font.pointSize: 14
-    }
-
-    TextField {
-        id: b5
-        x: 8
-        y: 349
-        width: 141
-        height: 40
-        placeholderText: qsTr("0")
-        color: "#ffffff"
-        placeholderTextColor: "#ffffff"
-        Material.accent: Material.Blue
-        Material.background: Material.Blue
-        Material.theme: Material.Dark
-        horizontalAlignment: Text.AlignHCenter
-        inputMethodHints: Qt.ImhDigitsOnly
-        onAccepted: b6.focus = true
-    }
-
-    Label {
-        id: label55
-        x: 155
-        y: 349
-        width: 457
-        height: 40
-        color: "#ffffff"
-        text: "Ток останова, А"
-        horizontalAlignment: Text.AlignLeft
-        verticalAlignment: Text.AlignVCenter
-        font.pointSize: 14
-    }
-
-    TextField {
-        id: b6
-        x: 8
-        y: 395
-        width: 141
-        height: 40
-        placeholderText: qsTr("0")
-        color: "#ffffff"
-        placeholderTextColor: "#ffffff"
-        Material.accent: Material.Blue
-        Material.background: Material.Blue
-        Material.theme: Material.Dark
-        horizontalAlignment: Text.AlignHCenter
-        inputMethodHints: Qt.ImhDigitsOnly
-        onAccepted: b7.focus = true
-    }
-
-    Label {
-        id: label56
-        x: 155
-        y: 395
-        width: 457
-        height: 40
-        color: "#ffffff"
-        text: "Ток реверса, А"
-        horizontalAlignment: Text.AlignLeft
-        verticalAlignment: Text.AlignVCenter
-        font.pointSize: 14
-    }
-
-    TextField {
-        id: b7
-        x: 8
-        y: 441
-        width: 141
-        height: 40
-        placeholderText: qsTr("0")
-        color: "#ffffff"
-        placeholderTextColor: "#ffffff"
-        Material.accent: Material.Blue
-        Material.background: Material.Blue
-        Material.theme: Material.Dark
-        horizontalAlignment: Text.AlignHCenter
-        inputMethodHints: Qt.ImhDigitsOnly
-        onAccepted: cl0.focus = true
-    }
-
-    Label {
-        id: label57
-        x: 155
-        y: 441
+        id: label43
+        x: 156
+        y: 444
         width: 457
         height: 40
         color: "#ffffff"
@@ -303,193 +269,163 @@ Rectangle {
     }
 
     TextField {
-        id: cl0
-        x: 652
-        y: 73
+        id: ph7
+        x: 9
+        y: 396
         width: 141
         height: 40
         placeholderText: qsTr("0")
-        color: "#ffffff"
+                color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
         Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
-        onAccepted: cl1.focus = true
+        onAccepted: ph8.focus = true
     }
 
     Label {
-        id: label58
-        x: 799
-        y: 73
+        id: label38
+        x: 156
+        y: 207
         width: 457
         height: 40
         color: "#ffffff"
-        text: "Давление осадки/зажимов, Бар"
+        text: "Скорость последнего разведения, мм/с"
         horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
     }
 
     TextField {
-        id: cl1
-        x: 652
-        y: 119
+        id: ph8
+        x: 9
+        y: 444
         width: 141
         height: 40
         placeholderText: qsTr("0")
-        color: "#ffffff"
+                color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
         Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
-        onAccepted: cl2.focus = true
+        onAccepted: ph9.focus = true
     }
 
     Label {
-        id: label59
-        x: 799
-        y: 119
+        id: label41
+        x: 156
+        y: 350
         width: 457
         height: 40
         color: "#ffffff"
-        text: "Исходное, мм"
+        text: "Время паузы, мс"
         horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
     }
 
     TextField {
-        id: cl2
-        x: 652
-        y: 165
+        id: ph9
+        x: 653
+        y: 70
         width: 141
         height: 40
         placeholderText: qsTr("0")
-        color: "#ffffff"
+                color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
         Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
-        onAccepted: cl3.focus = true
+        onAccepted: ph10.focus = true
     }
 
     Label {
-        id: label60
-        x: 799
-        y: 165
+        id: label44
+        x: 800
+        y: 70
         width: 457
         height: 40
         color: "#ffffff"
-        text: "Время проковки, мм"
+        text: "Ток ХХ, А"
         horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
     }
 
     TextField {
-        id: cl3
-        x: 652
-        y: 211
+        id: ph10
+        x: 653
+        y: 116
         width: 141
         height: 40
         placeholderText: qsTr("0")
-        color: "#ffffff"
+                color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
         Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
-        onAccepted: cl4.focus = true
+        onAccepted: ph11.focus = true
     }
 
     Label {
-        id: label61
-        x: 799
-        y: 211
+        id: label45
+        x: 800
+        y: 116
         width: 457
         height: 40
         color: "#ffffff"
-        text: "Величина разведения, мм"
+        text: "Напряжение подогрева, %"
         horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
     }
 
     TextField {
-        id: cl4
-        x: 652
-        y: 257
+        id: ph11
+        x: 653
+        y: 161
         width: 141
         height: 40
         placeholderText: qsTr("0")
-        color: "#ffffff"
+                color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
         Material.theme: Material.Dark
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
-        onAccepted: cl5.focus = true
+        onAccepted: ph12.focus = true
     }
 
     Label {
-        id: label62
-        x: 799
-        y: 257
+        id: label46
+        x: 800
+        y: 161
         width: 457
         height: 40
         color: "#ffffff"
-        text: "Скорость разведения, мм/с"
+        text: "Время осадки с током, мс"
         horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
     }
 
     TextField {
-        id: cl5
-        x: 652
-        y: 395
+        id: ph12
+        x: 653
+        y: 207
         width: 141
         height: 40
         placeholderText: qsTr("0")
-        color: "#ffffff"
-        placeholderTextColor: "#ffffff"
-        Material.accent: Material.Blue
-        Material.background: Material.Blue
-        Material.theme: Material.Dark
-        horizontalAlignment: Text.AlignHCenter
-        inputMethodHints: Qt.ImhDigitsOnly
-        onAccepted: cl6.focus = true
-    }
-
-    Label {
-        id: label65
-        x: 799
-        y: 395
-        width: 457
-        height: 40
-        color: "#ffffff"
-        text: "Срезка грата (1-вкл/0-выкл)"
-        horizontalAlignment: Text.AlignLeft
-        verticalAlignment: Text.AlignVCenter
-        font.pointSize: 14
-    }
-
-    TextField {
-        id: cl6
-        x: 652
-        y: 441
-        width: 141
-        height: 40
-        placeholderText: qsTr("0")
-        color: "#ffffff"
+                color: "#ffffff"
         placeholderTextColor: "#ffffff"
         Material.accent: Material.Blue
         Material.background: Material.Blue
@@ -497,19 +433,19 @@ Rectangle {
         horizontalAlignment: Text.AlignHCenter
         inputMethodHints: Qt.ImhDigitsOnly
         onAccepted: {
-            changeRectangle(rectangle13)
-            oth0.focus = true
+            changeRectangle(rectangle12)
+            b0.focus = true
         }
     }
 
     Label {
-        id: label66
-        x: 799
-        y: 441
+        id: label47
+        x: 800
+        y: 207
         width: 457
         height: 40
         color: "#ffffff"
-        text: "Осадка (1-время/0-путь)"
+        text: "Величина осадки, мм"
         horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
         font.pointSize: 14
@@ -518,7 +454,7 @@ Rectangle {
 
 /*##^##
 Designer {
-    D{i:0;formeditorZoom:0.66;height:490;width:1264}
+    D{i:0;formeditorZoom:0.66;height:504;width:1264}
 }
 ##^##*/
 
