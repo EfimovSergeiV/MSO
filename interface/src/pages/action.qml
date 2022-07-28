@@ -1,6 +1,7 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.15
 import QtQuick.Controls.Material 2.15
+import QtQuick.Extras 1.4
 
 Item {
     id: item1
@@ -208,6 +209,23 @@ Item {
             x: 512
             y: 936
             text: qsTr("Button")
+            onClicked: {
+                statusIndicator.active = !statusIndicator.active
+                statusIndicator1.active = !statusIndicator1.active
+            }
+        }
+
+        StatusIndicator {
+            id: statusIndicator
+            x: 160
+            y: 171
+        }
+
+        StatusIndicator {
+            id: statusIndicator1
+            x: 98
+            y: 171
+            active: true
         }
     }
 }
