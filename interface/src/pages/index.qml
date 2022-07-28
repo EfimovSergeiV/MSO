@@ -206,13 +206,15 @@ Item {
                 radius: 5
             }
 
+            ////
+
             //            }
             Material.accent: Material.Blue
             ScrollView {
                 id: scrollView
-                x: 8
+                x: 14
                 y: 127
-                width: 902
+                width: 870
                 height: 579
                 ScrollBar.horizontal.interactive: false
                 ScrollBar.vertical.interactive: true
@@ -227,7 +229,7 @@ Item {
                         id: rectangle5
                         x: 8
                         y: 8
-                        width: 850
+                        width: 810
                         height: 70
                         color: "#40000000"
                         radius: 3
@@ -235,7 +237,7 @@ Item {
 
                         Button {
                             id: button
-                            x: 603
+                            x: 564
                             y: 5
                             width: 238
                             height: 60
@@ -243,13 +245,17 @@ Item {
                             font.pointSize: 14
                             Material.background: Material.Cyan
                             highlighted: true
+                            onClicked: {
+                                //                                console.log(id)
+                                handler.select_welding_programm(id)
+                            }
                         }
 
                         Label {
                             id: label3
                             x: 8
                             y: 5
-                            width: 292
+                            width: 251
                             height: 60
                             color: "#ffffff"
                             text: name
@@ -259,7 +265,7 @@ Item {
 
                         Label {
                             id: label41
-                            x: 304
+                            x: 265
                             y: 5
                             width: 95
                             height: 60
@@ -272,7 +278,7 @@ Item {
 
                         Label {
                             id: label51
-                            x: 405
+                            x: 366
                             y: 5
                             width: 20
                             height: 60
@@ -285,12 +291,12 @@ Item {
 
                         Label {
                             id: label6
-                            x: 431
+                            x: 392
                             y: 5
                             width: 95
                             height: 60
                             color: "#ffffff"
-                            text: max_diameter
+                            text: max_diameter + " мм"
                             horizontalAlignment: Text.AlignLeft
                             verticalAlignment: Text.AlignVCenter
                             font.pointSize: 14
@@ -298,12 +304,12 @@ Item {
 
                         Label {
                             id: label7
-                            x: 532
+                            x: 493
                             y: 5
                             width: 65
                             height: 60
                             color: "#ffffff"
-                            text: "(мм)"
+                            text: ""
                             horizontalAlignment: Text.AlignLeft
                             verticalAlignment: Text.AlignVCenter
                             font.pointSize: 14
@@ -410,10 +416,11 @@ Item {
                     color: "#ffffff"
                     text: "Выбрана програма:"
                     verticalAlignment: Text.AlignVCenter
+                    font.pointSize: 8
                 }
 
                 Label {
-                    id: label10
+                    id: selectProgrammName
                     x: 157
                     y: 8
                     width: 521
@@ -425,24 +432,25 @@ Item {
                 }
 
                 Label {
-                    id: label11
+                    id: selectProgrammDiameter
                     x: 684
                     y: 8
                     width: 210
                     height: 26
                     color: "#ffffff"
-                    text: qsTr("10 - 20 мм")
-                    horizontalAlignment: Text.AlignHCenter
+                    text: qsTr("диаметры")
+                    horizontalAlignment: Text.AlignRight
                     verticalAlignment: Text.AlignVCenter
                 }
 
                 TextArea {
-                    id: textArea
+                    id: selectProgrammDescription
                     x: 8
                     y: 71
                     width: 670
                     height: 127
                     color: "#ffffff"
+                    readOnly: true
                     placeholderTextColor: "#d1ffffff"
                     placeholderText: qsTr("Нет описания")
                 }
@@ -450,11 +458,12 @@ Item {
                 Label {
                     id: label12
                     x: 8
-                    y: 40
+                    y: 48
                     width: 670
-                    height: 25
+                    height: 17
                     color: "#ffffff"
                     text: "Описание:"
+                    font.pointSize: 8
                 }
             }
         }
@@ -534,10 +543,19 @@ Item {
         }
     }
 
-    Component.onCompleted: handler.get_welding_programm()
+    Component.onCompleted: handler.get_welding_programms()
 
     Connections {
         target: handler
+
+        function onWeldingProgramm(programm) {
+            console.log(programm[0].name)
+
+            selectProgrammName.text = programm[0].name
+            selectProgrammDescription.text = programm[0].description
+            selectProgrammDiameter.text = programm[0].min_diameter + " - "
+                    + programm[0].max_diameter + " мм"
+        }
 
         function onWeldingProgramms(wb) {
             listProgramms.append(wb)
@@ -556,7 +574,7 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:1.1;height:1024;width:1280}
+    D{i:0;autoSize:true;height:1024;width:1280}
 }
 ##^##*/
 

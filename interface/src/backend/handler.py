@@ -1,6 +1,10 @@
 import time, logging
 from PySide2.QtCore import QObject, Signal, Slot, QThread
-from .modules.database import select_all, create
+from .modules.database import (
+    select,
+    select_all_programm, 
+    create
+)
 from .modules import charts
 
 import json
@@ -8,19 +12,50 @@ import json
 class Handler(QObject):
     """ Управление модулями приложения (Обработчик)"""
 
+    
+
     # Сигналы  ( Сигналы потоков )
     programmData = Signal(list)
     chartData = Signal(list)
     closeApplication = Signal()
 
 
+
+
+
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+    # Костыль для списка программ и выбранной программы
+    selected_programm = {}
+
+
     weldingProgramms = Signal(list)
-    # Слоты
+    weldingProgramm = Signal(list)
+
     @Slot()
-    def get_welding_programm(self):
+    def get_welding_programms(self):
         """ Получение программ сварки """
-        programm = select_all()
+        programm = select_all_programm()
         self.weldingProgramms.emit(programm)
+
+    
+    @Slot(int)
+    def select_welding_programm(self, id):
+        data = []
+        data.append(select(id)["programm_programmmodel"])
+        # json_formatted_str = json.dumps(list_data[0], ensure_ascii=False, indent=4)
+        # print('\nDATA:\n', json_formatted_str, '\n')
+
+        
+        self.weldingProgramm.emit(data)
+
+
+
+
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
 
 
 

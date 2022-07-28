@@ -60,7 +60,7 @@ def select(id):
 
 
 
-def select_all():
+def select_all_programm():
     result = []
     conn = sqlite3.connect(f'{ BASE_DIR }/db.sqlite3')
     conn.row_factory = dict_factory

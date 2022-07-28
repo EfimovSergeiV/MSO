@@ -154,7 +154,7 @@ Item {
         }
     }
 
-    Component.onCompleted: handler.get_welding_programm()
+    Component.onCompleted: handler.get_welding_programms()
 
     Connections {
         target: handler

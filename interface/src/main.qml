@@ -16,7 +16,7 @@ Window {
         y: 0
         width: mainWindow.width
         height: mainWindow.height
-        initialItem: Qt.resolvedUrl("pages/programms.qml")
+        initialItem: Qt.resolvedUrl("pages/action.qml")
         pushEnter: Transition {
             PropertyAnimation {
                 property: "scale" /// "opacity"
@@ -54,7 +54,7 @@ Window {
     //  For production
     Component.onCompleted: {
 
-        //        mainWindow.showFullScreen()
+        //    mainWindow.showFullScreen()
         //        handler.running_application()
     }
     Connections {
@@ -66,3 +66,10 @@ Window {
     }
     //    Component.onDestruction: handler.first_worker_stop()
 }
+
+/*##^##
+Designer {
+    D{i:0;formeditorZoom:0.66}
+}
+##^##*/
+
