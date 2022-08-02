@@ -121,12 +121,14 @@ Item {
                 font.pointSize: 14
                 Material.background: Material.Blue
                 highlighted: true
+
                 onClicked: {
                     stackView.push(Qt.resolvedUrl("charts.qml"))
                 }
             }
 
             Button {
+                id: runProgrammBtn
                 x: 8
                 y: 55
                 width: 324
@@ -135,12 +137,15 @@ Item {
                 font.pointSize: 14
                 Material.background: Material.Blue
                 highlighted: true
+                enabled: false
                 onClicked: {
-                    stackView.push(Qt.resolvedUrl("charts.qml"))
+                    handler.running_application()
+                    //                    stackView.push(Qt.resolvedUrl("charts.qml"))
                 }
             }
 
             Button {
+                id: exitProgrammBtn
                 x: 8
                 y: 701
                 width: 324
@@ -149,6 +154,20 @@ Item {
                 font.pointSize: 14
                 Material.background: Material.Blue
                 highlighted: true
+                enabled: false
+            }
+
+            Button {
+                id: stopProgrammBtn
+                x: 8
+                y: 313
+                width: 324
+                height: 80
+                text: "Остановка программы"
+                font.pointSize: 14
+                highlighted: true
+                enabled: false
+                Material.background: Material.Blue
                 onClicked: {
                     handler.close_application()
                 }
@@ -565,6 +584,15 @@ Item {
             //                notProgrammLabel.visible = true
             //            }
         }
+        function onShowRunButton(state) {
+            runProgrammBtn.enabled = state
+        }
+        function onShowStopButton(state) {
+            stopProgrammBtn.enabled = state
+        }
+        function onShowExitButton(state) {
+            exitProgrammBtn.enabled = state
+        }
     }
 
     //    Component.onCompleted: {
@@ -574,7 +602,7 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}
+    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}D{i:12}
 }
 ##^##*/
 

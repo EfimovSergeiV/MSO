@@ -6,13 +6,15 @@ from .modules.database import (
     create
 )
 from .modules import charts
-
 import json
+
+# json_formatted_str = json.dumps(list_data[0], ensure_ascii=False, indent=4)
+# print('\nDATA:\n', json_formatted_str, '\n')
+
+
 
 class Handler(QObject):
     """ Управление модулями приложения (Обработчик)"""
-
-    
 
     # Сигналы  ( Сигналы потоков )
     programmData = Signal(list)
@@ -33,6 +35,12 @@ class Handler(QObject):
     weldingProgramms = Signal(list)
     weldingProgramm = Signal(list)
 
+    # Event for control buttons
+    showRunButton = Signal(bool)
+    showStopButton = Signal(bool)
+    showExitButton = Signal(bool)
+
+
     @Slot()
     def get_welding_programms(self):
         """ Получение программ сварки """
@@ -43,11 +51,9 @@ class Handler(QObject):
     @Slot(int)
     def select_welding_programm(self, id):
         data = []
-        data.append(select(id)["programm_programmmodel"])
-        # json_formatted_str = json.dumps(list_data[0], ensure_ascii=False, indent=4)
-        # print('\nDATA:\n', json_formatted_str, '\n')
+        data.append(select(id)["programm_programmmodel"])   # Ходим в бузу за выбранной программой
+        self.showRunButton.emit(True)
 
-        
         self.weldingProgramm.emit(data)
 
 
@@ -84,7 +90,7 @@ class Handler(QObject):
         json_formatted_str = json.dumps(data[0], ensure_ascii=False, indent=4)
         print('\nDATA:\n', json_formatted_str, '\n')
         create(data[0])
-        
+
 
 
 
@@ -92,6 +98,9 @@ class Handler(QObject):
     @Slot()
     def running_application(self):
         """ Запуск необходимых сервисов при старте """
+
+        self.showStopButton.emit(True)
+        self.showRunButton.emit(False)
 
         self.create_chart_stream()
 
@@ -111,5 +120,9 @@ class Handler(QObject):
             print("Останавливаем First Worker")
             time.sleep(1)
 
+
+        self.showExitButton.emit(True)
+        self.showRunButton.emit(True)
+        self.showStopButton.emit(False)
         # Закрываем приложение, если все потоки остановились
-        self.closeApplication.emit()
+        # self.closeApplication.emit()
