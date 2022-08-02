@@ -55,7 +55,7 @@ Window {
     Component.onCompleted: {
 
         //    mainWindow.showFullScreen()
-        //        handler.running_application()
+               handler.running_application()
     }
     Connections {
         target: handler

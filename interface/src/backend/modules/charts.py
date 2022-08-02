@@ -21,7 +21,7 @@ class ChartWorker(QObject):
         while True:
             if self.__finished:
                 break
-            time.sleep(0.5)
+            time.sleep(2)
             if self.count % 2 == 0:
                 data = [
                     {"name": "name 1", "x": self.count, "y": random.randint(60, 80)},

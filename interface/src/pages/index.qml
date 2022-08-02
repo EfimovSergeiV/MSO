@@ -100,7 +100,7 @@ Item {
 
             Button {
                 x: 8
-                y: 49
+                y: 141
                 width: 324
                 height: 80
                 text: qsTr("Визуализация")
@@ -114,7 +114,7 @@ Item {
 
             Button {
                 x: 8
-                y: 135
+                y: 227
                 width: 324
                 height: 80
                 text: qsTr("График")
@@ -128,10 +128,10 @@ Item {
 
             Button {
                 x: 8
-                y: 221
+                y: 55
                 width: 324
                 height: 80
-                text: qsTr("Кнопка")
+                text: qsTr("Запуск программы")
                 font.pointSize: 14
                 Material.background: Material.Blue
                 highlighted: true
@@ -145,7 +145,7 @@ Item {
                 y: 701
                 width: 324
                 height: 80
-                text: qsTr("Выход")
+                text: "Завершить работу"
                 font.pointSize: 14
                 Material.background: Material.Blue
                 highlighted: true
@@ -574,7 +574,7 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;height:1024;width:1280}
+    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}
 }
 ##^##*/
 
