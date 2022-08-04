@@ -101,6 +101,10 @@ class Handler(QObject):
     def welding_data_processing(self, data):
         json_formatted_str = json.dumps(data, ensure_ascii=False, indent=4)
         print('\nDATA:\n', json_formatted_str, '\n')
+        self.bl0.emit(data["bl_0"])
+        self.bl1.emit(data["bl_1"])
+        self.bl2.emit(data["bl_2"])
+        self.bl3.emit(data["bl_3"])
 
     def create_welding_stream(self):
         self.welding_thread = QThread()

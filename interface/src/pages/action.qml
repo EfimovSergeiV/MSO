@@ -98,6 +98,21 @@ Item {
 
         Rectangle {
             id: rectangle7
+
+            property bool up: false
+            property bool down: false
+            NumberAnimation on y {
+                to: 434
+                duration: 400
+                running: rectangle7.up
+            }
+
+            NumberAnimation on y {
+                to: 399
+                duration: 400
+                running: rectangle7.down
+            }
+
             x: 519
             y: 399
             width: 80
@@ -107,6 +122,21 @@ Item {
 
         Rectangle {
             id: rectangle8
+
+            property bool up: false
+            property bool down: false
+            NumberAnimation on y {
+                to: 434
+                duration: 400
+                running: rectangle8.up
+            }
+
+            NumberAnimation on y {
+                to: 399
+                duration: 400
+                running: rectangle8.down
+            }
+
             x: 648
             y: 399
             width: 80
@@ -219,21 +249,76 @@ Item {
             id: statusIndicator
             x: 160
             y: 171
+            color: "green"
+            active: false
         }
 
         StatusIndicator {
             id: statusIndicator1
             x: 98
             y: 171
-            active: true
+            color: "green"
+            active: false
+        }
+
+        StatusIndicator {
+            id: statusIndicator2
+            x: 457
+            y: 289
+            color: "green"
+            active: false
+        }
+
+        StatusIndicator {
+            id: statusIndicator3
+            x: 457
+            y: 381
+            color: "green"
+            active: false
+        }
+
+        StatusIndicator {
+            id: statusIndicator4
+            x: 755
+            y: 289
+            color: "green"
+            active: false
+        }
+
+        StatusIndicator {
+            id: statusIndicator5
+            x: 755
+            y: 381
+            color: "green"
+            active: false
+        }
+    }
+
+    Connections {
+        target: handler
+
+        function onBl0(state) {
+            rectangle7.up = state
+            statusIndicator3.active = state
+        }
+        function onBl1(state) {
+            rectangle7.down = state
+            statusIndicator2.active = state
+        }
+        function onBl2(state) {
+            rectangle8.up = state
+            statusIndicator5.active = state
+        }
+        function onBl3(state) {
+            rectangle8.down = state
+            statusIndicator4.active = state
         }
     }
 }
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}D{i:16}D{i:17}D{i:19}
-D{i:21}
+    D{i:0;autoSize:true;formeditorZoom:1.1;height:1024;width:1280}
 }
 ##^##*/
 
