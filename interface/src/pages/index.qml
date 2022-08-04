@@ -137,7 +137,7 @@ Item {
                 font.pointSize: 14
                 Material.background: Material.Blue
                 highlighted: true
-                enabled: false
+                //                enabled: false
                 onClicked: {
                     handler.running_application()
                     //                    stackView.push(Qt.resolvedUrl("charts.qml"))
@@ -154,7 +154,7 @@ Item {
                 font.pointSize: 14
                 Material.background: Material.Blue
                 highlighted: true
-                enabled: false
+                //                enabled: false
             }
 
             Button {
@@ -166,7 +166,7 @@ Item {
                 text: "Остановка программы"
                 font.pointSize: 14
                 highlighted: true
-                enabled: false
+                //                enabled: false
                 Material.background: Material.Blue
                 onClicked: {
                     handler.close_application()
@@ -602,7 +602,7 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}D{i:12}
+    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}
 }
 ##^##*/
 

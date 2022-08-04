@@ -8,7 +8,7 @@ from .modules.database import (
     create
 )
 
-from .modules.demo.emulators import welding
+from .modules.demo import emulators
 
 
 # json_formatted_str = json.dumps(list_data[0], ensure_ascii=False, indent=4)
@@ -87,8 +87,22 @@ class Handler(QObject):
 
 
     # !Поток выполнения сварки
+    def welding_data_processing(self, data):
+        json_formatted_str = json.dumps(data, ensure_ascii=False, indent=4)
+        print('\nDATA:\n', json_formatted_str, '\n')
+
     def create_welding_stream(self):
         self.welding_thread = QThread()
+        self.welding_worker = emulators.WeldingWorker()
+        self.welding_worker.moveToThread(self.welding_thread)
+        self.welding_thread.started.connect(self.welding_worker.doWork)
+        self.welding_worker.welding.connect(self.welding_data_processing)
+        self.welding_worker.finished.connect(self.welding_thread.quit)
+        self.welding_thread.start()
+
+    def destroy_welding_stream(self):
+        self.welding_worker.stop()
+        self.welding_thread.quit()
 
 
 
@@ -110,6 +124,7 @@ class Handler(QObject):
         self.showStopButton.emit(True)
         self.showRunButton.emit(False)
 
+        self.create_welding_stream()
         # self.create_chart_stream()
 
 
@@ -117,10 +132,10 @@ class Handler(QObject):
     def close_application(self):
         """ Ожидаем закрытия потоков сервисов и закрываем приложение """
         # Останавливаем потоки
-        self.destroy_chart_stream()
+        self.destroy_welding_stream()
 
         # Ждём пока поток будет завершён
-        while self.chart_thread.isRunning():
+        while self.welding_thread.isRunning():
 
             # Проверяем остановлен ли поток
             print(f"RUNNING FIRST THREAD: { self.chart_thread.isFinished() }")
