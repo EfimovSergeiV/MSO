@@ -1,12 +1,15 @@
 import time, logging
 from PySide2.QtCore import QObject, Signal, Slot, QThread
+from .modules import charts
+import json
 from .modules.database import (
     select,
     select_all_programm, 
     create
 )
-from .modules import charts
-import json
+
+from .modules.demo.emulators import welding
+
 
 # json_formatted_str = json.dumps(list_data[0], ensure_ascii=False, indent=4)
 # print('\nDATA:\n', json_formatted_str, '\n')
@@ -83,6 +86,11 @@ class Handler(QObject):
         self.chart_thread.quit()
 
 
+    # !Поток выполнения сварки
+    def create_welding_stream(self):
+        self.welding_thread = QThread()
+
+
 
     programmCreatedId = Signal(int)
     @Slot(list)
@@ -102,7 +110,7 @@ class Handler(QObject):
         self.showStopButton.emit(True)
         self.showRunButton.emit(False)
 
-        self.create_chart_stream()
+        # self.create_chart_stream()
 
 
     @Slot()
