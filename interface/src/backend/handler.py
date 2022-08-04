@@ -60,6 +60,17 @@ class Handler(QObject):
         self.weldingProgramm.emit(data)
 
 
+#########################################################################################################
+    # ACTION SIGNALS
+    bl0 = Signal(bool)
+    bl1 = Signal(bool)
+    bl2 = Signal(bool)
+    bl3 = Signal(bool)
+    nd0 = Signal(int)
+    nd1 = Signal(int)
+    nd2 = Signal(int)
+    nd3 = Signal(int)
+
 
 
 #########################################################################################################
