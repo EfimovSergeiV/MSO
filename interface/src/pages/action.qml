@@ -860,19 +860,19 @@ Item {
 
         function onBl0(state) {
             rectangle7.up = state
-            bl0value.active = state
+            bl1value.active = state
         }
         function onBl1(state) {
             rectangle7.down = state
-            bl1value.active = state
+            bl0value.active = state
         }
         function onBl2(state) {
             rectangle8.up = state
-            bl2value.active = state
+            bl3value.active = state
         }
         function onBl3(state) {
             rectangle8.down = state
-            bl3value.active = state
+            bl4value.active = state
         }
         ///// BL not action
         function onBl4(state) {

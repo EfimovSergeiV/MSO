@@ -50,12 +50,13 @@ class WeldingWorker(QObject):
                 "nd_0": str(random.randint( 0, 90 )) + "," +  str(random.randint(0, 90)) +  str(random.randint(0, 9)),
                 "nd_1": str(random.randint( 0, 90 )) + "," +  str(random.randint(0, 90)) +  str(random.randint(0, 9)),
                 "nd_2": str(random.randint( 0, 90 )) + "," +  str(random.randint(0, 90)) +  str(random.randint(0, 9)),
-                "nd_3": str(random.randint( 0, 90 )) + "," +  str(random.randint(0, 90)) +  str(random.randint(0, 9)),
+                "nd_3": str(4), # Номер программы
                 "nd_4": str(self.cnt),
                 "nd_5": str(random.randint( 0, 90 )) + "," +  str(random.randint(0, 90)) +  str(random.randint(0, 9)),
                 "nd_6": str(random.randint( 0, 90 )) + "," +  str(random.randint(0, 90)) +  str(random.randint(0, 9)),
                 "nd_7": str(random.randint( 0, 90 )) + "," +  str(random.randint(0, 90)) +  str(random.randint(0, 9)),
                 "nd_8": str(random.randint( 0, 90 )) + "," +  str(random.randint(0, 90)) +  str(random.randint(0, 9)),
+                "nd_9": str(4), # Номер участка
                 "nd_10": str(random.randint( 0, 90 )) + "," +  str(random.randint(0, 90)) +  str(random.randint(0, 9)),
             }
 
