@@ -62,14 +62,39 @@ class Handler(QObject):
 
 #########################################################################################################
     # ACTION SIGNALS
+
     bl0 = Signal(bool)
     bl1 = Signal(bool)
     bl2 = Signal(bool)
     bl3 = Signal(bool)
-    nd0 = Signal(int)
-    nd1 = Signal(int)
-    nd2 = Signal(int)
-    nd3 = Signal(int)
+    bl4 = Signal(bool)
+    bl5 = Signal(bool)
+    bl6 = Signal(bool)
+    bl7 = Signal(bool)
+    bl8 = Signal(bool)
+    bl9 = Signal(bool)
+    bl10 = Signal(bool)
+    bl11 = Signal(bool)
+    bl12 = Signal(bool)
+    bl13 = Signal(bool)
+    bl14 = Signal(bool)
+    bl15 = Signal(bool)
+    bl16 = Signal(bool)
+    bl17 = Signal(bool)
+    bl18 = Signal(bool)
+    bl19 = Signal(bool)
+    
+
+    nd0 = Signal(str)
+    nd1 = Signal(str)
+    nd2 = Signal(str)
+    nd3 = Signal(str)
+    nd4 = Signal(str)
+    nd5 = Signal(str)
+    nd6 = Signal(str)
+    nd7 = Signal(str)
+    nd8 = Signal(str)
+    nd10 = Signal(str)
 
 
 
@@ -105,6 +130,34 @@ class Handler(QObject):
         self.bl1.emit(data["bl_1"])
         self.bl2.emit(data["bl_2"])
         self.bl3.emit(data["bl_3"])
+        self.bl4.emit(data["bl_4"])
+        self.bl5.emit(data["bl_5"])
+        self.bl6.emit(data["bl_6"])
+        self.bl7.emit(data["bl_7"])
+        self.bl8.emit(data["bl_8"])
+        self.bl9.emit(data["bl_9"])
+        self.bl10.emit(data["bl_10"])
+        self.bl11.emit(data["bl_11"])
+        self.bl12.emit(data["bl_12"])
+        self.bl13.emit(data["bl_13"])
+        self.bl14.emit(data["bl_14"])
+        self.bl15.emit(data["bl_15"])
+        self.bl16.emit(data["bl_16"])
+        self.bl17.emit(data["bl_17"])
+        self.bl18.emit(data["bl_18"])
+        self.bl19.emit(data["bl_19"])
+        
+        self.nd0.emit(data["nd_0"])
+        self.nd1.emit(data["nd_1"])
+        self.nd2.emit(data["nd_2"])
+        self.nd3.emit(data["nd_3"])
+        self.nd4.emit(data["nd_4"])
+        self.nd5.emit(data["nd_5"])
+        self.nd6.emit(data["nd_6"])
+        self.nd7.emit(data["nd_7"])
+        self.nd8.emit(data["nd_8"])
+        self.nd10.emit(data["nd_10"])
+
 
     def create_welding_stream(self):
         self.welding_thread = QThread()

@@ -235,7 +235,7 @@ Item {
         }
 
         StatusIndicator {
-            id: statusIndicator
+            id: bl16value
             x: 8
             y: 60
             color: "green"
@@ -243,7 +243,7 @@ Item {
         }
 
         StatusIndicator {
-            id: statusIndicator1
+            id: bl15value
             x: 8
             y: 8
             color: "green"
@@ -251,7 +251,7 @@ Item {
         }
 
         StatusIndicator {
-            id: statusIndicator2
+            id: bl0value
             x: 457
             y: 289
             color: "green"
@@ -259,7 +259,7 @@ Item {
         }
 
         StatusIndicator {
-            id: statusIndicator3
+            id: bl1value
             x: 457
             y: 381
             color: "green"
@@ -267,7 +267,7 @@ Item {
         }
 
         StatusIndicator {
-            id: statusIndicator4
+            id: bl2value
             x: 755
             y: 289
             color: "green"
@@ -275,7 +275,7 @@ Item {
         }
 
         StatusIndicator {
-            id: statusIndicator5
+            id: bl3value
             x: 755
             y: 381
             color: "green"
@@ -283,89 +283,104 @@ Item {
         }
 
         StatusIndicator {
-            id: statusIndicator6
+            id: bl19value
             x: 605
             y: 484
             width: 37
             height: 40
+            color: "green"
         }
 
         StatusIndicator {
-            id: statusIndicator7
+            id: bl4value
             x: 649
             y: 570
+            width: 56
+            height: 40
+            color: "green"
         }
 
         StatusIndicator {
-            id: statusIndicator8
+            id: bl7value
             x: 220
             y: 450
+            color: "green"
         }
 
         StatusIndicator {
-            id: statusIndicator9
+            id: bl8value
             x: 220
             y: 527
+            color: "green"
         }
 
         StatusIndicator {
-            id: statusIndicator10
+            id: bl5value
             x: 993
             y: 450
+            color: "green"
         }
 
         StatusIndicator {
-            id: statusIndicator11
+            id: bl6value
             x: 993
             y: 527
+            color: "green"
         }
 
         StatusIndicator {
-            id: statusIndicator12
+            id: bl9value
             x: 908
             y: 234
             width: 79
             height: 82
+            color: "green"
         }
 
         StatusIndicator {
-            id: statusIndicator13
+            id: bl10value
             x: 1234
             y: 8
+            color: "green"
         }
 
         StatusIndicator {
-            id: statusIndicator14
+            id: bl11value
             x: 1234
             y: 52
+            color: "green"
         }
 
         StatusIndicator {
-            id: statusIndicator15
+            id: bl12value
             x: 1234
             y: 96
+            color: "green"
         }
 
         StatusIndicator {
-            id: statusIndicator16
+            id: bl14value
             x: 1234
             y: 140
+            color: "green"
         }
 
         StatusIndicator {
-            id: statusIndicator17
+            id: bl17value
             x: 1234
             y: 184
+            color: "green"
         }
 
         StatusIndicator {
-            id: statusIndicator18
+            id: bl18value
             x: 1234
             y: 228
+            color: "green"
         }
 
         StatusIndicator {
-            id: statusIndicator19
+            id: bl13value
             x: 1234
             y: 289
             color: "red"
@@ -491,58 +506,6 @@ Item {
             verticalAlignment: Text.AlignVCenter
         }
 
-        Rectangle {
-            id: rectangle19
-            x: 549
-            y: 249
-            width: 150
-            height: 40
-            color: "#ffffff"
-
-            TextField {
-                id: textField
-                x: 5
-                y: 0
-                width: 140
-                horizontalAlignment: Text.AlignHCenter
-                placeholderText: qsTr("0,00")
-            }
-        }
-
-        Rectangle {
-            id: rectangle20
-            x: 8
-            y: 976
-            width: 150
-            height: 40
-            color: "#ffffff"
-            TextField {
-                id: textField1
-                x: 5
-                y: 0
-                width: 140
-                horizontalAlignment: Text.AlignHCenter
-                placeholderText: qsTr("Text Field")
-            }
-        }
-
-        Rectangle {
-            id: rectangle21
-            x: 693
-            y: 570
-            width: 150
-            height: 40
-            color: "#ffffff"
-            TextField {
-                id: textField2
-                x: 5
-                y: 0
-                width: 140
-                horizontalAlignment: Text.AlignHCenter
-                placeholderText: qsTr("0,0")
-            }
-        }
-
         Label {
             id: label10
             x: 849
@@ -557,14 +520,16 @@ Item {
 
         Label {
             id: label11
-            x: 907
+            x: 884
             y: 206
-            width: 80
+            width: 126
             height: 22
             color: "#ffffff"
             text: qsTr("Готовность")
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
+            font.bold: true
+            font.capitalization: Font.AllUppercase
         }
 
         Label {
@@ -578,6 +543,316 @@ Item {
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
         }
+
+        Rectangle {
+            id: rectangle28
+            x: 8
+            y: 792
+            width: 150
+            height: 40
+            color: "#ffffff"
+
+            Label {
+                id: nd7value
+                x: 0
+                y: 0
+                width: 150
+                height: 40
+                text: qsTr("0,0")
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+            }
+        }
+
+        Label {
+            id: label13
+            x: 164
+            y: 884
+            width: 110
+            height: 40
+            color: "#ffffff"
+            text: qsTr("Sпл, мм")
+            horizontalAlignment: Text.AlignLeft
+            verticalAlignment: Text.AlignVCenter
+        }
+
+        Label {
+            id: label14
+            x: 164
+            y: 930
+            width: 110
+            height: 40
+            color: "#ffffff"
+            text: qsTr("Iсв, А")
+            horizontalAlignment: Text.AlignLeft
+            verticalAlignment: Text.AlignVCenter
+        }
+
+        Label {
+            id: label15
+            x: 164
+            y: 976
+            width: 110
+            height: 40
+            color: "#ffffff"
+            text: qsTr("№ участка")
+            horizontalAlignment: Text.AlignLeft
+            verticalAlignment: Text.AlignVCenter
+        }
+
+        Label {
+            id: label16
+            x: 436
+            y: 884
+            width: 110
+            height: 40
+            color: "#ffffff"
+            text: qsTr("№ программы")
+            horizontalAlignment: Text.AlignLeft
+            verticalAlignment: Text.AlignVCenter
+        }
+
+        Label {
+            id: label17
+            x: 436
+            y: 930
+            width: 110
+            height: 40
+            color: "#ffffff"
+            text: qsTr("Время сварки")
+            horizontalAlignment: Text.AlignLeft
+            verticalAlignment: Text.AlignVCenter
+        }
+
+        Label {
+            id: label18
+            x: 436
+            y: 976
+            width: 110
+            height: 40
+            color: "#ffffff"
+            text: qsTr("Т масла")
+            horizontalAlignment: Text.AlignLeft
+            verticalAlignment: Text.AlignVCenter
+        }
+
+        Label {
+            id: label19
+            x: 165
+            y: 838
+            width: 265
+            height: 40
+            color: "#ffffff"
+            text: qsTr("Скорость осадки")
+            horizontalAlignment: Text.AlignLeft
+            verticalAlignment: Text.AlignVCenter
+
+            Label {
+                id: label20
+                x: 583
+                y: 687
+                width: 257
+                height: 40
+                color: "#ffffff"
+                text: qsTr("Label")
+                horizontalAlignment: Text.AlignLeft
+                verticalAlignment: Text.AlignVCenter
+            }
+        }
+
+        Label {
+            id: label21
+            x: 165
+            y: 792
+            width: 265
+            height: 40
+            color: "#ffffff"
+            text: qsTr("Величина осадки")
+            horizontalAlignment: Text.AlignLeft
+            verticalAlignment: Text.AlignVCenter
+            Label {
+                id: label22
+                x: 583
+                y: 687
+                width: 257
+                height: 40
+                color: "#ffffff"
+                text: qsTr("Label")
+                horizontalAlignment: Text.AlignLeft
+                verticalAlignment: Text.AlignVCenter
+            }
+        }
+
+        Rectangle {
+            id: rectangle29
+            x: 9
+            y: 838
+            width: 150
+            height: 40
+            color: "#ffffff"
+            Label {
+                id: nd6value
+                x: 0
+                y: 0
+                width: 150
+                height: 40
+                text: qsTr("0,0")
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+            }
+        }
+
+        Rectangle {
+            id: rectangle30
+            x: 9
+            y: 884
+            width: 150
+            height: 40
+            color: "#ffffff"
+            Label {
+                id: nd1value
+                x: 0
+                y: 0
+                width: 150
+                height: 40
+                text: qsTr("0,0")
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+            }
+        }
+
+        Rectangle {
+            id: rectangle31
+            x: 9
+            y: 930
+            width: 150
+            height: 40
+            color: "#ffffff"
+            Label {
+                id: nd2value
+                x: 0
+                y: 0
+                width: 150
+                height: 40
+                text: qsTr("0,0")
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+            }
+        }
+
+        Rectangle {
+            id: rectangle32
+            x: 9
+            y: 976
+            width: 150
+            height: 40
+            color: "#ffffff"
+            Label {
+                id: nd9value
+                x: 0
+                y: 0
+                width: 150
+                height: 40
+                text: qsTr("0,0")
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+            }
+        }
+
+        Rectangle {
+            id: rectangle33
+            x: 280
+            y: 884
+            width: 150
+            height: 40
+            color: "#ffffff"
+            Label {
+                id: nd3value
+                x: 0
+                y: 0
+                width: 150
+                height: 40
+                text: qsTr("0,0")
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+            }
+        }
+
+        Rectangle {
+            id: rectangle34
+            x: 280
+            y: 930
+            width: 150
+            height: 40
+            color: "#ffffff"
+            Label {
+                id: nd4value
+                x: 0
+                y: 0
+                width: 150
+                height: 40
+                text: qsTr("0,0")
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+            }
+        }
+
+        Rectangle {
+            id: rectangle35
+            x: 280
+            y: 976
+            width: 150
+            height: 40
+            color: "#ffffff"
+            Label {
+                id: nd5value
+                x: 0
+                y: 0
+                width: 150
+                height: 40
+                text: qsTr("0,0")
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+            }
+        }
+
+        Rectangle {
+            id: rectangle36
+            x: 549
+            y: 249
+            width: 150
+            height: 40
+            color: "#ffffff"
+            Label {
+                id: nd8value
+                x: 0
+                y: 0
+                width: 150
+                height: 40
+                text: qsTr("0,0")
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+            }
+        }
+
+        Rectangle {
+            id: rectangle37
+            x: 718
+            y: 570
+            width: 150
+            height: 40
+            color: "#ffffff"
+            Label {
+                id: nd10value
+                x: 0
+                y: 0
+                width: 150
+                height: 40
+                text: qsTr("0,0")
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+            }
+        }
     }
 
     Connections {
@@ -585,27 +860,108 @@ Item {
 
         function onBl0(state) {
             rectangle7.up = state
-            statusIndicator3.active = state
+            bl0value.active = state
         }
         function onBl1(state) {
             rectangle7.down = state
-            statusIndicator2.active = state
+            bl1value.active = state
         }
         function onBl2(state) {
             rectangle8.up = state
-            statusIndicator5.active = state
+            bl2value.active = state
         }
         function onBl3(state) {
             rectangle8.down = state
-            statusIndicator4.active = state
+            bl3value.active = state
+        }
+        ///// BL not action
+        function onBl4(state) {
+            bl4value.active = state
+        }
+        function onBl5(state) {
+            bl5value.active = state
+        }
+        function onBl6(state) {
+            bl6value.active = state
+        }
+        function onBl7(state) {
+            bl7value.active = state
+        }
+        function onBl8(state) {
+            bl8value.active = state
+        }
+        function onBl9(state) {
+            bl9value.active = state
+        }
+        function onBl10(state) {
+            bl10value.active = state
+        }
+        function onBl11(state) {
+            bl11value.active = state
+        }
+        function onBl12(state) {
+            bl12value.active = state
+        }
+        function onBl13(state) {
+            bl13value.active = state
+        }
+        function onBl14(state) {
+            bl14value.active = state
+        }
+        function onBl15(state) {
+            bl15value.active = state
+        }
+        function onBl16(state) {
+            bl16value.active = state
+        }
+        function onBl17(state) {
+            bl17value.active = state
+        }
+        function onBl18(state) {
+            bl18value.active = state
+        }
+        function onBl19(state) {
+            bl19value.active = state
+        }
+        ///// ND
+        function onNd0(value) {
+            nd0value.text = value
+        }
+        function onNd1(value) {
+            nd1value.text = value
+        }
+        function onNd2(value) {
+            nd2value.text = value
+        }
+        function onNd3(value) {
+            nd3value.text = value
+        }
+        function onNd4(value) {
+            nd4value.text = value
+        }
+        function onNd5(value) {
+            nd5value.text = value
+        }
+        function onNd6(value) {
+            nd6value.text = value
+        }
+        function onNd7(value) {
+            nd7value.text = value
+        }
+        function onNd8(value) {
+            nd8value.text = value
+        }
+        function onNd10(value) {
+            nd10value.text = value
         }
     }
 }
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:1.5;height:1024;width:1280}D{i:47}D{i:48}D{i:49}
-D{i:50}D{i:51}D{i:52}D{i:53}D{i:54}D{i:55}D{i:58}D{i:60}
+    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}D{i:59}D{i:62}D{i:63}
+D{i:64}D{i:65}D{i:66}D{i:68}D{i:67}D{i:69}D{i:71}D{i:73}D{i:75}D{i:77}D{i:79}D{i:81}
+D{i:83}D{i:85}D{i:87}
 }
 ##^##*/
 
