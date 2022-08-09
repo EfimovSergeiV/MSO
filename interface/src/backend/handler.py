@@ -235,5 +235,5 @@ class Handler(QObject):
     @Slot()
     def reboot_system(self):
         # self.closeApplication.emit()
-        # os.system("sudo reboot")
-        os.system('shutdown now -h')
+        # os.system("systemctl reboot -i")
+        os.system('systemctl poweroff -i')
