@@ -1,4 +1,4 @@
-import time, logging
+import time, logging, os
 from PySide2.QtCore import QObject, Signal, Slot, QThread
 from .modules import charts
 import json
@@ -231,3 +231,7 @@ class Handler(QObject):
         self.showStopButton.emit(False)
         # Закрываем приложение, если все потоки остановились
         # self.closeApplication.emit()
+
+    def reboot_system(self):
+        self.closeApplication.emit()
+        os.system('reboot')

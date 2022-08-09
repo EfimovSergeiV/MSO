@@ -161,6 +161,9 @@ Item {
                 highlighted: true
                 icon.name: "exit"
                 icon.source: "../content/exit-run.png"
+                onClicked: {
+                    handler.reboot_system()
+                }
                 //                enabled: false
             }
 
