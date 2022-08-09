@@ -107,6 +107,8 @@ Item {
                 font.pointSize: 14
                 highlighted: true
                 Material.background: Material.Blue
+                icon.name: "gesture-double"
+                icon.source: "../content/gesture-double-tap.png"
                 onClicked: {
                     stackView.push(Qt.resolvedUrl("action.qml"))
                 }
@@ -121,7 +123,8 @@ Item {
                 font.pointSize: 14
                 Material.background: Material.Blue
                 highlighted: true
-
+                icon.name: "charts"
+                icon.source: "../content/chart-areaspline.png"
                 onClicked: {
                     stackView.push(Qt.resolvedUrl("charts.qml"))
                 }
@@ -133,6 +136,8 @@ Item {
                 y: 55
                 width: 324
                 height: 80
+                icon.name: "play"
+                icon.source: "../content/play-circle-outline.png"
                 text: qsTr("Запуск программы")
                 font.pointSize: 14
                 Material.background: Material.Blue
@@ -154,6 +159,8 @@ Item {
                 font.pointSize: 14
                 Material.background: Material.Blue
                 highlighted: true
+                icon.name: "exit"
+                icon.source: "../content/exit-run.png"
                 //                enabled: false
             }
 
@@ -167,6 +174,8 @@ Item {
                 font.pointSize: 14
                 highlighted: true
                 //                enabled: false
+                icon.name: "loc-exit"
+                icon.source: "../content/location-exit.png"
                 Material.background: Material.Blue
                 onClicked: {
                     handler.close_application()
@@ -391,6 +400,8 @@ Item {
                     height: 60
                     text: "Найти"
                     highlighted: true
+                    icon.name: "programm-diameter-search"
+                    icon.source: "../content/clipboard-text-search-outline.png"
                     Material.background: Material.Teal
                 }
             }
@@ -519,6 +530,8 @@ Item {
                 font.pointSize: 14
                 Material.background: Material.Blue
                 highlighted: true
+                icon.name: "list-programms"
+                icon.source: "../content/book-open-outline.png"
                 onClicked: {
                     if (indexPage.truePass) {
                         stackView.push(Qt.resolvedUrl("programms.qml"))
@@ -537,6 +550,8 @@ Item {
                 font.pointSize: 14
                 Material.background: Material.Blue
                 highlighted: true
+                icon.name: "cogs"
+                icon.source: "../content/cogs.png"
                 onClicked: {
                     if (indexPage.truePass) {
                         stackView.push(Qt.resolvedUrl("settings.qml"))

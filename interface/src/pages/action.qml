@@ -23,6 +23,8 @@ Item {
             font.pointSize: 14
             Material.background: Material.Blue
             highlighted: true
+            icon.name: "charts"
+            icon.source: "../content/chart-areaspline.png"
             onClicked: {
                 stackView.push(Qt.resolvedUrl("charts.qml"))
             }
@@ -37,6 +39,8 @@ Item {
             font.pointSize: 14
             Material.background: Material.Blue
             highlighted: true
+            icon.name: "charts"
+            icon.source: "../content/keyboard-return.png"
             onClicked: {
                 stackView.push(Qt.resolvedUrl("index.qml"))
             }
@@ -602,7 +606,7 @@ Item {
 
         Label {
             id: label16
-            x: 436
+            x: 474
             y: 884
             width: 110
             height: 40
@@ -614,7 +618,7 @@ Item {
 
         Label {
             id: label17
-            x: 436
+            x: 474
             y: 930
             width: 110
             height: 40
@@ -626,7 +630,7 @@ Item {
 
         Label {
             id: label18
-            x: 436
+            x: 474
             y: 976
             width: 110
             height: 40
@@ -646,18 +650,6 @@ Item {
             text: qsTr("Скорость осадки")
             horizontalAlignment: Text.AlignLeft
             verticalAlignment: Text.AlignVCenter
-
-            Label {
-                id: label20
-                x: 583
-                y: 687
-                width: 257
-                height: 40
-                color: "#ffffff"
-                text: qsTr("Label")
-                horizontalAlignment: Text.AlignLeft
-                verticalAlignment: Text.AlignVCenter
-            }
         }
 
         Label {
@@ -670,17 +662,6 @@ Item {
             text: qsTr("Величина осадки")
             horizontalAlignment: Text.AlignLeft
             verticalAlignment: Text.AlignVCenter
-            Label {
-                id: label22
-                x: 583
-                y: 687
-                width: 257
-                height: 40
-                color: "#ffffff"
-                text: qsTr("Label")
-                horizontalAlignment: Text.AlignLeft
-                verticalAlignment: Text.AlignVCenter
-            }
         }
 
         Rectangle {
@@ -761,7 +742,7 @@ Item {
 
         Rectangle {
             id: rectangle33
-            x: 280
+            x: 318
             y: 884
             width: 150
             height: 40
@@ -780,7 +761,7 @@ Item {
 
         Rectangle {
             id: rectangle34
-            x: 280
+            x: 318
             y: 930
             width: 150
             height: 40
@@ -799,7 +780,7 @@ Item {
 
         Rectangle {
             id: rectangle35
-            x: 280
+            x: 318
             y: 976
             width: 150
             height: 40
@@ -951,6 +932,9 @@ Item {
         function onNd8(value) {
             nd8value.text = value
         }
+        function onNd9(value) {
+            nd9value.text = value
+        }
         function onNd10(value) {
             nd10value.text = value
         }
@@ -959,9 +943,7 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}D{i:59}D{i:62}D{i:63}
-D{i:64}D{i:65}D{i:66}D{i:68}D{i:67}D{i:69}D{i:71}D{i:73}D{i:75}D{i:77}D{i:79}D{i:81}
-D{i:83}D{i:85}D{i:87}
+    D{i:0;autoSize:true;formeditorZoom:1.25;height:1024;width:1280}
 }
 ##^##*/
 

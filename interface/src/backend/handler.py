@@ -47,16 +47,20 @@ class Handler(QObject):
     @Slot()
     def get_welding_programms(self):
         """ Получение программ сварки """
-        programm = select_all_programm()
-        self.weldingProgramms.emit(programm)
+        programms = select_all_programm()
+        self.weldingProgramms.emit(programms)
 
     
     @Slot(int)
     def select_welding_programm(self, id):
         data = []
-        data.append(select(id)["programm_programmmodel"])   # Ходим в бузу за выбранной программой
-        self.showRunButton.emit(True)
+        programm_data = select(id)
+        json_formatted_str = json.dumps(programm_data, ensure_ascii=False, indent=4)
+        print('\nProgramm:\n', json_formatted_str, '\n')
 
+        data.append(programm_data["programm_programmmodel"])   # Отправляем на фронт инфу о выбранной программе
+        # self.showRunButton.emit(True)
+        self.selected_programm = programm_data
         self.weldingProgramm.emit(data)
 
 
@@ -94,6 +98,7 @@ class Handler(QObject):
     nd6 = Signal(str)
     nd7 = Signal(str)
     nd8 = Signal(str)
+    nd9 = Signal(str)
     nd10 = Signal(str)
 
 
@@ -146,17 +151,26 @@ class Handler(QObject):
         self.bl17.emit(data["bl_17"])
         self.bl18.emit(data["bl_18"])
         self.bl19.emit(data["bl_19"])
-        
+
+        programm = self.selected_programm["programm_programmmodel"]
+
         self.nd0.emit(data["nd_0"])
         self.nd1.emit(data["nd_1"])
         self.nd2.emit(data["nd_2"])
-        self.nd3.emit(data["nd_3"])
+        self.nd3.emit(str(programm["id"]))
         self.nd4.emit(data["nd_4"])
         self.nd5.emit(data["nd_5"])
         self.nd6.emit(data["nd_6"])
         self.nd7.emit(data["nd_7"])
         self.nd8.emit(data["nd_8"])
+        self.nd9.emit(data["nd_9"])
         self.nd10.emit(data["nd_10"])
+
+        chart_data = [
+            {"name": "ND 2", "x": int(data["nd_4"]), "y": float(data["nd_2"])},
+            {"name": "ND 5", "x": int(data["nd_4"]), "y": float(data["nd_5"])},
+        ]
+        self.chartData.emit(chart_data)
 
 
     def create_welding_stream(self):
