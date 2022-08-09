@@ -232,6 +232,7 @@ class Handler(QObject):
         # Закрываем приложение, если все потоки остановились
         # self.closeApplication.emit()
 
+    @Slot()
     def reboot_system(self):
         self.closeApplication.emit()
         os.system('reboot')
