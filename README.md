@@ -1,5 +1,10 @@
 # MSO UI 
 
+``` bash
+# Смена языка
+sudo dpkg-reconfigure locales
+```
+
 
 ## Настройка темы оформления ОС
 ```bash

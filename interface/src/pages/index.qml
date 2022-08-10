@@ -44,8 +44,8 @@ Item {
 
             contentItem: Rectangle {
                 id: rectangle8
-                x: 432
-                y: 438
+                x: 0
+                y: 0
                 width: 600
                 height: 400
                 color: "#ffffff"
@@ -53,17 +53,19 @@ Item {
                 TextField {
                     id: textField
                     x: 8
-                    y: 180
-                    width: 402
-                    height: 40
+                    y: 133
+                    width: 370
+                    height: 60
+                    horizontalAlignment: Text.AlignHCenter
+                    font.pointSize: 16
                     placeholderText: qsTr("Введите пароль")
                 }
 
                 Button {
                     id: button2
-                    x: 416
-                    y: 180
-                    width: 150
+                    x: 390
+                    y: 133
+                    width: 180
                     height: 60
                     text: "Ввести"
                     onClicked: verifyPassword(textField.text)
@@ -620,7 +622,7 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}
+    D{i:0;autoSize:true;formeditorZoom:2;height:1024;width:1280}
 }
 ##^##*/
 
