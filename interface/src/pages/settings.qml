@@ -28,10 +28,13 @@ Item {
             y: 372
             width: 324
             height: 80
-            text: qsTr("Обновление программы")
+            text: qsTr("Обновление программы(restart)")
             font.pointSize: 14
             highlighted: true
             Material.background: Material.Blue
+            onClicked: {
+                handler.reboot_system()
+            }
         }
 
         Button {
@@ -43,6 +46,9 @@ Item {
             font.pointSize: 14
             highlighted: true
             Material.background: Material.Blue
+            onClicked: {
+                handler.app_exit()
+            }
         }
 
         Button {
@@ -71,8 +77,7 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}D{i:3}D{i:4}D{i:5}
-D{i:6}
+    D{i:0;autoSize:true;formeditorZoom:0.66;height:1024;width:1280}
 }
 ##^##*/
 

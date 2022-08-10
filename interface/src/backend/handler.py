@@ -232,8 +232,16 @@ class Handler(QObject):
         # Закрываем приложение, если все потоки остановились
         # self.closeApplication.emit()
 
+
     @Slot()
     def reboot_system(self):
         # self.closeApplication.emit()
-        # os.system("systemctl reboot -i")
-        os.system('systemctl poweroff -i')
+        os.system("systemctl reboot -i")
+
+    @Slot()
+    def poweroff_system(self):
+        os.system("systemctl poweroff")
+
+    @Slot()
+    def app_exit(self):
+        self.closeApplication.emit()

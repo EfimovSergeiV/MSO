@@ -11,7 +11,7 @@ Item {
 
     function verifyPassword(password) {
         console.log(password)
-        if (password === "123456") {
+        if (password === "1") {
             indexPage.truePass = true
             testDialog.close()
         } else {
@@ -162,7 +162,7 @@ Item {
                 icon.name: "exit"
                 icon.source: "../content/exit-run.png"
                 onClicked: {
-                    handler.reboot_system()
+                    handler.poweroff_system()
                 }
                 //                enabled: false
             }
