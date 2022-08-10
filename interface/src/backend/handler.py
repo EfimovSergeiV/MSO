@@ -233,9 +233,11 @@ class Handler(QObject):
         # self.closeApplication.emit()
 
 
+
     @Slot()
     def reboot_system(self):
-        os.system("systemctl reboot")
+        os.system("git pull")
+        # os.system("systemctl reboot")
 
     @Slot()
     def poweroff_system(self):
