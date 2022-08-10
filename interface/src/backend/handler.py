@@ -237,7 +237,8 @@ class Handler(QObject):
     @Slot()
     def reboot_system(self):
         os.system("git pull")
-        # os.system("systemctl reboot")
+        time.sleep(3)
+        os.system("systemctl reboot")
 
     @Slot()
     def poweroff_system(self):
